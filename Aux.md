@@ -11,6 +11,8 @@ combined with the following distortion models
 * radial-tangential
 * equidistant
 
+
+
 ##Supported calibration targets
 Three different calibration target are supported which are configured using a YAML-file. Please find the configuration details below.
 
@@ -18,8 +20,11 @@ Three different calibration target are supported which are configured using a YA
 With the Aprilgrid partially visible targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
 
 Aprilgrid PDFs can be downloaded here:
+
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+
 or can be created according to your size requirements using the script here:
+
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 The awsome [Apriltag implementation](http://people.csail.mit.edu/kaess/apriltags/) of M. Kaess is being used for tag extraction in this toolbox. (see [apriltags](#olson))
