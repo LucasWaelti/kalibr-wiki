@@ -8,13 +8,14 @@ The following properties make it different from existing toolboxes:
 
 
 ##Quick start
-
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 ###Collect images
-
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 
 ###Calibrate the system
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 This sectioownload the sample dataset [here](http://awsome-link).
 
 1. Collect a ros bag containing the calibration image streams
@@ -22,11 +23,10 @@ This sectioownload the sample dataset [here](http://awsome-link).
 > rosrun aslam_camera_calibration calibrate --model pinhole-radtan pinhole-equi omni-radtan
 
 ###Output
-
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 ###Example calibration using sample dataset
-
-![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.png)
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 
 ## References
