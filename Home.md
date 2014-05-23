@@ -31,7 +31,9 @@
 
 ##License (BSD)
 Copyright (c) 2014, Paul Furgale, Jérôme Maye and Jörn Rehder, Autonomous Systems Lab, ETH Zürich, Switzerland
+
 Copyright (c) 2014, Thomas Schneider, Skybotix AG, Switzerland
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
