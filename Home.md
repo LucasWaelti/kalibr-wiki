@@ -1,7 +1,7 @@
 #Kalibr
 
 ##Introduction
-
+![](images/cam.png)
 ##Installation
 ###A) CDE package
 
