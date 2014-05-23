@@ -40,8 +40,7 @@ tagSpacing: 0.3          #ratio of space between tags to tagSize
 ```
 
 ###B) Checkerboard
-
-Sample checkerboard.yaml:
+The standard checkerboard pattern is supported using the following configuration:
 
 **checkerboard.yaml**
 ```
