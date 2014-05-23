@@ -1,9 +1,12 @@
 #Kalibr
 
+![alt tag](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/cam.png)
+
 ##Introduction
 
 ##Installation
 ###A) CDE package
+
 
 ###B) From source
 1. Before you compile the repository code, you need to install the required
