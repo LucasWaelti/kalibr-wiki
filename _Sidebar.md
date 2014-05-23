@@ -1,9 +1,5 @@
 [Home](home)<br>
-[Multiple camera calibration](multiple-camera-calibration)
-
-[Camera-IMU calibration](camera-imu-calibration)
-
-[Helper scripts](helper-scripts)
-
+[Multiple camera calibration](multiple-camera-calibration)<br>
+[Camera-IMU calibration](camera-imu-calibration)<br>
+[Helper scripts](helper-scripts)<br>
 [Aux](aux)
-
