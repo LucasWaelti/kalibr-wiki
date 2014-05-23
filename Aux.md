@@ -12,7 +12,6 @@ combined with the following distortion models
 * equidistant
 
 
-
 ##Supported calibration targets
 Three different calibration target are supported which are configured using a YAML-file. Please find the configuration details below.
 
@@ -62,7 +61,6 @@ targetRows: 7              #number of circles (rows)
 spacingMeters: 0.02        #distance between circles [m]
 asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 ```
-
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
