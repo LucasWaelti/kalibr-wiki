@@ -12,9 +12,7 @@ Rest
 ---
 [Supported models](supported-models)<br>
 [Calibration targets and configuration](calibration-target)<br>
-[Helper scripts](helper-scripts)<br>
-[Input data formats](helper-scripts)<br>
-[Output data formats](helper-scripts)<br>
+[Data format](data-format)<br>
 
 Extras
 ---

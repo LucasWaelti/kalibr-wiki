@@ -1,4 +1,5 @@
-#Helper scripts
+#Data format
+
 
 ##ROS bag creater/extractor
 ###bagcreater
@@ -36,4 +37,5 @@ The bagextractor exports a ROS bag containing image and/or IMU data to image fil
 
 Example usage:
 > rosrun aslam_calibration bagextractor --image-topics /cam0/image_raw /cam1/image_raw --imu-topics /imu0 --output-folder dataset-dir --bag awsome.bag
+
 
