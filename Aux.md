@@ -1,34 +1,40 @@
 #Camera/distortion models and calibration targets
 
 ## Camera and distortion models
-The package implements the following camera models:
+The package allows the calibration of the following projection models
 
 * pinhole
 * omni
 
-and the following distortion models:
+combined with the following distortion models
 
 * radial-tangential
 * equidistant
 
-
 ##Supported calibration targets
-Three different calibration target are supported which are configured using a YAML-file. Please find the configuration details on the following 
+Three different calibration target are supported which are configured using a YAML-file. Please find the configuration details below.
 
-###Aprilgrid
-The awsome [Apriltag implementation](http://people.csail.mit.edu/kaess/apriltags/) of M. Kaess is used for the tag extraction. (see [olson](#olson))
+###A) Aprilgrid
+With the Aprilgrid partially visible targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
+
+Aprilgrid PDFs can be downloaded here:
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+or can be created according to your size requirements using the script here:
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+
+The awsome [Apriltag implementation](http://people.csail.mit.edu/kaess/apriltags/) of M. Kaess is being used for tag extraction in this toolbox. (see [apriltags](#olson))
 
 **aprilgrid.yaml**
 ```
-target_type: 'aprilgrid'    #gridtype
-tagCols: 7                  #number of apriltags
-tagRows: 7                  #number of apriltags
-tagSize: 0.05006            #size of apriltag, edge to edge [m]
-tagSpacing: 0.250699161     #ratio of space between tags to tagSize
-                              #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.25[-]
+target_type: 'aprilgrid' #gridtype
+tagCols: 6               #number of apriltags
+tagRows: 6               #number of apriltags
+tagSize: 0.088           #size of apriltag, edge to edge [m]
+tagSpacing: 0.3          #ratio of space between tags to tagSize
+                         #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.25[-]
 ```
 
-###Checkerboard
+###B) Checkerboard
 
 Sample checkerboard.yaml:
 
@@ -41,7 +47,7 @@ rowSpacingMeters: 0.06      #size of one chessboard square [m]
 colSpacingMeters: 0.06      #size of one chessboard square [m]
 ```
 
-###Circlegrid
+###C) Circlegrid
 The standard OpenCV symmetric and asymmetric circle grid are supported using the following configuration:
 
 **circlegrid.yaml**
