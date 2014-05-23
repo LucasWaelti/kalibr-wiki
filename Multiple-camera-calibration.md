@@ -7,15 +7,10 @@ The following properties make it different from existing toolboxes:
 * Different camera and distortion models can be mixed in one optimization run.
 
 
-##Contents
-* [blob](#blob)
-
-
 ##Quick start
 
 
 ###Collect images
-
 
 
 
@@ -31,7 +26,7 @@ This sectioownload the sample dataset [here](http://awsome-link).
 
 ###Example calibration using sample dataset
 
-
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.png)
 
 
 ## References
