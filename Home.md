@@ -1,6 +1,6 @@
 #Kalibr
 
-![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr-logo.png)
+![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr.png)
 
 ##Introduction
 
