@@ -7,7 +7,7 @@ Detailed information about the used approach is available in the following paper
 ##Contents
 * [Multiple camera calibration with intrinsics](#multiple-camera-calibration-with-intrinsics)
 * [Dynamic IMU and multi-camera calibration](#dynamic-IMU-and-multi-camera calibration)
-* [Tipps](#ipps)
+* [Tipps](#tipps)
 * [Supported calibration targets](#supported-calibration-targets)
 * [Sample datasets](#sample-datasets)
 

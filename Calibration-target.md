@@ -1,8 +1,7 @@
 #Supported calibration targets
 Kalibr supports three different calibration target.
 
-
-Best is to use a checkerboard for the calibration of the camera intrinsics and an Aprilgrid for the IMU-camera calibration. This is because the symmetrical natures of a checkerboard grid doesn't allow it easily to detect rotations above a certain threshold. For this reasons Aprilgrids have been introduced for the IMU-camera calibration which offer the following benefit:
+To simplify the data collection  Aprilgrid for the IMU-camera calibration. This is because the symmetrical natures of a checkerboard grid doesn't allow it easily to detect rotations above a certain threshold. For this reasons Aprilgrids have been introduced for the IMU-camera calibration which offer the following benefit:
 
     board can be only partially in image
     rotation is fully resolved (no flips)

@@ -1,18 +1,13 @@
 #Multiple camera calibration with intrinsics
-This tool allows you to calibrate the intrinsic and extrinsic parameters of a multiple camera system with non-shared overlapping fields of view. 
+This tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. The image data is provided as one [ROS](https://www.ros.org) bag containing the image streams for all cameras. The calibration routine will go through all images and pick those to include in the optimization based on information theoretic measures (see [jmaye](#jmaye)).
 
-The following properties make it different from existing toolboxes:
-
-* The image data is collected from a [ROS](https://www.ros.org) bag and the tool chooses which images to include in the optimization based on information theoretic measures (see [jmaye](#jmaye))
-* Different camera and distortion models can be mixed in one optimization run.
-
+Arbitrary combinations of camera and distortion models can be mixed in one camera system and calibration run. See 
 
 ##Quick start
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
 ###Collect images
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
-
 
 ###Calibrate the system
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
