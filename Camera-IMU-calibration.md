@@ -58,6 +58,7 @@ More information is available using the help argument:<br\>
     * good illumination 
 * avoid too flat angles between the camera axis and the calibration target
 * hide external apriltags, if the aprilgrid is used 
+* if you are using a calibration target with symmetries (checkerboard, circlegrid), try to avoid rotations over the symmetry, as this would lead to orientation flips in the 
 
 
 ## References
