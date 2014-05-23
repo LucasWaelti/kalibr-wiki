@@ -1,7 +1,7 @@
 #Kalibr
 
 ##Introduction
-![](https://github.com/schneith/raw/Kalibr-test/wiki/images/images/cam.png)
+[[images/cam.jpg]]
 
 ##Installation
 ###A) CDE package
