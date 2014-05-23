@@ -1,9 +1,8 @@
 #Kalibr
 
-![alt tag](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/cam.png)
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/cam.png)
 
 ##Introduction
-![](wiki_images/cam.jpg)
 
 ##Installation
 ###A) CDE package
