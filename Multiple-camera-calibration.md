@@ -23,7 +23,11 @@ This sectioownload the sample dataset [here](http://awsome-link).
 > rosrun aslam_camera_calibration calibrate --model pinhole-radtan pinhole-equi omni-radtan
 
 ###Output
-![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+The calibration will produce the following output files:
+
+* **report-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
+* **results-%BAGNAME%.txt**: Results in TXT format.
+* **chain.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator
 
 ###Example calibration using sample dataset
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)

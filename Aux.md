@@ -18,18 +18,40 @@ Three different calibration target are supported which are configured using a YA
 ###Aprilgrid
 The awsome [Apriltag implementation](http://people.csail.mit.edu/kaess/apriltags/) of M. Kaess is used for the tag extraction. (see [olson](#olson))
 
+**aprilgrid.yaml**
+```
+target_type: 'aprilgrid'    #gridtype
+tagCols: 7                  #number of apriltags
+tagRows: 7                  #number of apriltags
+tagSize: 0.05006            #size of apriltag, edge to edge [m]
+tagSpacing: 0.250699161     #ratio of space between tags to tagSize
+                              #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.25[-]
+```
 
 ###Checkerboard
 
 Sample checkerboard.yaml:
 
+**checkerboard.yaml**
 ```
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+target_type: 'checkerboard' #gridtype
+targetCols: 6               #number of internal chessboard corners
+targetRows: 7               #number of internal chessboard corners
+rowSpacingMeters: 0.06      #size of one chessboard square [m]
+colSpacingMeters: 0.06      #size of one chessboard square [m]
 ```
 
 ###Circlegrid
+The standard OpenCV symmetric and asymmetric circle grid are supported using the following configuration:
+
+**circlegrid.yaml**
+```
+target_type: 'circlegrid'  #gridtype
+targetCols: 6              #number of circles (cols)
+targetRows: 7              #number of circles (rows)
+spacingMeters: 0.02        #distance between circles [m]
+asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
+```
 
 
 ## References

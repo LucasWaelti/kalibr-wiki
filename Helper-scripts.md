@@ -1,10 +1,13 @@
 #Helper scripts
 
-
-##Camera focus
+##Camera focus (ROS node)
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
-##ROS bag dataset creater/extractor
+##Calibration validation (ROS node)
+![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+
+
+##ROS bag creater/extractor
 ###bagcreater
 This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
 >
@@ -19,7 +22,7 @@ dataset-dir<br>
 │   └── 1385030212176607500.png<br>
 └── imu0.csv<br>
 
-The imu0.csv file is structured as follows:
+The imu0.csv file is structured as follows (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
 >
 timestamp,omega_x,omega_y,omega_z,alpha_x,alpha_y,alpha_z<br>
 1385030208736607488,0.5,-0.2,-0.1,8.1,-1.9,-3.3<br>
@@ -41,6 +44,5 @@ The bagextractor exports a ROS bag containing image and/or IMU data to image fil
 Example usage:
 > rosrun aslam_calibration bagextractor --image-topics /cam0/image_raw /cam1/image_raw --imu-topics /imu0 --output-folder dataset-dir --bag awsome.bag
 
-##Calibration validation
-![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
+
 
