@@ -3,9 +3,8 @@ Kalibr supports three different calibration target.
 
 To simplify the data collection  Aprilgrid for the IMU-camera calibration. This is because the symmetrical natures of a checkerboard grid doesn't allow it easily to detect rotations above a certain threshold. For this reasons Aprilgrids have been introduced for the IMU-camera calibration which offer the following benefit:
 
-    board can be only partially in image
-    rotation is fully resolved (no flips)
-    higher corner density (4 corners per tag) 
+* partially visible targets can be detected
+* rotation is fully resolved (no flips)
 
 
 The calibration targets are configured using a YAML configuration file which is passed to the calibration tools. Please find the configuration templates below.

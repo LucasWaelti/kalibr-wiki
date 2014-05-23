@@ -27,7 +27,6 @@ The calibration will produce the following output files:
 ###Example calibration using sample dataset
 ![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
 
-
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
 
