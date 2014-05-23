@@ -8,6 +8,7 @@ To remove necessity of building the code with all its pitfalls, we have packed t
 ##B) Building from source
 1. Install the following requirements_
 > sudo apt-get install BLOB
+> pip iigraph....
 
 2. Limit the building threads to avoid memory problems during the build: <br\>
 > export ROS_PARALLEL_JOBS="-j2
