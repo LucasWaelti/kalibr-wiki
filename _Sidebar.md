@@ -1,1 +1,1 @@
-awsome sidebar
+[Home](Home)
