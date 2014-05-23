@@ -1,7 +1,15 @@
 #Supported calibration targets
+Kalibr supports three different calibration target.
 
 
-Three different calibration target are supported which are configured using a YAML-file. Please find the configuration details below.
+Best is to use a checkerboard for the calibration of the camera intrinsics and an Aprilgrid for the IMU-camera calibration. This is because the symmetrical natures of a checkerboard grid doesn't allow it easily to detect rotations above a certain threshold. For this reasons Aprilgrids have been introduced for the IMU-camera calibration which offer the following benefit:
+
+    board can be only partially in image
+    rotation is fully resolved (no flips)
+    higher corner density (4 corners per tag) 
+
+
+The calibration targets are configured using a YAML configuration file which is passed to the calibration tools. Please find the configuration templates below.
 
 ##A) Aprilgrid
 With the Aprilgrid partially visible targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
@@ -50,11 +58,10 @@ spacingMeters: 0.02        #distance between circles [m]
 asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 ```
 
-##Tipps/Problems
-
-    Make sure the printed target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or stable wood.
-    Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and use this data during the calibration.
-    Reserve a white border around the calibration target. 
+##Tips/Problems
+* Make sure the printed target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
+* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data during the calibration.
+* Reserve a white border around the calibration target (min. the size of one grid element)
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
