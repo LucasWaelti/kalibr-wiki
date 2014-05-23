@@ -1,14 +1,5 @@
 #Helper scripts
 
-##Camera focus (ROS node)
-
-![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
-
-##Calibration validation (ROS node)
-
-![example image](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/todo.gif)
-
-
 ##ROS bag creater/extractor
 ###bagcreater
 This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
