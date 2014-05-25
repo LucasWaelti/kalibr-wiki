@@ -1,11 +1,9 @@
-Kalibr supports three different calibration target.
+Kalibr supports three different calibration target. The Aprilgrid is the recommended grid to use in this toolbox due to the following benefits over the other targets:
 
-To simplify the data collection  Aprilgrid for the IMU-camera calibration. This is because the symmetrical natures of a checkerboard grid doesn't allow it easily to detect rotations above a certain threshold. For this reasons Aprilgrids have been introduced for the IMU-camera calibration which offer the following benefit:
+* partially visible calibration boards can be used
+* rotations of the target are fully resolved (no flips)
 
-* partially visible targets can be detected
-* rotation is fully resolved (no flips)
-
-The calibration targets are configured using a YAML configuration file which is passed to the calibration tools. Please find the configuration templates below.
+The calibration target is configured using a YAML configuration file which is passed to the calibration tool. Please find the configuration templates for the supported targets below.
 
 ###A) Aprilgrid
 With the Aprilgrid partially visible targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
