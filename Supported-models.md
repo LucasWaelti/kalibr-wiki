@@ -13,5 +13,5 @@ The package allows the calibration of the following projection models
 ## Distortion models
 The following distortion models are available:
 
-* radial-tangential (distortion_coeffs: <font color='red'>[k1 k2 r1 r2]</font>)
+* radial-tangential (distortion_coeffs: [<font color='red'>k1 k2 r1 r2</font>])
 * equidistant (distortion_coeffs: <font color='red'>[k1 k2 r1 r2]</font>)
