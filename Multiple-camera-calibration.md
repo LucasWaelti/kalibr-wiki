@@ -1,4 +1,3 @@
-#Multiple camera calibration
 This tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. The image data is provided as a [ROS](https://www.ros.org) bag containing image streams for all cameras. The calibration routine will go through all images and select images using information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
 
 Arbitrary combinations these camera and distortion models can be mixed in one calibration run. Have a look at [this page](supported-models) for a list of the supported camera and distortion models.

@@ -1,4 +1,4 @@
-##Calibration validation (not in CDE)
+##Calibration validation (only ROS)
 
 The calibration validation tool extracts calibration targets from live ROS image streams and displays the image overlaid with the reprojections of the extracted corners. Further the reprojection error statistics are calculated and displayed for mono and as well as for inter-camera reprojections.
 

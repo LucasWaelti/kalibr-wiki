@@ -1,5 +1,3 @@
-#YAML formats
-
 ##Camera system configuration (aka chain.yaml)
 
 describe all the possible entries...
@@ -12,6 +10,7 @@ describe all the possible entries...
 chain evtl bild
 imu0 -> cam0 -> cam1 -> cam2
 
+link intrinsics vector to camera models --> omni -> 5 -> [xi fu....]
 
 
 **chain.yaml**
@@ -41,7 +40,7 @@ cam1:
   rostopic: /cam1/image_raw
 ```
 
-<font color='red'>INTRODUCE BETTER NAMINGS ...</font>
+<font color='red'>INTRODUCE BETTER TRAFO NAMES ...</font>
 
 
 
