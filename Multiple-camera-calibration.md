@@ -5,7 +5,7 @@ Arbitrary combinations of projection and distortion model can be mixed in one ca
 ##How to use?
 
 ###1) Collect images
-Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the <font color='red'>bagcreater</font> script on a sequence of image files.
+Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
 
 It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces the number of images to be processed by the calibrator containing almost redundant information and thus lower the runtime of the calibration.
 
