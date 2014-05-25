@@ -1,5 +1,3 @@
-#Camera and distortion models
-
 ## Camera and distortion models
 The package allows the calibration of the following projection models
 
