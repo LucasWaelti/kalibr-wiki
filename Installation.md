@@ -1,4 +1,4 @@
-Two sources for the toolbox are provided. Altough it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build-system) as some of the tools will only work with working installation of ROS.
+Two sources for the toolbox are provided. Altough it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build-system) as some of the tools will only work with a native ROS installation
 
 * **building from source**<br>
     You will need a working installation of ROS (hydro recommended) with a catkin workspace.
