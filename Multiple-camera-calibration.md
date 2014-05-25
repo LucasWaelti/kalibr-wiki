@@ -16,9 +16,9 @@ The tool must be provided with the following input:
 * **--bag filename.bag**<br>
     ROS bag containing the data
 * **--topics TOPIC_0 ... TOPIC_N**<br>
-    list of all camera topics in the bag  (matches the ordering of the --models)
+    list of all camera topics in the bag. matches the ordering of --models
 * **--models MODEL_0 ... MODEL_N**<br>
-    list of camera/distortion models to be fitted (matches the ordering of the --topics)
+    list of camera/distortion models to be fitted. matches the ordering of --topics. (see [Camera&distortion models](supported-models))
 * **--target target.yaml**<br>
     the calibration target configuration (see [Cailbration targets](#calibration-target))
 
