@@ -18,7 +18,7 @@ The tool must be provided with the following input:
 * **--topics TOPIC_0 ... TOPIC_N**<br>
     list of all camera topics in the bag. matches the ordering of --models
 * **--models MODEL_0 ... MODEL_N**<br>
-    list of camera/distortion models to be fitted. matches the ordering of --topics. (see [Camera&distortion models](supported-models))
+    list of camera/distortion models to be fitted. matches the ordering of --topics. (see [Supported models](supported-models))
 * **--target target.yaml**<br>
     the calibration target configuration (see [Cailbration targets](#calibration-target))
 
