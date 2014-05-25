@@ -1,8 +1,14 @@
-#Installation
+Two sources for the toolbox are provided. Altough it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build system) as some of the tools will only work with working installation of ROS.
 
-##A) CDE package
+* building from source
+    You will need a working installation of ROS (hydro recommended) with a catkin workspace.
+
+* CDE package
+    Using this package is the easiest way to get the toolbox working. All dependencies are packed within this package so no external dependencies need to be installed.   
+
+
+##A) Using the CDE package
 To remove necessity of building the code with all its pitfalls, we have packed the entire project with its dependencies into a [CDE](#guo) package. The only thing you will need to run this package is the 
-
 
 
 ##B) Building from source
