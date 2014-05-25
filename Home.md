@@ -1,8 +1,11 @@
-#Kalibr
-
 ![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr.png)
 
 ##Introduction
+The toolbox consists of 
+
+* BLOB 1
+* BLOB 2
+
 
 
 ##Authors
