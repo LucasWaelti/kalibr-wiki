@@ -12,7 +12,7 @@ Tools
 
 ---
 [Supported models](supported-models)<br>
-[Calibration targets](calibration-target)<br>
+[Calibration targets](calibration-targets)<br>
 [Bag format](bag-format)<br>
 [YAML format](yaml-formats)<br>
 
