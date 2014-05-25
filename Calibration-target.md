@@ -60,7 +60,7 @@ The *--show-extraction* argument can be used on both calibrators to show details
 ##Tips/Problems
 * Make sure the printed target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
 * Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data during the calibration.
-* Reserve a white border around the calibration target (min. the size of one grid element)
+* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in some lightning conditions)
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
