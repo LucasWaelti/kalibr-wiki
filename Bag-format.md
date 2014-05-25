@@ -1,6 +1,4 @@
-#Bag format
 All applications in this toolbox use ROS bags as a source for its sensor data (image and imu data)
-
 
 ##Using image files and IMU csv files
 A bagcreater script is provided to use image files and/or IMU data for the calibration
