@@ -8,7 +8,7 @@ This script allows you to create a ROS bag from raw image files and optionally I
 >
 dataset-dir<br>
 ├── cam0<br>
-│      ├── 1385030208726607500.png<br>
+│   ├── 1385030208726607500.png<br>
 │   ├──      ...<br>
 │   └── 1385030212176607500.png<br>
 ├── cam1<br>
