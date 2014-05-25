@@ -13,7 +13,7 @@ Rest
 [Supported models](supported-models)<br>
 [Calibration targets and configuration](calibration-target)<br>
 [Bag format](bag-format)<br>
-[YAML format](yaml-format)<br>
+[YAML format](yaml-formats)<br>
 
 Extras
 ---
