@@ -1,4 +1,4 @@
-#Multiple camera calibration with intrinsics
+#Multiple camera calibration
 This tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. The image data is provided as a [ROS](https://www.ros.org) bag containing image streams for all cameras. The calibration routine will go through all images and select images using information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
 
 Arbitrary combinations these camera and distortion models can be mixed in one calibration run. Have a look at [this page](supported-models) for a list of the supported camera and distortion models.
@@ -49,8 +49,6 @@ cam0, cam1: pinhole projection / equidistant distortion
 cam2, cam3: omni projection / radial-tangential distortion
 
 > <font color='red'>rosrun aslam_camera_calibration calibrate</font> --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw --bag dataset_mcc.bag --target aprilgrid_6x6.yaml
-
-
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.

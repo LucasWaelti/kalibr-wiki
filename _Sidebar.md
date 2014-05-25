@@ -12,7 +12,8 @@ Rest
 ---
 [Supported models](supported-models)<br>
 [Calibration targets and configuration](calibration-target)<br>
-[Data format](data-format)<br>
+[Bag format](bag-format)<br>
+[YAML format](yaml-format)<br>
 
 Extras
 ---
