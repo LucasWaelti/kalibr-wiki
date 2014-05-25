@@ -45,8 +45,8 @@ Download the sample dataset <font color='red'>here</font> and extract it. The ar
 **IMAGE OF CAMERA ARRANGEMENT**<br>
 The dataset was recorded with the sensor system shown in the picture above. It contains four cameras which should be calibrated using the following models:
 
-* cam0, cam1: pinhole projection / equidistant distortion
-* cam2, cam3: omni projection / radial-tangential distortion
+* **cam0, cam1:** pinhole projection / equidistant distortion
+* **cam2, cam3:** omni projection / radial-tangential distortion
 
 > <font color='red'>rosrun aslam_camera_calibration calibrate</font> --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw --bag dataset_mcc.bag --target aprilgrid_6x6.yaml
 
