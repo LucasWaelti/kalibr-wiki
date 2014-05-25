@@ -5,6 +5,8 @@ Tools
 ---
 [Multiple camera calibration](multiple-camera-calibration)<br>
 [Camera-IMU calibration](camera-imu-calibration)<br>
+
+(only ROS):
 [Camera focus](camera-focus)<br>
 [Calibration validator](calibration-validator)<br>
 
@@ -15,4 +17,4 @@ Tools
 [YAML format](yaml-formats)<br>
 
 ---
-[Example: calibrating the VI-Sensor](calibrating-the-vi-sensor)<br>
+[Example: calibrating a visual-inertial sensor](calibrating-the-vi-sensor)<br>
