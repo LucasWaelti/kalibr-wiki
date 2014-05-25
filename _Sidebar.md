@@ -14,7 +14,7 @@ Tools
 [Supported models](supported-models)<br>
 [Calibration targets](calibration-targets)<br>
 [Bag format](bag-format)<br>
-[YAML format](yaml-formats)<br>
+[YAML formats](yaml-formats)<br>
 
 ---
 [Example: calibrating a visual-inertial sensor](calibrating-the-vi-sensor)<br>
