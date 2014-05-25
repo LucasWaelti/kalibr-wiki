@@ -1,4 +1,3 @@
-#Dynamic IMU to multi-camera system calibration
 This tool calibrates the spatial and temporal parameters of an imu/camera pair.
 
 Detailed information about the used approach is available in the following papers: [1](#paul1), [2](#paul2)
