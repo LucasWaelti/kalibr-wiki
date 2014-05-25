@@ -12,7 +12,7 @@ Detailed information about the used approach is available in the following paper
 * [Sample datasets](#sample-datasets)
 
 
-###Quick walkthrough
+###How to use it
 The following instructions briefly explain the calibration process. 
 
 1. Collect calibration data either as 
