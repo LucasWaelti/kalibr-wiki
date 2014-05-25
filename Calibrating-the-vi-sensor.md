@@ -30,12 +30,12 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 1. minimize the motion blur with a good light source and by reducing the shutter times:
     Shutter times can be set using the following commands:
 
-    >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam0_agc_enable': 0, 'cam0_aec_enable': 0, 'cam0_coarse_shutter_width': 300}"
+    >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam0_agc_enable': 0, 'cam0_aec_enable': 0, 'cam0_coarse_shutter_width': 300}"<br>
     >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam1_agc_enable': 0, 'cam1_aec_enable': 0, 'cam1_coarse_shutter_width': 300}"
 
     Observe the result on an image window and tweak the shutter until you get a good image:
 
-    > rosrun image_view image_view image:=/cam0/image_raw &
+    > rosrun image_view image_view image:=/cam0/image_raw &<br>
 rosrun image_view image_view image:=/cam1/image_raw &
 
 
@@ -63,7 +63,7 @@ In this step we need to collect two calibration datasets with the following prop
     * use skewed views and varying distances to the calibration target
 
     view images with:
-    >rosrun image_view image_view image:=/cam0/image_raw &
+    >rosrun image_view image_view image:=/cam0/image_raw &<br>
 rosrun image_view image_view image:=/cam1/image_raw &
 
     record bag with:
@@ -76,12 +76,12 @@ rosrun image_view image_view image:=/cam1/image_raw &
     * try to excite all rotation and acceleration axis of the IMU
     * avoid shocks
     * good illumination and shutter times are crucial here (to avoid motion blur while exciting the IMU)
-    >rostopic hz /cam0/image_raw
-    >rostopic hz /cam1/image_raw
-    >rostopic hz /imu0
+    >rostopic hz /cam0/image_raw<br>
+    rostopic hz /cam1/image_raw<br>
+    rostopic hz /imu0
 
     view images with:
-    >rosrun image_view image_view image:=/cam0/image_raw &
+    >rosrun image_view image_view image:=/cam0/image_raw &<br>
 rosrun image_view image_view image:=/cam1/image_raw &
 
     record bag with:
