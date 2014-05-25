@@ -11,14 +11,14 @@ It is recommended to lower the frequency of the camera streams to around 4 Hz wh
 
 ###2) Running the calibration
 
-The tool must at least be provided with the following arguments:
+The tool must be provided with the following input:
 
 * **--bag filename.bag**<br>
-    the rosbag containing the data
+    ROS bag containing the data
 * **--topics TOPIC_0 ... TOPIC_N**<br>
     list of all camera topics in the bag  (matches the ordering of the --models)
 * **--models MODEL_0 ... MODEL_N**<br>
-    list of camera/distortion models to be calibrated. (matches the ordering of the --topics)
+    list of camera/distortion models to be fitted (matches the ordering of the --topics)
 * **--target target.yaml**<br>
     the calibration target configuration (see [Cailbration targets](#calibration-target))
 
@@ -27,7 +27,7 @@ Note that the ordering of the topics and camera/distortion models match and dete
 The calibration can then be run using:
 > <font color='red'>rosrun blob blob</font>
 
-It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the images for the initial guesses are select randomly.
+It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the initial guesses are based on a random pick of images.
 
 ###3) The output
 The calibration will produce the following output files:
