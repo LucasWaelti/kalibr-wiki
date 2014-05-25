@@ -14,13 +14,13 @@ It is recommended to lower the frequency of the camera streams to around 4 Hz wh
 
 The tool must at least be provided with the following arguments:
 
-* **--bag filename.bag**
+* **--bag filename.bag**<br>
     the rosbag containing the data
-* **--topics TOPIC_0 ... TOPIC_N**
+* **--topics TOPIC_0 ... TOPIC_N**<br>
     list of all camera topics in the bag  (matches the ordering of the --models)
-* **--models MODEL_0 ... MODEL_N**
+* **--models MODEL_0 ... MODEL_N**<br>
     list of camera/distortion models to be calibrated. (matches the ordering of the --topics)
-* **--target target.yaml**
+* **--target target.yaml**<br>
     the calibration target configuration (see [Cailbration targets](#calibration-target))
 
 Note that the ordering of the topics and camera/distortion models match and determine the internal camera number in the calibration.
