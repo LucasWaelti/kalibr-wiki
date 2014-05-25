@@ -3,7 +3,6 @@
 
 ##Procedure
 The calibration procedure consists of the following steps:
-
     setting the focus
     intrinsic camera calibration
     Camera-IMU calibration (temporal and spatial)

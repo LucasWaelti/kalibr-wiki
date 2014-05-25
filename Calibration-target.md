@@ -6,7 +6,6 @@ To simplify the data collection  Aprilgrid for the IMU-camera calibration. This 
 * partially visible targets can be detected
 * rotation is fully resolved (no flips)
 
-
 The calibration targets are configured using a YAML configuration file which is passed to the calibration tools. Please find the configuration templates below.
 
 ##A) Aprilgrid
