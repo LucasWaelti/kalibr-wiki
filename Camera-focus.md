@@ -7,7 +7,7 @@ The tool can be launched with:
 
 
 ## References
-Please cite the appropriate papers when using this library or parts of it in an academic publication.
+Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
 
 1. <a name="focus"></a> Matej Kristan, Franjo Pernu. Entropy Based Measure of Camera Focus.  University of Ljubljana. Slovenia.
 

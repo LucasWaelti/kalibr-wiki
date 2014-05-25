@@ -4,15 +4,7 @@ This tool calibrates the spatial and temporal parameters of an imu/camera pair.
 Detailed information about the used approach is available in the following papers: [1](#paul1), [2](#paul2)
 
 
-##Contents
-* [Multiple camera calibration with intrinsics](#multiple-camera-calibration-with-intrinsics)
-* [Dynamic IMU and multi-camera calibration](#dynamic-IMU-and-multi-camera calibration)
-* [Tipps](#tipps)
-* [Supported calibration targets](#supported-calibration-targets)
-* [Sample datasets](#sample-datasets)
-
-
-###How to use it
+##How to use it
 The following instructions briefly explain the calibration process. 
 
 1. Collect calibration data either as 
@@ -62,7 +54,7 @@ More information is available using the help argument:<br\>
 
 
 ## References
-Please cite the appropriate papers when using this library or parts of it in an academic publication.
+Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
 
 1. <a name="paul1"></a>Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.
 1. <a name="paul2"></a>Paul Furgale, T D Barfoot, G Sibley (2012). Continuous-Time Batch Estimation Using Temporal Basis Functions. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 2088–2095, St. Paul, MN.
