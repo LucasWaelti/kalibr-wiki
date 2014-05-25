@@ -1,5 +1,5 @@
 ## Camera models
-The package allows the calibration of the following projection models
+The toolbox allows the calibration of the following projection models
 
 * **pinhole** (_intrinsics_: <font color='red'>[fu fv pu pv]</font>)
 * **omni** (_intrinsics_: <font color='red'>[xi fu fv pu pv]</font>)
