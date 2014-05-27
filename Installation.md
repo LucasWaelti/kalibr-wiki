@@ -22,6 +22,7 @@ To remove necessity of building the code with all its pitfalls, we have packed t
 3. Build the code. Maybe grab a coffee, this will take a while...
 > catkin_make
 
+sudo pip install python-igraph --upgrade
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
