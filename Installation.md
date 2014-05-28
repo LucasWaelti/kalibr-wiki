@@ -14,28 +14,27 @@ To remove necessity of building the code with all its pitfalls, we have packed t
 ##B) Building from source
 The source build has been tested on Ubuntu 12.10 with ROS hydro.
 
-1. Install ROS hydro
+1. Install ROS hydro <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
 1. Install the following dependencies:
-    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev
-
+    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br>
     sudo pip install python-igraph --upgrade
 
-1. Create a catkin workspace
-    mkdir -p ~/kalibr_workspace/src
-    cd ~/kalibr_workspace/src
-    source /opt/ros/hydro/setup.bash
-    catkin_init_workspace
+1. Create a catkin workspace<br>
+    >mkdir -p ~/kalibr_workspace/src <br>
+    cd ~/kalibr_workspace/src <br>
+    source /opt/ros/hydro/setup.bash <br>
+    catkin_init_workspace <br>
 
-1. Clone the source repo into the catkin workspace src folder
-    cd ~/kalibr_workspace/src
+1. Clone the source repo into the catkin workspace src folder <br>
+    >cd ~/kalibr_workspace/src <br>
     git clone https://github.com/ethz-asl/kalibr.git
 
-1. Build the code. Maybe grab a coffee, this will take a while...
-    depending on the amount of RAM you have, you might need to reduce the build threads, due to heavy templating (e.g. add -j4 to catkin_make)
+1. Build the code. Maybe grab a coffee, this will take a while... <br>
+    depending on the amount of RAM you have, you might need to reduce the build threads, due to heavy templating (e.g. add -j4 to catkin_make) <br>
 
-    > cd ~/kalibr_workspace
+    > cd ~/kalibr_workspace <br>
     catkin_make -j2
 
 
