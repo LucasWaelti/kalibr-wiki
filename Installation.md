@@ -31,11 +31,14 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
     >cd ~/kalibr_workspace/src <br>
     git clone https://github.com/ethz-asl/Kalibr.git
 
-1. Build the code. Maybe grab a coffee, this will take a while... <br>
+1. Build the code using the Release target. Maybe grab a coffee, this will take a while... <br>
     depending on the available memory, you might need to reduce the build threads (e.g. add -j2 to catkin_make) <br>
 
     > cd ~/kalibr_workspace <br>
-    catkin_make -j4
+    catkin_make -DCMAKE_BUILD_TYPE=Release -j4
+
+1. Once the build is finished you have to source the workspaces setup to use Kalibr
+    > source ~/kalibr_workspace/devel/setup.bash
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
