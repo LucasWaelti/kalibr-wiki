@@ -25,7 +25,7 @@ The tool must be provided with the following input:
 Note that the ordering of the topics and camera/distortion models match and determine the internal camera number in the calibration.
 
 The calibration can then be run using:
-> <font color='red'>rosrun blob blob</font>
+> kalibr_calibrate_cameras --bag [filename.bag] --topics [TOPIC_0 ... TOPIC_N] --models [MODEL_0 ... MODEL_N] --target [target.yaml]
 
 It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the initial guesses are based on a random pick of images.
 
@@ -48,7 +48,7 @@ The dataset was recorded with the sensor system shown in the picture above. It c
 * **cam0, cam1:** pinhole projection / equidistant distortion
 * **cam2, cam3:** omni projection / radial-tangential distortion
 
-> <font color='red'>rosrun aslam_camera_calibration calibrate</font> --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw --bag dataset_mcc.bag --target aprilgrid_6x6.yaml
+> kalibr_calibrate_cameras --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw --bag dataset_mcc.bag --target aprilgrid_6x6.yaml
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
