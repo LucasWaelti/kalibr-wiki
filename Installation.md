@@ -7,7 +7,7 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
     Using this package is the easiest way to get the toolbox working. All dependencies are packed within this package so no external dependencies need to be installed. Some tools will not work with this package (validator and focus tool)
 
 
-##A) Using the CDE package
+##A) Using the CDE package (only 64bit)
 To remove necessity of building the code with all its pitfalls, we have packed the entire project with its dependencies into a [CDE](#guo) package. The only thing you will need to run this package is the 
 
 
