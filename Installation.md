@@ -32,11 +32,10 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
     git clone https://github.com/ethz-asl/Kalibr.git
 
 1. Build the code. Maybe grab a coffee, this will take a while... <br>
-    depending on the amount of RAM you have, you might need to reduce the build threads, due to heavy templating (e.g. add -j4 to catkin_make) <br>
+    depending on the available memory, you might need to reduce the build threads (e.g. add -j2 to catkin_make) <br>
 
     > cd ~/kalibr_workspace <br>
-    catkin_make -j2
-
+    catkin_make -j4
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
