@@ -12,17 +12,32 @@ To remove necessity of building the code with all its pitfalls, we have packed t
 
 
 ##B) Building from source
-1. Install the following requirements_
-> sudo apt-get install BLOB
-> pip iigraph....
+The source build has been tested on Ubuntu 12.10 with ROS hydro.
 
-2. Limit the building threads to avoid memory problems during the build: <br\>
-> export ROS_PARALLEL_JOBS="-j2
+1. Install ROS hydro
+    see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
-3. Build the code. Maybe grab a coffee, this will take a while...
-> catkin_make
+1. Install the following dependencies:
+    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev
 
-sudo pip install python-igraph --upgrade
+    sudo pip install python-igraph --upgrade
+
+1. Create a catkin workspace
+    mkdir -p ~/kalibr_workspace/src
+    cd ~/kalibr_workspace/src
+    source /opt/ros/hydro/setup.bash
+    catkin_init_workspace
+
+1. Clone the source repo into the catkin workspace src folder
+    cd ~/kalibr_workspace/src
+    git clone https://github.com/ethz-asl/kalibr.git
+
+1. Build the code. Maybe grab a coffee, this will take a while...
+    depending on the amount of RAM you have, you might need to reduce the build threads, due to heavy templating (e.g. add -j4 to catkin_make)
+
+    > cd ~/kalibr_workspace
+    catkin_make -j2
+
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
