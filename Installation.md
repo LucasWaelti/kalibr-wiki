@@ -18,7 +18,7 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
 1. Install the following dependencies:
-    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br>
+    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br> <br>
     sudo pip install python-igraph --upgrade
 
 1. Create a catkin workspace<br>
