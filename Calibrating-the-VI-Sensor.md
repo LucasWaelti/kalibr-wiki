@@ -1,4 +1,4 @@
-![VI-Sensor](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/visensor.jpg)
+![VI-Sensor](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/visensor.png)
 
 This page will guide you through the calibration of the VI-Sensor (visual-inertial sensor). The intrinsics and extrinsics of the camera system as well as the transformation between the cameras and the IMU will be calibrated.
 

@@ -7,7 +7,6 @@ The toolbox consists of
 * BLOB 2
 
 
-
 ##Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
 * Jérôme Maye ([email](jerome.maye@mavt.ethz.ch))
