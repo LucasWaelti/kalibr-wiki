@@ -1,10 +1,15 @@
 ![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr_small.png)
 
 ##Introduction
-The toolbox consists of 
+Kalibr is a toolbox that solves the following calibration problems:
 
-* BLOB 1
-* BLOB 2
+1. intrinsic and extrinsic calibration of a camera-systems with non-globally shared overlapping fields of view
+1. spatial and temporal parameters of an IMU with respect to a camera-system
+
+To make the calibration task convenient and reproducible the following tools are provided:
+
+1. tool to set the camera focus in a reproducible way
+1. validation of the camera-system calibration on live ROS image streams
 
 
 ##Authors
