@@ -8,9 +8,9 @@ The toolbox allows the calibration of the following projection models
 
 The _intrinsics vector_ contains all parameters for the model:
 
-* **xi**: <font color='red'>(only omni) TODO: name of this parameters</font>
 * **fu, fv**: focal-length
 * **pu, pv**: principal point
+* (only omni) **xi**: <font color='red'>TODO: name of this parameters</font>
 
 ## Distortion models
 The following distortion models are available:
