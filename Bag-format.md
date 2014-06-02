@@ -5,23 +5,18 @@ A bagcreater script is provided to use image files and/or IMU data for the calib
 
 ####bagcreater
 This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
->
-dataset-dir<br>
-├── cam0<br>
-│   ├── 1385030208726607500.png<br>
-│   ├──      ...<br>
-│   └── 1385030212176607500.png<br>
-├── cam1<br>
-│   ├── 1385030208726607500.png<br>
-│   ├──      ...<br>
-│   └── 1385030212176607500.png<br>
-└── imu0.csv<br>
 
 ```
-.
-+-- src                  <-- C++ wrapper .cpp files go in here
-+-- python
-|   +-- robot_awesome    <-- python initialization files go in here
++-- dataset-dir<br>
+    +-- cam0<br>
+    │   +-- 1385030208726607500.png<br>
+    │   +--      ...<br>
+    │   \-- 1385030212176607500.png<br>
+    +-- cam1<br>
+    │   +-- 1385030208726607500.png<br>
+    │   +--      ...<br>
+    │   \-- 1385030212176607500.png<br>
+    \-- imu0.csv<br>
 ```
 The imu0.csv file is structured as follows (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
 >
