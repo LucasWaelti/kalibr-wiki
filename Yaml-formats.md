@@ -27,7 +27,6 @@ Each camera has the following parameters:
 * **resolution**<br>
     camera resolution [width,height]
 
-
 **Example chain.yaml**
 ```
 cam0:
@@ -69,17 +68,17 @@ Each IMU in the calibration is configured using a YAML file. Please refer to the
 **imu0.yaml**
 ```
 #Accelerometers
-accelerometer_noise_density: 	0.006 	#Noise density (continous) [UNIT]
-accelerometer_random_walk: 		0.0002   #Bias random walk [UNIT]
+accelerometer_noise_density: 0.006  #Noise density (continuous-time) [UNIT]
+accelerometer_random_walk:   0.0002 #Bias random walk [UNIT]
 
 #Gyroscopes
-gyroscope_noise_density: 		0.0004 	#Noise density (continous) [UNIT]
-gyroscope_random_walk: 		4.0e-06  #Bias random walk [UNIT]
+gyroscope_noise_density:     0.0004  #Noise density (continuous-time) [UNIT]
+gyroscope_random_walk:       4.0e-06 #Bias random walk [UNIT]
 
-update_rate: 			200.0 	#Hz (used for discretization of the above values)
+update_rate:                 200.0 #Hz (for discretization of the values above)
 ```
 
-<font color='red'>INSERT UNITS ABOVE!</font>
+<font color='red'>TODO: INSERT UNITS ABOVE!</font>
 
 
 ##Calibration target configuration
