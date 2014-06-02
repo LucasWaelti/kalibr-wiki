@@ -1,6 +1,6 @@
-The camera-imu calibration tool estimates the spatial and temporal parameters of an imu/camera pair.
+The camera-imu calibration tool estimates the spatial and temporal parameters of an imu/camera pair. Image and IMU data is provided as a [ROS](https://www.ros.org) bag containing data streams for all cameras and the IMU. 
 
-The image and imu data is provided as a [ROS](https://www.ros.org) bag containing data streams for all cameras and the IMU. The calibration estimated in a full batch optimization using splines to model the pose of the camera-imu rig. Detailed information about the applied approach can be found in the following papers: (see [1](#paul1), [2](#paul2))
+The calibration parameters are estimated in a full batch optimization using splines to model the pose of the camera-imu rig. Detailed information about the approach can be found in the following papers: (see [1](#paul1), [2](#paul2))
 
 ##How to use it
 
