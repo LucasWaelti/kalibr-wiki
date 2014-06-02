@@ -45,8 +45,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
 
 1. point the cameras on a Siemens star (or similar pattern)
 1. start the focus tool
-
-    >rosrun aslam_camera_calibration --topic /cam0/image_raw /cam1/image_raw
+    >kalibr_camera_focus --topic /cam0/image_raw /cam1/image_raw
 
 1. set the focus of both cameras by:
     1. reducing the interference visible around the center of the Siemens star
@@ -89,18 +88,17 @@ rosrun image_view image_view image:=/cam1/image_raw &
     record bag with:
     >rosbag record /cam0/image_raw  /cam1/image_raw /imu0 -O dynamic.bag
 
-
 ##3) Run the calibration
 1. calibration of camera in/extrinsics
     1. run calibration
-    > rosrun aslam_camera_calibration --models pinhole-equi pinhole-equi --topics /cam0/image_raw /cam1/image_raw --bag static.bag --target aprilgrid_6x6.yaml
+    > kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /cam0/image_raw /cam1/image_raw --bag static.bag --target aprilgrid_6x6.yaml
     1. inspect the result plots
     1. verify calibration on the live image stream
-    > rosrun aslam_calibration --chain chain.yaml --target aprilgrid_6x6.yaml
+    > kalibr_camera_validator --chain chain.yaml --target aprilgrid_6x6.yaml
 
 1. camera-imu calibration
     1. run calibration
-    > rosrun imu_camera_calibration calibrate --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag dynamic.bag
+    > kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag dynamic.bag
     1. inspect the result plots
         * make sure the predicted accelerations & angular velocities fit the IMU measurements
         * reprojection errors should be in a normal range
