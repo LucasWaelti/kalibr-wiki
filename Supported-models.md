@@ -1,4 +1,4 @@
-## Camera models
+### Camera models
 Kalibr supports the calibration of the following projection models:
 
 * **pinhole camera model (pinhole)** <br>
@@ -12,7 +12,7 @@ The _intrinsics vector_ contains all parameters for the model:
 * **pu, pv**: principal point
 * **xi**: <font color='red'>TODO: name of this parameters</font>(only omni) 
 
-## Distortion models
+### Distortion models
 Kalibr supports the calibration of the following distortion models:
 
 * **radial-tangential** <br>
