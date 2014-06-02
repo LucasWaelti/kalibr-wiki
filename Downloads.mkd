@@ -2,23 +2,24 @@
 
 |                                         | Version   |   Last updated |
 |:--------------------------------------- |:----------|:-------------|
-| [Kalibr-CDE 64-bit](http://link/)              |  0.0.0     | 2. Jun. 2014 | 
+| [Kalibr-CDE 64-bit](http://link/)       |  0.0.0     | 2. Jun. 2014 | 
 
 **Sample datasets**
-
+|                                         |     |   
 |:--------------------------------------- |:-------------------------------|
 | [Multiple camera calibration](http://link/) | Sample dataset and configurations for the multiple-camera calibrator      |
 | [IMU-camera calibration](http://link/) | Sample dataset and configurations for the imu-camera calibrator      |
 
 **Calibration targets PDFs**
 
+|                                         |     |   
 |:--------------------------------------- |:-------------------------------|
 | [Aprilgrid 6x6 A0](http://link/) | Aprilgrid sized for an A0 print (unscaled is ~0.8x0.8 m)   |
 | [Chckerboard 7x6 0.5m](http://link/) | Checkerboard sized (unscaled ~0.5x0.5 m       |
 
+**UMU configurations**
 
-
-| IMU configurations |              |
+|                                         |     |   
 |:--------------------------------------- |:-------------------------------|
 | [ADIS 16448](http://link/) | IMU configuration file for an ADIS 16448 IMU from Analog Devices |
 
