@@ -55,13 +55,10 @@ The *--show-extraction* argument can be used on both calibrators to visualize th
 ##Tips/Problems
 * Make sure the calibration target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
 * Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data in the target configuration files.
-* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain light conditions)
+* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lighting conditions)
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
 
 1. <a name="olson"></a>Edwin Olson (2011). AprilTag: A robust and flexible visual fiducial system. Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 3400–3407
 1. <a name="kaess"></a>Michael Kaess. [http://people.csail.mit.edu/kaess/apriltags/](http://people.csail.mit.edu/kaess/apriltags/), Nov. 2013
-
-
-
