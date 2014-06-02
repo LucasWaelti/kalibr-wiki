@@ -10,7 +10,7 @@ The _intrinsics vector_ contains all parameters for the model:
 
 * **fu, fv**: focal-length
 * **pu, pv**: principal point
-* (only omni) **xi**: <font color='red'>TODO: name of this parameters</font>
+* **xi**: <font color='red'>TODO: name of this parameters</font>(only omni) 
 
 ## Distortion models
 The following distortion models are available:

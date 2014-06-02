@@ -1,4 +1,4 @@
-![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr.png)
+![Kalibr](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/kalibr_small.png)
 
 ##Introduction
 The toolbox consists of 
