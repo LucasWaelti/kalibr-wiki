@@ -1,8 +1,8 @@
-##CDE Package
+###CDE Package
 
-##Sample datasets
+###Sample datasets
 
-##Calibration targets
+###Calibration targets
 
 Aprilgrid
 
@@ -10,7 +10,7 @@ Checkerboard
 
 Circlegrid
 
-##IMU configurations
+###IMU configurations
 
 ADIS16448
 
