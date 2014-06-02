@@ -7,11 +7,19 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
     Using this package is the easiest way to get the toolbox working. All dependencies are packed within this package so no external dependencies need to be installed. Some tools will not work with this package (validator and focus tool)
 
 
-##A) Using the CDE package (only 64bit)
+##A) Using the CDE package (only 64bit systems)
 To remove necessity of building the toolbox from source, the entire toolbox together with its dependencies is packed into a [CDE](#guo) package. 
 
-Download the package [here]
+1. Download the package from the [Downloads](downloads) page.
 
+1. Extract the archive using:
+
+    > tar xfvz kalibr.tar.gz
+
+1. Either you can run the tools directly from the package folder
+    **or**
+    you can add the folder to the system path using:
+    export PATH="/home/myuser/kalibr:$PATH"
 
 ##B) Building from source
 The source build has been tested on Ubuntu 12.10 with ROS hydro.
@@ -29,7 +37,7 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
     rosdep init <br>
     rosdep update <br>
 
-1. Install the following dependencies:
+1. Install the build and run dependencies:
 
     >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br> <br>
     sudo pip install python-igraph --upgrade
@@ -51,7 +59,7 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
     > cd ~/kalibr_workspace <br>
     catkin_make -DCMAKE_BUILD_TYPE=Release -j4
 
-1. Once the build is finished you have to source the workspaces setup to use Kalibr
+1. Once the build is finished you have to source the catkin workspace setup to use Kalibr
     > source ~/kalibr_workspace/devel/setup.bash
 
 ## References
