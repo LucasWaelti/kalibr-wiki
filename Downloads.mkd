@@ -18,6 +18,8 @@
 | [Aprilgrid 6x6 A0](http://link/) | Aprilgrid sized for an A0 print (unscaled is ~0.8x0.8 m) |
 | [Chckerboard 7x6 0.5m](http://link/) | Checkerboard sized (unscaled ~0.5x0.5 m) |
 
+Kalibr provides a [script](calibration-targets) to generate custom target PDFs.
+
 ### IMU configurations
 
 | | |   
