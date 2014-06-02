@@ -65,7 +65,7 @@ cam1:
 ##IMU configuration
 Each IMU in the calibration is configured using a YAML file. Please refer to the example below for details:
 
-**imu0.yaml**
+**imu.yaml**
 ```
 #Accelerometers
 accelerometer_noise_density: 0.006  #Noise density (continuous-time) [UNIT]
@@ -79,7 +79,6 @@ update_rate:                 200.0 #Hz (for discretization of the values above)
 ```
 
 <font color='red'>TODO: INSERT UNITS ABOVE!</font>
-
 
 ##Calibration target configuration
 Please refer to the [Calibration targets](calibration-target) page.
