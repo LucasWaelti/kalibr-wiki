@@ -8,7 +8,7 @@ The calibration targets are configured using YAML configuration files which are 
 ###A) Aprilgrid
 Partially visible Aprilgrids can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use.
 
-Aprilgrid PDFs can be downloaded from the [Downloads](downloads) page or can be created according to your size requirements using the following script:
+Predefined PDFs of Aprilgrids can be downloaded on the [Downloads](downloads) page or custom grids can be created according to your needs using the following script:
 > kalibr_create_target_pdf --type apriltag --nx [NUM_COLS] --ny [NUM_ROWS] --tsize [TAG_WIDTH_M] --tspace [TAG_SPACING_PERCENT]
 
 **aprilgrid.yaml**
@@ -23,7 +23,7 @@ tagSpacing: 0.3          #ratio of space between tags to tagSize
 
 **Make sure to hide all external Apriltags not belonging to the calibration target while collection the calibration dataset**
 
-The awsome Apriltag implementation of M. Kaess is used for tag extraction in this toolbox. [[1](#olson),[2](#olson)]
+Kalibr uses the awsome Apriltag implementation of M. Kaess for tag extraction. [[1](#olson),[2](#olson)]
 
 ###B) Checkerboard
 The standard checkerboard pattern is supported using the following configuration:
