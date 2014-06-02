@@ -38,7 +38,7 @@ colSpacingMeters: 0.06      #size of one chessboard square [m]
 ```
 
 ###C) Circlegrid
-The standard OpenCV symmetric and asymmetric circle grid are supported using the following configuration:
+The standard OpenCV symmetric and asymmetric circle grids are supported using the following configuration:
 
 **circlegrid.yaml**
 ```
