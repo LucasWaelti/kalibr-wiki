@@ -41,13 +41,13 @@ The calibration will produce the following output files:
 
 * **report-cam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
 * **results-cam-%BAGNAME%.txt**: Result summary as a text file.
-* **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the used format [here](yaml-formats)).
+* **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the used format under [YAML formats](yaml-formats).
 
 ###4) Optional live validation (ROS only)
-If your sensor provides live data on ROS topics the live validator can be used to verify the calibration on live streams. Please refer to [this page](calibration-validator) on how to use this tool.
+If your sensor provides live data on ROS topics the live validator can be used to verify the calibration on live streams. Please refer to [Calibration validator](calibration-validator) page on how to use this tool.
 
 ##An example run using a sample dataset
-Download the sample dataset <font color='red'>here</font> and extract it. The archive will contain the bag-file and the calibration target configuration file.
+Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag-file and the calibration target configuration file.
 
 **IMAGE OF CAMERA ARRANGEMENT**<br>
 The dataset was recorded with the sensor system shown in the picture above. It contains four cameras which should be calibrated using the following models:
