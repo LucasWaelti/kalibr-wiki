@@ -1,0 +1,20 @@
+#Downloads
+
+
+##CDE Package
+
+
+##Sample datasets
+
+##Calibration targets
+
+Aprilgrid
+
+Checkerboard
+
+Circlegrid
+
+##IMU configurations
+
+ADIS16448
+

@@ -1,4 +1,5 @@
 [Home](home)<br>
+[Downloads](downloads)<br>
 [Installation](installation)<br>
 
 Tools

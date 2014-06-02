@@ -8,7 +8,9 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
 
 
 ##A) Using the CDE package (only 64bit)
-To remove necessity of building the code with all its pitfalls, we have packed the entire project with its dependencies into a [CDE](#guo) package. The only thing you will need to run this package is the 
+To remove necessity of building the toolbox from source, the entire toolbox togehter with its dependencies is packed into a [CDE](#guo) package. 
+
+Download the package [here]
 
 
 ##B) Building from source
