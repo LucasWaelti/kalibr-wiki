@@ -21,7 +21,8 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
 
     Example for ubuntu-quantal and ROS hydro below:
 
-    >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu quantal main" > /etc/apt/sources.list.d/ros-latest.list <br>
+    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu quantal main" > /etc/apt/sources.list.d/ros-latest.list'
+<br>
     wget http://packages.ros.org/ros.key -O - | sudo apt-key add - <br>
     sudo apt-get update  <br>
     sudo apt-get install ros-hydro-desktop python-rosdistro python-rosdep python-rosinstall python-rosinstall-generator python-bloom python-rosinstall python-rosdep -y <br>
