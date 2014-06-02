@@ -8,7 +8,7 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
 
 
 ##A) Using the CDE package (only 64bit systems)
-To remove necessity of building the toolbox from source, the entire toolbox together with its dependencies is packed into a [CDE](#guo) package. 
+To remove necessity of installing ROS and building the toolbox from source, the entire toolbox together with its dependencies is provided as a [CDE](#guo) package. 
 
 1. Download the package from the [Downloads](downloads) page.
 
@@ -16,10 +16,11 @@ To remove necessity of building the toolbox from source, the entire toolbox toge
 
     > tar xfvz kalibr.tar.gz
 
-1. Either you can run the tools directly from the package folder
+1. Either you can run the tools directly from the cde-package folder
     **or**
-    you can add the folder to the system path using:
-    export PATH="/home/myuser/kalibr:$PATH"
+    you can add this folder to the system path using:
+
+    > export PATH="**/cde/package/path**:$PATH"
 
 ##B) Building from source
 The source build has been tested on Ubuntu 12.10 with ROS hydro.
