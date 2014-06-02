@@ -1,5 +1,5 @@
 ## Camera models
-The toolbox allows the calibration of the following projection models
+Kalibr supports the calibration of the following projection models:
 
 * **pinhole camera model (pinhole)** <br>
     (_intrinsics vector_: [fu fv pu pv])
@@ -13,7 +13,7 @@ The _intrinsics vector_ contains all parameters for the model:
 * **xi**: <font color='red'>TODO: name of this parameters</font>(only omni) 
 
 ## Distortion models
-The following distortion models are available:
+Kalibr supports the calibration of the following distortion models:
 
 * **radial-tangential** <br>
     (_distortion_coeffs_: [k1 k2 r1 r2])
