@@ -1,24 +1,23 @@
-| Name          | Description                    | Download                   | Last updated |
-|:------------- |:-------------------------------|:---------------------------|:-------------|
-| Kalibr-CDE    | CDE package for 64-bit systems | [link](http://link.i.am/)  | 2. Jun. 2014 |
-| col 2 is      | centered      | [link](http://link.i.am/) |
-| zebra stripes | are neat      | [link](http://link.i.am/) |
+| CDE-packages                            | Version   |   Last updated |                      |
+|:--------------------------------------- |:----------|:-------------|:-------------------------------|
+| [Kalibr-CDE](http://link/)              |  0.0.0     | 2. Jun. 2014 | CDE package for 64-bit systems |
+
+| Sample datasets                    |              |
+|:--------------------------------------- |:-------------------------------|
+| [Multiple camera calibration](http://link/) | Sample dataset and configurations for the multiple-camera calibrator      |
+| [IMU-camera calibration](http://link/) | Sample dataset and configurations for the imu-camera calibrator      |
+
+| Calibration targets  PDFs                  |              |
+|:--------------------------------------- |:-------------------------------|
+| [Aprilgrid 6x6 A0](http://link/) | Aprilgrid sized for an A0 print (unscaled is ~0.8x0.8 m)   |
+| [Chckerboard 7x6 0.5m](http://link/) | Checkerboard sized (unscaled ~0.5x0.5 m       |
 
 
-###
 
-###Sample datasets
+| IMU configurations |              |
+|:--------------------------------------- |:-------------------------------|
+| [ADIS 16448](http://link/) | IMU configuration file for an ADIS 16448 IMU from Analog Devices |
 
-###Calibration targets
 
-Aprilgrid
-
-Checkerboard
-
-Circlegrid
-
-###IMU configurations
-
-ADIS16448
 
 
