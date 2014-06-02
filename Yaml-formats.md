@@ -1,4 +1,4 @@
-##Camera-system calibration file (aka chain.yaml)
+###Camera-system calibration file (camchain.yaml)
 This YAML file includes the complete parameter set for the calibration of the camera intrinsic and extrinsic parameters as well as the spatial and temporal calibration parameters of the IMU with respect to the cameras.
 
 Each camera has the following parameters:
@@ -62,7 +62,7 @@ cam1:
   resolution: [752, 480]
 ```
 
-##IMU configuration
+###IMU configuration
 Each IMU in the calibration is configured using a YAML file. Please refer to the example below for details:
 
 **imu.yaml**
@@ -80,5 +80,5 @@ update_rate:                 200.0 #Hz (for discretization of the values above)
 
 <font color='red'>TODO: INSERT UNITS ABOVE!</font>
 
-##Calibration target configuration
+###Calibration target configuration
 Please refer to the [Calibration targets](calibration-target) page.
