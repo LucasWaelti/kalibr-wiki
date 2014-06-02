@@ -54,9 +54,9 @@ The temporal calibration is turned off by default and can be enabled using the *
 ###4) The output
 The calibration will produce the following output files:
 
-* **report-cam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
-* **results-cam-%BAGNAME%.txt**: Result summary as a text file.
-* **camchain_cimu.yaml**: Results in YAML format. This file is based on the input ***camchain.yaml*** with added transformations (and time shifts) for all cameras with respect to the imu. Please check the used format [here](yaml-formats).
+* **report-imucam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
+* **results-imucam-%BAGNAME%.txt**: Result summary as a text file.
+* **camchain-imucam-%BAGNAME%.yaml**: Results in YAML format. This file is based on the input ***camchain.yaml*** with added transformations (and time shifts) for all cameras with respect to the imu. Please check the used format [here](yaml-formats).
 
 ##An example run using a sample dataset
 Download the sample dataset <font color='red'>here</font> and extract it. The archive will contain the bag-file, calibration target and imu configuration file.
