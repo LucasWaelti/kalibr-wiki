@@ -1,9 +1,9 @@
-Kalibr supports three different calibration target. The Aprilgrid is the recommended grid to use in this toolbox due to the following benefits over the other targets:
+Kalibr supports three different calibration target. The Aprilgrid is the recommended grid to use due to the following benefits over the other targets:
 
 * partially visible calibration boards can be used
 * rotations of the target are fully resolved (no flips)
 
-The calibration target is configured using a YAML configuration file which is passed to the calibration tool. Please find the configuration templates for the supported targets below.
+The calibration targets are configured using YAML configuration files which are passed to the calibration tools. Please find the configuration templates for the supported targets below.
 
 ###A) Aprilgrid
 Partially visible Aprilgrids can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
