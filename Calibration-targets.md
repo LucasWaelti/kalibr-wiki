@@ -6,13 +6,9 @@ Kalibr supports three different calibration target. The Aprilgrid is the recomme
 The calibration target is configured using a YAML configuration file which is passed to the calibration tool. Please find the configuration templates for the supported targets below.
 
 ###A) Aprilgrid
-With the Aprilgrid partially visible targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
+Partially visible Aprilgrids can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use with this toolbox.
 
-Aprilgrid PDFs can be downloaded here:
-
-<font color='red'>http://Aprilgrid PDFs/</font>
-
-or can be created according to your size requirements using the script here:
+Aprilgrid PDFs can be downloaded from the [Downloads](downloads) page or can be created according to your size requirements using the following script:
 > kalibr_create_target_pdf --type apriltag --nx [NUM_COLS] --ny [NUM_ROWS] --tsize [TAG_WIDTH_M] --tspace [TAG_SPACING_PERCENT]
 
 **aprilgrid.yaml**
