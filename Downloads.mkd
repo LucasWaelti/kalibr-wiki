@@ -22,4 +22,4 @@
 
 | | |   
 |:--|:--|
-| [ADIS 16448](http://link/) | IMU configuration file for an ADIS 16448 IMU from Analog Devices |
+| [ADIS 16448](http://link/) | IMU configuration for the  Analog Devices ADIS16448 IMU |
