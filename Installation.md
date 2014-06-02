@@ -1,4 +1,4 @@
-Two sources for the toolbox are provided. Altough it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build-system) as some of the tools will only work with a native ROS installation
+The following two sources for the toolbox are provided:
 
 * **building from source**<br>
     Depends on a working installation of ROS hydro with a catkin workspace. Binaries will run faster than with the CDE package and all tools can be used.
@@ -6,6 +6,7 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
 * **CDE package**<br>
     Using this package is the easiest way to get the toolbox working. All dependencies are packed within this package so no external dependencies need to be installed. Some tools will not work with this package (validator and focus tool)
 
+**NOTE:** Although it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build-system) as some of the tools will only work with a native ROS installation
 
 ##A) Using the CDE package (only 64bit systems)
 To remove necessity of installing ROS and building the toolbox from source, the entire toolbox together with its dependencies is provided as a [CDE](#guo) package. 
