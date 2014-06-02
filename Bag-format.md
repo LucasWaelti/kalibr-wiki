@@ -7,16 +7,16 @@ A bagcreater script is provided to use image files and/or IMU data for the calib
 This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
 
 ```
-+-- dataset-dir<br>
-    +-- cam0<br>
-    │   +-- 1385030208726607500.png<br>
-    │   +--      ...<br>
-    │   \-- 1385030212176607500.png<br>
-    +-- cam1<br>
-    │   +-- 1385030208726607500.png<br>
-    │   +--      ...<br>
-    │   \-- 1385030212176607500.png<br>
-    \-- imu0.csv<br>
++-- dataset-dir
+    +-- cam0
+    │   +-- 1385030208726607500.png
+    │   +--      ...
+    │   \-- 1385030212176607500.png
+    +-- cam1
+    │   +-- 1385030208726607500.png
+    │   +--      ...
+    │   \-- 1385030212176607500.png
+    \-- imu0.csv
 ```
 The imu0.csv file is structured as follows (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
 >
