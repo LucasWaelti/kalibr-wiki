@@ -19,13 +19,15 @@ This script allows you to create a ROS bag from raw image files and optionally I
     \-- imu0.csv
 ```
 The imu0.csv file is structured as follows (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
->
-timestamp,omega_x,omega_y,omega_z,alpha_x,alpha_y,alpha_z<br>
-1385030208736607488,0.5,-0.2,-0.1,8.1,-1.9,-3.3<br>
- ...<br>
-1386030208736607488,0.5,-0.1,-0.1,8.1,-1.9,-3.3<br>
+```
+timestamp,omega_x,omega_y,omega_z,alpha_x,alpha_y,alpha_z
+1385030208736607488,0.5,-0.2,-0.1,8.1,-1.9,-3.3
+ ...
+1386030208736607488,0.5,-0.1,-0.1,8.1,-1.9,-3.3
+```
 
 To create the ROS bag run the following command:
+
 > rosrun aslam_calibration bagcreater --folder dataset-dir --output awsome.bag
 
 The data will be written to the following topics:
