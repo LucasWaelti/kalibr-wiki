@@ -13,8 +13,7 @@ Aprilgrid PDFs can be downloaded here:
 <font color='red'>http://Aprilgrid PDFs/</font>
 
 or can be created according to your size requirements using the script here:
-
-<font color='red'>createTargetPdf...</font>
+> kalibr_create_target_pdf --type apriltag --nx [NUM_COLS] --ny [NUM_ROWS] --tsize [TAG_WIDTH_M] --tspace [TAG_SPACING_PERCENT]
 
 **aprilgrid.yaml**
 ```
@@ -23,10 +22,12 @@ tagCols: 6               #number of apriltags
 tagRows: 6               #number of apriltags
 tagSize: 0.088           #size of apriltag, edge to edge [m]
 tagSpacing: 0.3          #ratio of space between tags to tagSize
-                         #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.25[-]
+                         #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.3[-]
 ```
 
-The awsome [Apriltag implementation](http://people.csail.mit.edu/kaess/apriltags/) of M. Kaess is used for tag extraction in this toolbox. [[1](#olson)]
+**Make sure to hide all external Apriltags not belonging to the calibration target while collection the calibration dataset**
+
+The awsome Apriltag implementation of M. Kaess is used for tag extraction in this toolbox. [[1](#olson),[2](#olson)]
 
 ###B) Checkerboard
 The standard checkerboard pattern is supported using the following configuration:
@@ -64,4 +65,7 @@ The *--show-extraction* argument can be used on both calibrators to show details
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
 
 1. <a name="olson"></a>Edwin Olson (2011). AprilTag: A robust and flexible visual fiducial system. Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 3400–3407
+1. <a name="kaess"></a>Michael Kaess. [http://people.csail.mit.edu/kaess/apriltags/](http://people.csail.mit.edu/kaess/apriltags/), Nov. 2013
+
+
 

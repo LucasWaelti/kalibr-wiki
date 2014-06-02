@@ -1,55 +1,74 @@
-This tool calibrates the spatial and temporal parameters of an imu/camera pair.
+The camera-imu calibration tool estimates the spatial and temporal parameters of an imu/camera pair.
 
-Detailed information about the used approach is available in the following papers: [1](#paul1), [2](#paul2)
-
+The image and imu data is provided as a [ROS](https://www.ros.org) bag containing data streams for all cameras and the IMU. The calibration estimated in a full batch optimization using splines to model the pose of the camera-imu rig. Detailed information about the applied approach can be found in the following papers: (see [1](#paul1), [2](#paul2))
 
 ##How to use it
-The following instructions briefly explain the calibration process. 
 
-1. Collect calibration data either as 
-  * a ROS bag (with image and imu topics)
-  * a set of images and IMU data as a CSV file<br\>
-   Please see the sample datasets for the data format.
+###1) Requirements
+The intrinsic parameters of the IMU such as 
 
-2. Create an IMU, camera and target configration yaml-file.<br\>
-  1. `IMU.yaml`: <br\>
-     * IMU error statistics (default values should work with common MEMS IMUs)<br\>
-     * rostopic for imu data<br\>
-  2. `cam.yaml`: <br\>
-     * camera intrinsic calibration<br\>
-     * rostopic for image data<br\>
-  3. `target.yaml`: <br\>
-     * target type<br\>
-     * target dimensions<br\>
+* scales
+* axis misalignment
+* nonlinearities
 
-  Templates can be found in the `yaml_example` folder of the `imu_camera_calibration` ROS package.
+need to be estimated and its corrected beforehand. 
 
-3. Run the calibration with
+Further the following statistics need to be known:
 
-  * ROS bag:<br\>
+* noise density
+* bias random walk
 
-        rosrun imu_camera_calibration calib_term.py --imu IMU.yaml --cam cam.yaml \
-               --target target.yaml --bag mybag.bag
+This data has to be provided to the calibrator as an IMU-YAML file. Refer to this [page](yaml-formats) for the data format.
 
-  * Images/CSV:<br\>
 
-        rosrun imu_camera_calibration calib_term.py --imu IMU.yaml --cam cam.yaml \
-               --target target.yaml --csv image.csv imu.csv
+###1) Collect images
+Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
 
-To observe the target corner extraction and get result plots you can add the `--show-all` flag.
+The calibration target is fixed in this calibration and the camera-imu system is moved in front of the target. Therefore it is important to have good illumination and to keep the cameras shutter times as low as possible to avoid motion blur while exciting the IMU.
 
-More information is available using the help argument:<br\>
-   ```rosrun imu_camera_calibration calib_term.py --h```
+Good results have been obtained by using a camera rate of 20 Hz while the IMU was recorded at 200 Hz. 
 
-##Tips
+**Tips:**
+
 * try to excite all six IMU axis evenly
 * avoid shocks 
 * keep the motion blur low
     * low shutter times
     * good illumination 
-* avoid too flat angles between the camera axis and the calibration target
-* hide external apriltags, if the aprilgrid is used 
 * if you are using a calibration target with symmetries (checkerboard, circlegrid), try to avoid rotations over the symmetry, as this would lead to orientation flips in the 
+
+
+###2) Running the calibration
+The tool must be provided with the following input:
+
+* **--bag filename.bag**<br>
+    ROS bag containing the image and IMU data<br>
+* **--cam camchain.yaml**<br>
+    intrinsic and extrinsic calibration parameters of the camera system. the output of the multiple-camera-calibration tool can be used directly here. (see [YAML formats](yaml-formats)<br>
+* **--imu imu.yaml**<br>
+    contains the IMU statistics and the IMU's topic (see [YAML formats](yaml-formats))<br>
+* **--target target.yaml**<br>
+    the calibration target configuration (see [Cailbration targets](#calibration-target))
+
+The calibration can then be run using:
+> kalibr_calibrate_imu_camera --bag [filename.bag] --cam [camchain.yaml] --imu [imu.yaml] --target [target.yaml]
+
+The temporal calibration is turned off by default and can be enabled using the **--time-calibration** argument. More information about options is available using the help argument:<br\>
+> kalibr_calibrate_imu_camera --h
+
+
+###3) The output
+The calibration will produce the following output files:
+
+* **report-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
+* **results-%BAGNAME%.txt**: Result summary as a text file.
+* **chain.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please see the <font color='red'>here</font> for the used format.
+
+
+##An example run using a sample dataset
+Download the sample dataset <font color='red'>here</font> and extract it. The archive will contain the bag-file, calibration target and imu configuration file.
+
+
 
 
 ## References

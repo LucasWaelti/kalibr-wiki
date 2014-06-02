@@ -1,4 +1,6 @@
-This tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. The image data is provided as a [ROS](https://www.ros.org) bag containing image streams for all cameras. The calibration routine will go through all images and select images using information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
+The camera calibration tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. 
+
+The image data is provided as a [ROS](https://www.ros.org) bag containing image streams for all cameras. The calibration routine will go through all images and select images using information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
 
 Arbitrary combinations of projection and distortion model can be mixed in one calibration run. Have a look at [this page](supported-models) for a list of the supported camera and distortion models.
 
@@ -6,6 +8,8 @@ Arbitrary combinations of projection and distortion model can be mixed in one ca
 
 ###1) Collect images
 Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
+
+The camera system is fixed and the calibration target is moved in front of the cameras to obtain the calibration images. 
 
 It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces the number of images to be processed by the calibrator containing almost redundant information and thus lower the runtime of the calibration.
 
@@ -28,6 +32,9 @@ The calibration can then be run using:
 > kalibr_calibrate_cameras --bag [filename.bag] --topics [TOPIC_0 ... TOPIC_N] --models [MODEL_0 ... MODEL_N] --target [target.yaml]
 
 It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the initial guesses are based on a random pick of images.
+
+More information about options is available using the help argument:<br\>
+> kalibr_calibrate_imu_camera --h
 
 ###3) The output
 The calibration will produce the following output files:
