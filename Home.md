@@ -11,18 +11,20 @@ To make the calibration task more convenient and reproducible the following tool
 1. tool to set the camera focus in a reproducible way
 1. validation of the camera-system calibration on live ROS image streams
 
-The calibration approaches used in Kalibr primarily bases on the following papers:
+
+## References
+The calibration approaches used in Kalibr primarily bases on the following papers. Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
 
 1. <a name="paul1"></a>Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.
 1. <a name="paul2"></a>Paul Furgale, T D Barfoot, G Sibley (2012). Continuous-Time Batch Estimation Using Temporal Basis Functions. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 2088–2095, St. Paul, MN.
 1. <a name="jmaye"></a> J. Maye, P. Furgale, R. Siegwart (2013). Self-supervised Calibration for Robotic Systems, In Proc. of the IEEE Intelligent Vehicles Symposium (IVS)
-
 
 ##Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
 * Jérôme Maye ([email](jerome.maye@mavt.ethz.ch))
 * Jörn Rehder ([email](joern.rehder@mavt.ethz.ch))
 * Thomas Schneider ([email](schneith@ethz.ch))
+
 
 ##License (BSD)
 Copyright (c) 2014, Paul Furgale, Jérôme Maye and Jörn Rehder, Autonomous Systems Lab, ETH Zurich, Switzerland<br>
