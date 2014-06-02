@@ -53,9 +53,9 @@ asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 The *--show-extraction* argument can be used on both calibrators to visualize the calibration target extraction process and might help to debug problems with calibration target configuration and extraction.
 
 ##Tips/Problems
-* Make sure the printed target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
-* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data during the calibration.
-* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lightning conditions)
+* Make sure the calibration target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
+* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data in the target configuration files.
+* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain light conditions)
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
