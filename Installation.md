@@ -8,7 +8,7 @@ Two sources for the toolbox are provided. Altough it is possible to use the CDE 
 
 
 ##A) Using the CDE package (only 64bit)
-To remove necessity of building the toolbox from source, the entire toolbox togehter with its dependencies is packed into a [CDE](#guo) package. 
+To remove necessity of building the toolbox from source, the entire toolbox together with its dependencies is packed into a [CDE](#guo) package. 
 
 Download the package [here]
 
@@ -19,11 +19,22 @@ The source build has been tested on Ubuntu 12.10 with ROS hydro.
 1. Install ROS hydro <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
+    Example for ubuntu-quantal and ROS hydro below:
+
+    >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu quantal main" > /etc/apt/sources.list.d/ros-latest.list <br>
+    wget http://packages.ros.org/ros.key -O - | sudo apt-key add - <br>
+    sudo apt-get update  <br>
+    sudo apt-get install ros-hydro-desktop python-rosdistro python-rosdep python-rosinstall python-rosinstall-generator python-bloom python-rosinstall python-rosdep -y <br>
+    rosdep init <br>
+    rosdep update <br>
+
 1. Install the following dependencies:
+
     >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br> <br>
     sudo pip install python-igraph --upgrade
 
 1. Create a catkin workspace<br>
+
     >mkdir -p ~/kalibr_workspace/src <br>
     cd ~/kalibr_workspace/src <br>
     source /opt/ros/hydro/setup.bash <br>
