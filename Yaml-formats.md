@@ -1,5 +1,4 @@
 ##Camera-system calibration file (aka chain.yaml)
-
 This YAML file includes the complete parameter set for the calibration of the camera intrinsic and extrinsic parameters as well as the spatial and temporal calibration parameters of the IMU with respect to the cameras.
 
 Each camera has the following parameters:
@@ -21,9 +20,8 @@ Each camera has the following parameters:
     (e.g. cam1: T_cn_cnm1 = T_c1_c0)<br>
 * **T_cam_imu**<br>
     IMU extrinsics: tranformation from IMU-frame to camera frame<br>
-* **time**<br>
-    IMU extrinsics: tranformation from IMU-frame to camera frame<br>
-
+* **timeshift_cam_imu**<br>
+    timeshift between camera and IMU timestamps in seconds<br>
 * **rostopic**<br>
     topic of the camera's image stream
 * **resolution**<br>
@@ -33,39 +31,36 @@ Each camera has the following parameters:
 **Example chain.yaml**
 ```
 cam0:
-  camera_model: omni
-  distortion_coeffs: [-0.3524047797899213, 0.16207450943423096, 0.00036919741711283124,
-    0.000988523976270618]
+  camera_model: pinhole
+  intrinsics: [461.629, 460.152, 362.680, 246.049]
   distortion_model: radtan
-  intrinsics: [0.671111239995445, 770.7765589675081, 770.5559465743702, 362.1635863019238,
-    247.88842203540298]
-  resolution: [752, 480]
+  distortion_coeffs: [-0.27695497, 0.06712482, 0.00087538, 0.00011556]
+  T_cam_imu:
+  - [0.01779318, 0.99967549,-0.01822936, 0.07008565]
+  - [-0.9998017, 0.01795239, 0.00860714,-0.01771023]
+  - [0.00893160, 0.01807260, 0.99979678, 0.00399246]
+  - [0.0, 0.0, 0.0, 1.0]
+  timeshift_cam_imu: -8.121e-05
   rostopic: /cam0/image_raw
-  trafo_cam_imu:
-  - [0.014061452055637302, 0.9997399667393116, -0.0179520046281176, 0.07051165610399869]
-  - [-0.9998860726109333, 0.01415751265554327, 0.005235134582067706, -0.01482053746550415]
-  - [0.0054879290056671325, 0.017876345809171246, 0.9998251441605879, -0.0008669839765732394]
-  - [0.0, 0.0, 0.0, 1.0]
-cam1:
-  baseline_last_to_this_cam:
-  - [0.9999963219239997, 0.002667912895867444, 0.00048824097823761936, -0.10998811687147413]
-  - [-0.0026721458237613386, 0.9999569589497798, 0.008884812018572488, 0.0003133265658200174]
-  - [-0.0004645160592714478, -0.008886083990649619, 0.9999604100843904, -0.00041422980563141245]
-  - [0.0, 0.0, 0.0, 1.0]
-  camera_model: omni
-  distortion_coeffs: [-0.34330808866302887, 0.14844603008818044, -0.0003074632859414297,
-    0.0013186394350600886]
-  distortion_model: radtan
-  intrinsics: [0.7476616047651173, 805.0992800974523, 805.1201800399643, 376.61967341034676,
-    256.0786828765575]
   resolution: [752, 480]
-  rostopic: /cam1/image_raw
-  trafo_cam_imu:
-  - [0.011396470820857374, 0.9997827885948853, -0.01744981610976558, -0.03951668331483825]
-  - [-0.999831851497067, 0.011644280296453924, 0.014166138087881374, -0.014702693425226551]
-  - [0.01436625159102594, 0.017285437969947488, 0.9997473803163531, -0.001182236714303278]
+cam1:
+  camera_model: omni
+  intrinsics: [0.80065662, 833.006, 830.345, 373.850, 253.749]
+  distortion_model: radtan
+  distortion_coeffs: [-0.33518750, 0.13211436, 0.00055967, 0.00057686]
+  T_cn_cnm1:
+  - [ 0.99998854, 0.00216014, 0.00427195,-0.11003785]
+  - [-0.00221074, 0.99992702, 0.01187697, 0.00045792]
+  - [-0.00424598,-0.01188627, 0.99992034,-0.00064487]
   - [0.0, 0.0, 0.0, 1.0]
-
+  T_cam_imu:
+  - [ 0.01567142, 0.99978002,-0.01393948,-0.03997419]
+  - [-0.99966203, 0.01595569, 0.02052137,-0.01735854]
+  - [ 0.02073927, 0.01361317, 0.99969223, 0.00326019]
+  - [0.0, 0.0, 0.0, 1.0]
+  timeshift_cam_imu: -8.681e-05
+  rostopic: /cam1/image_raw
+  resolution: [752, 480]
 ```
 
 ##IMU configuration
