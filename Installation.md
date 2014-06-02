@@ -26,6 +26,8 @@ To remove the necessity of installing ROS and building the toolbox from source, 
 ##B) Building from source
 The source build has been tested on Ubuntu 12.10 with ROS hydro.
 
+To build from source follow these steps:
+
 1. Install ROS hydro <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
