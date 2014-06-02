@@ -53,18 +53,22 @@ To build from source follow these steps:
     source /opt/ros/hydro/setup.bash <br>
     catkin_init_workspace <br>
 
-1. Clone the source repo into the catkin workspace src folder <br>
+1. Clone the source repo into your catkin workspace _src_ folder <br>
     >cd ~/kalibr_workspace/src <br>
     git clone https://github.com/ethz-asl/Kalibr.git
 
-1. Build the code using the Release target. Maybe grab a coffee, this will take a while... <br>
+1. Build the code using the _Release_ target.
     depending on the available memory, you might need to reduce the build threads (e.g. add -j2 to catkin_make) <br>
 
     > cd ~/kalibr_workspace <br>
     catkin_make -DCMAKE_BUILD_TYPE=Release -j4
 
+    Grab a coffee, this will take a while... <br>
+
 1. Once the build is finished you have to source the catkin workspace setup to use Kalibr
     > source ~/kalibr_workspace/devel/setup.bash
+
+More information on building with catkin and ROS can be found [here](http://wiki.ros.org/catkin/Tutorials).
 
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
