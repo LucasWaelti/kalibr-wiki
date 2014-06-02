@@ -10,8 +10,8 @@ Kalibr is a toolbox that solves the following calibration problems:
 
 To make the calibration task more convenient and reproducible the following tools are provided:
 
-1. tool to set the camera focus in a reproducible way
-1. validation of the camera-system calibration on live ROS image streams
+1. **camera focus**: tool to set the camera focus in a reproducible way
+1. **calibration validator**: validation tool that computes the reprojection error statistics of the calibrated camera-system on live ROS image streams
 
 ##Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
