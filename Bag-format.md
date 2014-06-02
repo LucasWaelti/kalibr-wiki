@@ -28,18 +28,19 @@ timestamp,omega_x,omega_y,omega_z,alpha_x,alpha_y,alpha_z
 
 To create the ROS bag run the following command:
 
-> rosrun aslam_calibration bagcreater --folder dataset-dir --output awsome.bag
+> kalibr_bagcreater --folder dataset-dir --output-bag awsome.bag
 
-The data will be written to the following topics:
+In the example above the data would be written to the following topics:
 
 * /cam0/image_raw
 * /cam1/image_raw
 * /imu0
 
 ####bagextractor
-The bagextractor exports a ROS bag containing image and/or IMU data to image files and IMU data as csv  files.
+The bagextractor exports a ROS bag containing image and/or IMU data to image files and IMU data as CSV  files.
 
 Example usage:
-> rosrun aslam_calibration bagextractor --image-topics /cam0/image_raw /cam1/image_raw --imu-topics /imu0 --output-folder dataset-dir --bag awsome.bag
+> kalibr_bagextractor --image-topics /cam0/image_raw /cam1/image_raw --imu-topics /imu0 --output-folder dataset-dir --bag awsome.bag
 
+**NOTE:** If you are using the CDE package the _output-folder_ argument should not be used. Instead it will default to _output-folder=output/_ which should work.
 
