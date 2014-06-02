@@ -1,9 +1,9 @@
 ## Camera models
 The toolbox allows the calibration of the following projection models
 
-* **pinhole camera model (pinhole)** 
+* **pinhole camera model (pinhole)** <br>
     (_intrinsics vector_: [fu fv pu pv])
-* **omnidirectional camera model (omni)** 
+* **omnidirectional camera model (omni)** <br>
     (_intrinsics vector_: [xi fu fv pu pv])
 
 The _intrinsics vector_ contains all parameters for the model:
@@ -15,9 +15,9 @@ The _intrinsics vector_ contains all parameters for the model:
 ## Distortion models
 The following distortion models are available:
 
-* **radial-tangential** 
+* **radial-tangential** <br>
     (_distortion_coeffs_: [k1 k2 r1 r2])
-* **equidistant**
+* **equidistant**<br>
     (_distortion_coeffs_: [k1 k2 k3 k4])
 
 ## References
