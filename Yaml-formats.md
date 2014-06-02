@@ -21,7 +21,7 @@ Each camera has the following parameters:
 * **T_cam_imu**<br>
     IMU extrinsics: tranformation from IMU-frame to camera frame<br>
 * **timeshift_cam_imu**<br>
-    timeshift between camera and IMU timestamps in seconds<br>
+    timeshift between camera and IMU timestamps in seconds (t_imu = t_cam + shift)<br>
 * **rostopic**<br>
     topic of the camera's image stream
 * **resolution**<br>

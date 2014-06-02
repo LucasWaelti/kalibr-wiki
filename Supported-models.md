@@ -1,8 +1,10 @@
 ## Camera models
 The toolbox allows the calibration of the following projection models
 
-* **pinhole** (_intrinsics_: <font color='red'>[fu fv pu pv]</font>)
-* **omni** (_intrinsics_: <font color='red'>[xi fu fv pu pv]</font>)
+* **pinhole** 
+    (_intrinsics_: [fu fv pu pv])
+* **omni** 
+    (_intrinsics_: [xi fu fv pu pv])
 
 **_intrinsics_** is the vector used in the camera-system yaml for the inrinsic parameter:
 
@@ -13,5 +15,12 @@ The toolbox allows the calibration of the following projection models
 ## Distortion models
 The following distortion models are available:
 
-* **radial-tangential** (distortion_coeffs: <font color='red'>k1 k2 r1 r2</font>)
-* **equidistant** (distortion_coeffs: <font color='red'>[k1 k2 r1 r2]</font>)
+* **radial-tangential** 
+    (_distortion_coeffs_: [k1 k2 r1 r2])
+* **equidistant**
+    (_distortion_coeffs_: [k1 k2 k3 k4])
+
+## References
+Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
+
+1. <a name="jmaye"></a> J. Kannala and S. Brandt (2006). A Generic Camera Model and Calibration Method for Conventional, Wide-Angle, and Fish-Eye Lenses, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 28, no. 8, pp. 1335-1340
