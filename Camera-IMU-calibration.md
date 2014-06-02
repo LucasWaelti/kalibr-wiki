@@ -21,7 +21,7 @@ Further the following statistics need to be known:
 This data has to be provided to the calibrator as an IMU-YAML file. Refer to this [page](yaml-formats) for the data format.
 
 
-###1) Collect images
+###2) Collect images
 Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
 
 The calibration target is fixed in this calibration and the camera-imu system is moved in front of the target. Therefore it is important to have good illumination and to keep the cameras shutter times as low as possible to avoid motion blur while exciting the IMU.
@@ -37,8 +37,7 @@ Good results have been obtained by using a camera rate of 20 Hz while the IMU wa
     * good illumination 
 * if you are using a calibration target with symmetries (checkerboard, circlegrid), try to avoid rotations over the symmetry, as this would lead to orientation flips in the 
 
-
-###2) Running the calibration
+###3) Running the calibration
 The tool must be provided with the following input:
 
 * **--bag filename.bag**<br>
@@ -57,18 +56,17 @@ The temporal calibration is turned off by default and can be enabled using the *
 > kalibr_calibrate_imu_camera --h
 
 
-###3) The output
+###4) The output
 The calibration will produce the following output files:
 
-* **report-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
-* **results-%BAGNAME%.txt**: Result summary as a text file.
-* **chain.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please see the <font color='red'>here</font> for the used format.
-
+* **report-cam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
+* **results-cam-%BAGNAME%.txt**: Result summary as a text file.
+* **camchain_cimu.yaml**: Results in YAML format. This file is based on the input ***camchain.yaml*** with added transformations (and time shifts) for all cameras with respect to the imu. Please check the used format [here](yaml-formats).
 
 ##An example run using a sample dataset
 Download the sample dataset <font color='red'>here</font> and extract it. The archive will contain the bag-file, calibration target and imu configuration file.
 
-
+> kalibr_calibrate_cameras --bag dataset_icc.bag --cam camchain.yaml --imu imu0.yaml --target aprilgrid_6x6.yaml
 
 
 ## References

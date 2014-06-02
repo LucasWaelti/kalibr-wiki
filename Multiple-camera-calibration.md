@@ -41,7 +41,7 @@ The calibration will produce the following output files:
 
 * **report-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
 * **results-%BAGNAME%.txt**: Result summary as a text file.
-* **chain.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please see the <font color='red'>here</font> for the used format.
+* **chain.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the used format [here](yaml-formats).
 
 ###4) Optional live validation (ROS only)
 If your sensor provides live data on ROS topics the live validator can be used to verify the calibration on live streams. Please refer to <font color='red'>this page</font> on how to use this tool.
