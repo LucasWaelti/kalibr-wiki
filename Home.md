@@ -4,7 +4,7 @@
 Kalibr is a toolbox that solves the following calibration problems:
 
 1. **Multiple camera calibration**: 
-    intrinsic and extrinsic calibration of a camera-systems** with non-globally shared overlapping fields of view
+    intrinsic and extrinsic calibration of a camera-systems with non-globally shared overlapping fields of view
 1. **Camera-IMU calibration**:
     spatial and temporal calibration of an IMU w.r.t a camera-system
 
