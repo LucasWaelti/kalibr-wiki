@@ -1,9 +1,9 @@
 All applications in Kalibr use ROS bags as a source for its sensor data (image and IMU).
 
-##Can I use image files and IMU data as CSV files?
+###Can I use image files and IMU data as CSV files?
 A bagcreater script is provided to use image files and/or IMU data for the calibration
 
-###bagcreater
+####bagcreater
 This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
 >
 dataset-dir<br>
@@ -39,7 +39,7 @@ The data will be written to the following topics:
 * /cam1/image_raw
 * /imu0
 
-###bagextractor
+####bagextractor
 The bagextractor exports a ROS bag containing image and/or IMU data to image files and IMU data as csv  files.
 
 Example usage:
