@@ -1,4 +1,4 @@
-###Camera-system calibration file (camchain.yaml)
+###Camera-system calibration (camchain.yaml)
 This YAML file includes the complete parameter set for the calibration of the camera intrinsic and extrinsic parameters as well as the spatial and temporal calibration parameters of the IMU with respect to the cameras.
 
 Each camera has the following parameters:
