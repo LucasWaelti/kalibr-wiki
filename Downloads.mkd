@@ -15,11 +15,11 @@
 
 | | | |
 |:--|:--|:--|
-| Aprilgrid 6x6 0.5x0.5 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUQVVCZEV2QXg2WWc/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUR3U2TWRndkR6T00/edit?usp=sharing) |
-| Aprilgrid 6x6 0.8x0.8 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUdjFJem9mQXdiMTQ/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUU2lGMTdWYWhPaWc/edit?usp=sharing) |
 | Aprilgrid 6x6 0.8x0.8 m (A0 page) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUdjFJem9mQXdiMTQ/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUU2lGMTdWYWhPaWc/edit?usp=sharing) |
-| Checkerboard 7x6 0.5x0.5 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUVmJZYW9XWFZRdE0/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUcHJaUGtMR2dhTzQ/edit?usp=sharing) |
 | Aprilgrid 6x6 & Checkerboard 7x6 0.5x0.5 m (A0 page) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUbl92ejdBeUd1Mk0/edit?usp=sharing) |  [checker-yaml](https://drive.google.com/file/d/0B0T1sizOvRsUcHJaUGtMR2dhTzQ/edit?usp=sharing), [april-yaml](https://drive.google.com/file/d/0B0T1sizOvRsUR3U2TWRndkR6T00/edit?usp=sharing) |
+| Aprilgrid 6x6 0.8x0.8 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUdjFJem9mQXdiMTQ/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUU2lGMTdWYWhPaWc/edit?usp=sharing) |
+| Aprilgrid 6x6 0.5x0.5 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUQVVCZEV2QXg2WWc/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUR3U2TWRndkR6T00/edit?usp=sharing) |
+| Checkerboard 7x6 0.5x0.5 m (unscaled) | [pdf](https://drive.google.com/file/d/0B0T1sizOvRsUVmJZYW9XWFZRdE0/edit?usp=sharing) | [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUcHJaUGtMR2dhTzQ/edit?usp=sharing) |
 
 Kalibr provides a [script](calibration-targets) to generate custom target PDFs.
 
