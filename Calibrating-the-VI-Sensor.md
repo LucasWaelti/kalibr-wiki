@@ -78,10 +78,6 @@ rosrun image_view image_view image:=/cam1/image_raw &
     * avoid shocks
     * good illumination and shutter times are crucial here (to avoid motion blur while exciting the IMU)
 
-    >rostopic hz /cam0/image_raw<br>
-    rostopic hz /cam1/image_raw<br>
-    rostopic hz /imu0
-
     view images with:
     >rosrun image_view image_view image:=/cam0/image_raw &<br>
 rosrun image_view image_view image:=/cam1/image_raw &
