@@ -77,6 +77,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
     * try to excite all rotation and acceleration axis of the IMU
     * avoid shocks
     * good illumination and shutter times are crucial here (to avoid motion blur while exciting the IMU)
+
     >rostopic hz /cam0/image_raw<br>
     rostopic hz /cam1/image_raw<br>
     rostopic hz /imu0
