@@ -99,6 +99,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
     1. run calibration
 
     > kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag dynamic.bag
+
     1. inspect the result plots
         * make sure the predicted accelerations & angular velocities fit the IMU measurements
         * reprojection errors should be in a normal range
