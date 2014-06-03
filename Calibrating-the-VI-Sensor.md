@@ -89,6 +89,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
 1. calibration of camera in/extrinsics
     1. run calibration
     > kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /cam0/image_raw /cam1/image_raw --bag static.bag --target aprilgrid_6x6.yaml
+
     1. inspect the result plots
     1. verify calibration on the live image stream
 
