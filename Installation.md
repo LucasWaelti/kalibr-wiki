@@ -1,15 +1,15 @@
 The following two sources for the toolbox are provided:
 
 * **building from source**<br>
-    Depends on a working installation of ROS hydro and a catkin workspace. Binaries will run faster than with the CDE package and all tools can be used.
+    Depends on a working installation of ROS hydro and a catkin workspace. Binaries will run faster than with the CDE package and all tools are available.
 
 * **CDE package**<br>
-    Using this package is the easiest and fastest way to get the toolbox working. All dependencies are packed within this package and no external dependencies need to be installed. The [Camera focus](camera-focus) and [Calibration validator](calibration-validator) tools won't work with the CDE-package as a native ROS installation is required.
+    Using this package is the easiest and fastest way to get the toolbox working. All dependencies are packed within the package and no external dependencies required. The [Camera focus](camera-focus) and [Calibration validator](calibration-validator) tools aren't available with the CDE-package as a native ROS installation is required.
 
-**NOTE:** Although it is possible to use the CDE package to get the toolbox running we recommend to build the package from source using catkin (ROS build-system) as some of the tools will only work with a native ROS installation
+**NOTE:** It is recommended to build the toolbox from source with a native ROS installation to make all tools available.
 
 ##A) Using the CDE package (only 64bit systems)
-To remove the necessity of installing ROS and building the toolbox from source, the entire toolbox together with its dependencies is provided as a [CDE](#guo) package. To install this package follow these steps:
+To remove the necessity of installing ROS and building the toolbox from source, a [CDE](#guo) package is provided that packs the toolbox and all its dependencies in a chroot-like environment. To install this package follow these steps:
 
 1. Download the package from the [Downloads](downloads) page.
 
@@ -18,15 +18,15 @@ To remove the necessity of installing ROS and building the toolbox from source, 
     > tar xfvz kalibr.tar.gz
 
 1. Either you can run the tools directly from the cde-package folder
-    **or**
-    you can add this folder to the system path using:
+    **or/and**
+    it is possible to add the package folder to the system path using:
 
     > export PATH="**/cde/package/path**:$PATH"
 
-##B) Building from source
-The source build has been tested on Ubuntu 12.10 with ROS hydro.
+    to use the tools conveniently as it would be installed.
 
-To build from source follow these steps:
+##B) Building from source
+To build from source follow these steps (tested on Ubuntu 12.10 and ROS hydro):
 
 1. Install ROS hydro <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
@@ -66,6 +66,7 @@ To build from source follow these steps:
     Grab a coffee, this will take a while... <br>
 
 1. Once the build is finished you have to source the catkin workspace setup to use Kalibr
+
     > source ~/kalibr_workspace/devel/setup.bash
 
 More information on building with catkin and ROS can be found [here](http://wiki.ros.org/catkin/Tutorials).
