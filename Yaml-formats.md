@@ -63,7 +63,7 @@ cam1:
 ```
 
 ###IMU configuration (imu.yaml)
-Each IMU in the calibration is configured using a YAML file. Please refer to the example below for details:
+IMUs are configured using a YAML file. Please refer to the example below for details:
 
 **imu.yaml**
 ```
@@ -77,8 +77,6 @@ gyroscope_random_walk:       4.0e-06 #Bias random walk [UNIT]
 
 update_rate:                 200.0 #Hz (for discretization of the values above)
 ```
-
-<font color='red'>TODO: INSERT UNITS ABOVE!</font>
 
 ###Calibration target configuration (target.yaml)
 Please refer to the [Calibration targets](calibration-target) page.
