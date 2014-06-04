@@ -13,7 +13,7 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
     1. imu-camera calibration (dynamic calibration)
 1. run the calibration
     1. in-/extrinsic camera calibration
-    1. camera-IMU calibration
+    1. imu-camera calibration
 1. collect results
 
 
