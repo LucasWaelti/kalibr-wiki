@@ -34,7 +34,7 @@ The calibration can be run using:
 It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the initial guesses are based on a random pick of images.
 
 More information about options is available using the help argument:<br\>
-> kalibr_calibrate_imu_camera --h
+> kalibr_calibrate_cameras --h
 
 ###3) The output
 The calibration will produce the following output:
