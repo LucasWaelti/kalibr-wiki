@@ -1,14 +1,17 @@
-Kalibr supports three different calibration target. The Aprilgrid is the recommended grid to use due to the following benefits over the other targets:
+Kalibr supports three different calibration targets described below. It is the recommended to use the Aprilgrid due to the following benefits:
 
 * partially visible calibration boards can be used
-* rotations of the target are fully resolved (no flips)
+* pose of the target is fully resolved (no flips)
 
 The calibration targets are configured using YAML configuration files which are passed to the calibration tools. Please find the configuration templates for the supported targets below.
 
-###A) Aprilgrid
-Partially visible Aprilgrids can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended target to use.
+Grids can be downloaded on the [Downloads](downloads) page or created using the script below:
+> kalibr_create_target_pdf --h
 
-Predefined PDFs of Aprilgrids can be downloaded on the [Downloads](downloads) page or custom grids can be created according to your needs using the following script:
+###A) Aprilgrid
+Partially visible Aprilgrid targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended choice.
+
+Aprilgrids can be downloaded on the [Downloads](downloads) page or custom grids can be created using the following script:
 > kalibr_create_target_pdf --type apriltag --nx [NUM_COLS] --ny [NUM_ROWS] --tsize [TAG_WIDTH_M] --tspace [TAG_SPACING_PERCENT]
 
 **aprilgrid.yaml**
@@ -21,9 +24,9 @@ tagSpacing: 0.3          #ratio of space between tags to tagSize
                          #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.3[-]
 ```
 
-**Make sure to hide all external Apriltags not belonging to the calibration target while collection the calibration dataset**
+**Make sure to hide all external Apriltags while collecting the calibration dataset.**
 
-Kalibr uses the awsome Apriltag implementation of M. Kaess for tag extraction. [[1](#olson),[2](#olson)]
+Kalibr uses the awsome Apriltag implementation of M. Kaess for tag extraction. [[1](#olson),[2](#kaess)]
 
 ###B) Checkerboard
 The standard checkerboard pattern is supported using the following configuration:
@@ -50,12 +53,12 @@ asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 ```
 
 ##Problems with the target extraction?
-The *--show-extraction* argument can be used on both calibrators to visualize the calibration target extraction process and might help to debug problems with calibration target configuration and extraction.
+The *--show-extraction* argument can be used with the calibration tools to visualize the calibration target extraction process. This might help to find problems with calibration target configuration and extraction.
 
 ##Tips/Problems
 * Make sure the calibration target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
-* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and provide this data in the target configuration files.
-* Reserve a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lighting conditions)
+* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and adjust the target configuration file accordingly.
+* Keep a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lighting conditions)
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
