@@ -50,7 +50,6 @@ The calibration can be run using:
 The temporal calibration is turned off by default and can be enabled using the **--time-calibration** argument. More information about options is available using the help argument:<br\>
 > kalibr_calibrate_imu_camera --h
 
-
 ###4) The output
 The calibration will produce the following output files:
 
