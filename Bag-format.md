@@ -1,4 +1,4 @@
-All applications in Kalibr use ROS bags as a source for its sensor data (image and IMU).
+All applications in Kalibr use ROS bags as a source for the image and IMU data.
 
 ###How to use image files and IMU data as CSV files?
 A bagcreater script is provided to use image files and/or IMU data for the calibration
