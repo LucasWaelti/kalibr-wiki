@@ -55,13 +55,13 @@ The calibration will produce the following output files:
 
 * **report-imucam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
 * **results-imucam-%BAGNAME%.txt**: Result summary as a text file.
-* **camchain-imucam-%BAGNAME%.yaml**: Results in YAML format. This file is based on the input ***camchain.yaml*** with added transformations (and time shifts) for all cameras with respect to the imu. Please check the used format [here](yaml-formats).
+* **camchain-imucam-%BAGNAME%.yaml**: Results in YAML format. This file is based on the input _camchain.yaml_ with added transformations (and optionally time shifts) for all cameras with respect to the IMU. Please check the format on the [YAML formats](yaml-formats) page.
 
-##An example run using a sample dataset
-Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag-file, calibration target and imu configuration file.
+##An example using a sample dataset
+Download the dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag, calibration target and IMU configuration file.
 
+The calibration can be started using:
 > kalibr_calibrate_cameras --bag dataset_icc.bag --cam camchain.yaml --imu imu0.yaml --target aprilgrid_6x6.yaml
-
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
