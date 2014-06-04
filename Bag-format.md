@@ -18,7 +18,7 @@ This script allows you to create a ROS bag from raw image files and optionally I
     │   \-- 1385030212176607500.png
     \-- imu0.csv
 ```
-The imu0.csv file is structured as follows (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
+The imu0.csv file uses the format below: (timestamps=[ns], omega=[rad/s], alpha=[m/s^2])
 ```
 timestamp,omega_x,omega_y,omega_z,alpha_x,alpha_y,alpha_z
 1385030208736607488,0.5,-0.2,-0.1,8.1,-1.9,-3.3
