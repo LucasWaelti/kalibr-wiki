@@ -1,8 +1,8 @@
-The camera calibration tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with non-shared overlapping fields of view. 
+The _multiple camera calibration_ tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with the requirement that neighbouring cameras have overlapping fields of view. 
 
-The image data is provided as a [ROS](https://www.ros.org) bag containing image streams for all cameras. The calibration routine will go through all images and select images using information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
+The image data is provided as a [ROS](https://www.ros.org) bag containing the image streams for all cameras. The calibration routine will go through all images and picks images based on information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
 
-Arbitrary combinations of projection and distortion model can be mixed in one calibration run. Have a look at [this page](supported-models) for a list of the supported camera and distortion models.
+Arbitrary combinations of projection and distortion model can be combined in one calibration run. Have a look at [Supported models](supported-models) page for a list of available models.
 
 ##How to use?
 
@@ -11,7 +11,7 @@ Create a ROS bag containing the raw image streams either by directly recording f
 
 The camera system is fixed and the calibration target is moved in front of the cameras to obtain the calibration images. 
 
-It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces the number of images to be processed by the calibrator containing almost redundant information and thus lower the runtime of the calibration.
+It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces the number of images containing almost redundant information and thus lower the runtime of the calibration.
 
 ###2) Running the calibration
 
@@ -26,9 +26,9 @@ The tool must be provided with the following input:
 * **--target target.yaml**<br>
     the calibration target configuration (see [Cailbration targets](#calibration-target))
 
-Note that the ordering of the topics and camera/distortion models match and determine the internal camera number in the calibration.
+Note that the ordering of the topics (--topics) and camera/distortion models (--models) arguments match order and determine the internal camera numbering in the output.
 
-The calibration can then be run using:
+The calibration can be run using:
 > kalibr_calibrate_cameras --bag [filename.bag] --topics [TOPIC_0 ... TOPIC_N] --models [MODEL_0 ... MODEL_N] --target [target.yaml]
 
 It can happen that the optimization diverges right after processing the first few images due to a bad initial guess on the focal lengths. In this case just try to restart the calibration as the initial guesses are based on a random pick of images.
@@ -37,17 +37,17 @@ More information about options is available using the help argument:<br\>
 > kalibr_calibrate_imu_camera --h
 
 ###3) The output
-The calibration will produce the following output files:
+The calibration will produce the following output:
 
 * **report-cam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
 * **results-cam-%BAGNAME%.txt**: Result summary as a text file.
-* **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the used format under [YAML formats](yaml-formats).
+* **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the format on the [YAML formats](yaml-formats) page.
 
 ###4) Optional live validation (ROS only)
-If your sensor provides live data on ROS topics the live validator can be used to verify the calibration on live streams. Please refer to [Calibration validator](calibration-validator) page on how to use this tool.
+If your sensor provides live data on ROS topics the validator can be used to verify the calibration on live streams. Please refer to the [Calibration validator](calibration-validator) page on how to use this tool.
 
 ##An example run using a sample dataset
-Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag-file and the calibration target configuration file.
+Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.
 
 **IMAGE OF CAMERA ARRANGEMENT**<br>
 The dataset was recorded with the sensor system shown in the picture above. It contains four cameras which should be calibrated using the following models:
