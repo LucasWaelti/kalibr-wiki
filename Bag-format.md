@@ -4,7 +4,7 @@ All applications in Kalibr use ROS bags as a source for the image and IMU data.
 A bagcreater script is provided to use image files and/or IMU data for the calibration
 
 ####bagcreater
-This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below for a system with two cameras and an IMU
+This script allows you to create a ROS bag from raw image files and optionally IMU data. The files have to be organized in folders as illustrated below. The example below uses a system with two cameras and one IMU
 
 ```
 +-- dataset-dir
