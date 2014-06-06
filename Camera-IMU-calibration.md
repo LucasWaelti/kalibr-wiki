@@ -24,7 +24,7 @@ Good results have been obtained by using a camera rate of 20 Hz and an IMU rate 
 **Tips:**
 
 * try to excite all IMU axes (rotation and translation)
-* avoid shocks 
+* avoid shocks, especially at the beginning/end when you pick up the sensor
 * keep the motion blur low:
     * low shutter times
     * good illumination 
