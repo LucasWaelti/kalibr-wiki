@@ -27,5 +27,5 @@ Kalibr provides a [script](calibration-targets) to generate custom targets.
 
 | | |   
 |:--|:--|
-| [ADIS 16448](https://drive.google.com/file/d/0B0T1sizOvRsUNWxVaERrNjdIaVE/edit?usp=sharing) | IMU configuration for the  Analog Devices ADIS16448 IMU |
+| [ADIS 16448](https://drive.google.com/file/d/0B0T1sizOvRsUSk9ReDlid0VSY3M/edit?usp=sharing) | IMU configuration for the  Analog Devices ADIS16448 IMU |
 
