@@ -49,7 +49,7 @@ If your sensor provides live data on ROS topics the validator tool can be used t
 ##An example run using a sample dataset
 Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.
 
-(https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/sensor_dataset.png)
+![Sensor](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/sensor_dataset.png)
 The dataset was recorded with the sensor system shown in the picture above. It contains four cameras that should be calibrated using the following models:
 
 * **cam0, cam1:** pinhole projection / equidistant distortion
