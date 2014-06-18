@@ -56,6 +56,7 @@ The dataset was recorded with the sensor system shown in the picture above. It c
 * **cam0, cam1:** pinhole projection / equidistant distortion
 * **cam2, cam3:** omni projection / radial-tangential distortion
 
+The calibration can be started with:
 > kalibr_calibrate_cameras --target april_6x6.yaml --bag static.bag --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw 
 
 ## References

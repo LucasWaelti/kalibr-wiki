@@ -8,8 +8,8 @@
 
 | | |   
 |:--|:--|
-| [Multiple camera calibration](http://link/) | Sample dataset and configurations for the multiple-camera calibrator |
-| [IMU-camera calibration](http://link/) | Sample dataset and configurations for the imu-camera calibrator |
+| [Multiple camera calibration](https://drive.google.com/file/d/0B0T1sizOvRsUYU1XV0lBbjMyOG8/edit?usp=sharing) | Sample dataset and configurations for the multiple-camera calibrator |
+| [IMU-camera calibration](https://drive.google.com/file/d/0B0T1sizOvRsUcGpTWUNTRC14RzA/edit?usp=sharing) | Sample dataset and configurations for the imu-camera calibrator |
 
 ### Calibration targets
 

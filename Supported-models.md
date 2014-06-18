@@ -10,7 +10,7 @@ The _intrinsics vector_ contains all parameters for the model:
 
 * **fu, fv**: focal-length
 * **pu, pv**: principal point
-* **xi**: <font color='red'>TODO: name of this parameters</font>(only omni) 
+* **xi**: mirror parameter (only omni) 
 
 ### Distortion models
 Kalibr supports the following distortion models:
