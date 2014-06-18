@@ -44,18 +44,18 @@ The calibration will produce the following output:
 * **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the format on the [YAML formats](yaml-formats) page.
 
 ###4) Optional live validation (ROS only)
-If your sensor provides live data on ROS topics the validator can be used to verify the calibration on live streams. Please refer to the [Calibration validator](calibration-validator) page on how to use this tool.
+If your sensor provides live data on ROS topics the validator tool can be used to verify the calibration. Please refer to the [Calibration validator](calibration-validator) page on how to use this tool.
 
 ##An example run using a sample dataset
 Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.
 
-**IMAGE OF CAMERA ARRANGEMENT**<br>
-The dataset was recorded with the sensor system shown in the picture above. It contains four cameras which should be calibrated using the following models:
+(https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/sensor_dataset.png)
+The dataset was recorded with the sensor system shown in the picture above. It contains four cameras that should be calibrated using the following models:
 
 * **cam0, cam1:** pinhole projection / equidistant distortion
 * **cam2, cam3:** omni projection / radial-tangential distortion
 
-> kalibr_calibrate_cameras --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw --bag dataset_mcc.bag --target aprilgrid_6x6.yaml
+> kalibr_calibrate_cameras --target april_6x6.yaml --bag static.bag --models pinhole-equi pinhole-equi omni-radtan omni-radtan --topics /cam0/image_raw /cam1/image_raw /cam2/image_raw /cam3/image_raw 
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.

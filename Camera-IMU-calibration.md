@@ -61,7 +61,9 @@ The calibration will produce the following output files:
 Download the dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag, calibration target and IMU configuration file.
 
 The calibration can be started using:
-> kalibr_calibrate_cameras --bag dataset_icc.bag --cam camchain.yaml --imu imu0.yaml --target aprilgrid_6x6.yaml
+> kalibr_calibrate_imu_camera --target april_6x6.yaml --cam camchain.yaml --imu imu_adis16448.yaml --bag dynamic.bag --bag-from-to 5 45
+
+*NOTE: * Because there are shocks in the dataset (sensor pick-up/lay-down), only the data between 5 to 45 s is used.
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
