@@ -1,11 +1,11 @@
-Kalibr supports three different calibration targets described below. It is the recommended to use the Aprilgrid due to the following benefits:
+Kalibr supports three different calibration targets. It is recommended to use the Aprilgrid due to the following benefits:
 
 * partially visible calibration boards can be used
 * pose of the target is fully resolved (no flips)
 
-The calibration targets are configured using YAML configuration files which are passed to the calibration tools. Please find the configuration templates for the supported targets below.
+The targets are configured using YAML configuration files which have to be provided to the calibration tools. Please find the configuration templates for the supported targets below.
 
-Grids can be downloaded on the [Downloads](downloads) page or created using the script below:
+Grids can be downloaded on the [Downloads](downloads) page or created using the following script:
 > kalibr_create_target_pdf --h
 
 ###A) Aprilgrid
@@ -53,11 +53,11 @@ asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 ```
 
 ##Problems with the target extraction?
-The *--show-extraction* argument can be used with the calibration tools to visualize the calibration target extraction process. This might help to find problems with calibration target configuration and extraction.
+The *--show-extraction* argument can be used with the calibration tools to visualize the calibration target extraction process. This might help to find problems with the target configuration and extraction.
 
 ##Tips/Problems
 * Make sure the calibration target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
-* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and adjust the target configuration file accordingly.
+* Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and adjust the target configuration accordingly.
 * Keep a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lighting conditions)
 
 ## References

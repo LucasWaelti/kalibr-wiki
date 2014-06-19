@@ -19,7 +19,7 @@ Each camera has the following parameters:
     camera extrinsic transformation, always with respect to the last camera in the chain<br>
     (e.g. cam1: T_cn_cnm1 = T_c1_c0, takes cam0 to cam1 coordinates)<br>
 * **T_cam_imu**<br>
-    IMU extrinsics: transformation from IMU to camera coordinates<br>
+    IMU extrinsics: transformation from IMU to camera coordinates (T_c_i)<br>
 * **timeshift_cam_imu**<br>
     timeshift between camera and IMU timestamps in seconds (t_imu = t_cam + shift)<br>
 * **rostopic**<br>

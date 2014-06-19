@@ -20,15 +20,16 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 ##Requirements
 
 * ROS sensor driver is running (image/imu data)
-* good Aprilgrid target (<font color='red'>yaml</font> /  <font color='red'>pdf</font>)
+* good Aprilgrid target ([pdf](https://drive.google.com/file/d/0B0T1sizOvRsUdjFJem9mQXdiMTQ/edit?usp=sharing), [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUU2lGMTdWYWhPaWc/edit?usp=sharing))
 * Siemens star (or similar camera focus test pattern)
-* IMU configuration for ADIS16448 (<font color='red'>yaml</font>)
+* IMU configuration for ADIS16448 ([yaml](https://drive.google.com/file/d/0B0T1sizOvRsUSk9ReDlid0VSY3M/edit?usp=sharing))
 
 
 ##1) Sensor preparation
 
 1. make sure the sensor publishes all image and imu streams to ROS
-1. minimize the motion blur with a good light source and by reducing the shutter times:
+1. minimize the motion blur with a good light source and by reducing the shutter times.
+
     Shutter times can be set using the following commands:
 
     >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam0_agc_enable': 0, 'cam0_aec_enable': 0, 'cam0_coarse_shutter_width': 300}"<br>
