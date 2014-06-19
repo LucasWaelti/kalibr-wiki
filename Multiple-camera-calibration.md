@@ -1,17 +1,17 @@
 The _multiple camera calibration_ tool estimates the intrinsic and extrinsic parameters of a multiple camera-system with the requirement that neighbouring cameras have overlapping fields of view. 
 
-The image data is provided as a [ROS](https://www.ros.org) bag containing the image streams for all cameras. The calibration routine will go through all images and picks images based on information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
+The image data is provided as a [ROS](https://www.ros.org) bag containing the image streams for all cameras. The calibration routine will go through all images and pick images based on information theoretic measures in order to get a good estimate of the system parameters. (see [1](#jmaye))
 
-Arbitrary combinations of projection and distortion model can be combined in one calibration run. Have a look at [Supported models](supported-models) page for a list of available models.
+Arbitrary combinations of projection and distortion models can be combined in one calibration run. Have a look at [Supported models](supported-models) page for a list of available models.
 
 ##How to use?
 
 ###1) Collect images
-Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
+Create a ROS bag containing the raw image data either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
 
 The camera system is fixed and the calibration target is moved in front of the cameras to obtain the calibration images. 
 
-It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces the number of images containing almost redundant information and thus lower the runtime of the calibration.
+It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces redundant information in the dataset and thus lowering the runtime of the calibration.
 
 ###2) Running the calibration
 
@@ -22,11 +22,11 @@ The tool must be provided with the following input:
 * **--topics TOPIC_0 ... TOPIC_N**<br>
     list of all camera topics in the bag. matches the ordering of --models
 * **--models MODEL_0 ... MODEL_N**<br>
-    list of camera/distortion models to be fitted. matches the ordering of --topics. (see [Supported models](supported-models))
+    list of camera/distortion models to be fitted. matches the ordering of --topics (see [Supported models](supported-models))
 * **--target target.yaml**<br>
-    the calibration target configuration (see [Cailbration targets](#calibration-target))
+    the calibration target configuration (see [Calibration targets](#calibration-target))
 
-Note that the ordering of the topics (--topics) and camera/distortion models (--models) arguments match order and determine the internal camera numbering in the output.
+Note that the order of the topics (--topics) and camera/distortion models (--models) must match and determine the internal camera numbering in the output.
 
 The calibration can be run using:
 > kalibr_calibrate_cameras --bag [filename.bag] --topics [TOPIC_0 ... TOPIC_N] --models [MODEL_0 ... MODEL_N] --target [target.yaml]
@@ -44,7 +44,7 @@ The calibration will produce the following output:
 * **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the format on the [YAML formats](yaml-formats) page.
 
 ###4) Optional live validation (ROS only)
-If your sensor provides live data on ROS topics the validator tool can be used to verify the calibration. Please refer to the [Calibration validator](calibration-validator) page on how to use this tool.
+If your sensor is ROS-enabled you can use the validator tool to verify the calibration on live data. Please refer to the [Calibration validator](calibration-validator) page on how to do that.
 
 ##An example run using a sample dataset
 Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.

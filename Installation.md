@@ -1,17 +1,17 @@
-The following two sources for the toolbox are provided:
+The following two sources for the toolbox are available:
 
 * **building from source**<br>
     Depends on a working installation of ROS hydro and a catkin workspace. Binaries will run faster than with the CDE package and all tools are available.
 
 * **CDE package**<br>
-    Using this package is the easiest and fastest way to get the toolbox working. All dependencies are packed within the package and no external dependencies required. The [Camera focus](camera-focus) and [Calibration validator](calibration-validator) tools aren't available with the CDE-package as a native ROS installation is required.
+    This package is the easiest and fastest way to get the toolbox running. All dependencies are packed within this package and no external dependencies are required. The [Camera focus](camera-focus) and [Calibration validator](calibration-validator) tools aren't available with the CDE-package as they require a native ROS installation.
 
-**NOTE:** It is recommended to build the toolbox from source with a native ROS installation to make all tools available.
+**NOTE:** It is recommended to build the toolbox from source using a native ROS installation to make all tools available.
 
 ##A) Using the CDE package (only 64bit systems)
 To remove the necessity of installing ROS and building the toolbox from source, a [CDE](#guo) package is provided that packs the toolbox and all its dependencies in a chroot-like environment. To install this package follow these steps:
 
-1. Download the package from the [Downloads](downloads) page.
+1. Download the most recent package from the [Downloads](downloads) page.
 
 1. Extract the archive using:
 
@@ -19,19 +19,19 @@ To remove the necessity of installing ROS and building the toolbox from source, 
 
 1. Either you can run the tools directly from the cde-package folder
     **or/and**
-    it is possible to add the package folder to the system path using:
+    add the package folder to the system path using:
 
     > export PATH="**/cde/package/path**:$PATH"
 
-    to use the tools conveniently as it would be installed.
+    to use the tools more conveniently.
 
 ##B) Building from source
-To build from source follow these steps (tested on Ubuntu 12.10 and ROS hydro):
+To build the toolbox from source follow these steps (tested on Ubuntu 12.10 and 13.10 with ROS hydro):
 
 1. Install ROS hydro <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
-    Example for ubuntu-quantal and ROS hydro below:
+    Example installation on Ubuntu 12.10 (quantal) and ROS hydro:
 
     >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu quantal main" > /etc/apt/sources.list.d/ros-latest.list'
 <br>

@@ -1,11 +1,11 @@
 The camera-imu calibration tool estimates the spatial and temporal parameters of a camera system with respect to an intrinsically calibrated IMU. Image and IMU data has to be provided in a [ROS](https://www.ros.org) bag. 
 
-The calibration parameters are estimated using a full batch optimization with splines to model the pose of the system. Detailed information about the approach can be found in the following papers: (see [1](#paul1), [2](#paul2))
+The calibration parameters are estimated in a full batch optimization using splines to model the pose of the system. Detailed information about the approach can be found in the following papers: (see [1](#paul1), [2](#paul2))
 
 ##How to use it
 
 ###1) Requirements
-The intrinsic parameters of the IMU (e.g. scales, axis misalignment, nonlinearities,...) need to be calibrated beforehand and and its correction applied to the dataset.
+The intrinsic parameters of the IMU (e.g. scales, axis misalignment, nonlinearities,...) need to be calibrated beforehand and and its correction applied to the raw measurements.
 
 Further an IMU configuration YAML has to be created containing the following statistical properties for the accelerometers and gyroscopes:
 
@@ -15,14 +15,13 @@ Further an IMU configuration YAML has to be created containing the following sta
 Please refer to the [YAML formats](yaml-formats) page for the data format.
 
 ###2) Collect images
-Create a ROS bag containing the raw image streams either by directly recording from a ROS sensor streams or by using the _[bagcreater](bag-format)_ script on a list of image files and IMU data in a CSV file.
+Create a ROS bag containing the raw image streams either by directly recording from ROS sensor streams or by using the _[bagcreater](bag-format)_ script on a list of image files and a CSV file containing the IMU measurements.
 
-The calibration target is fixed in this calibration and the camera-imu system is moved in front of the target to excite all IMU axis. It is important to have good illumination and to keep the camera shutter times low to avoid motion blur while exciting the IMU.
+The calibration target is fixed in this calibration and the camera-imu system is moved in front of the target to excite all IMU axes. It is important to ensure good and even illumination of the calibration target and to keep the camera shutter times low to avoid excessive motion blur.
 
 Good results have been obtained by using a camera rate of 20 Hz and an IMU rate of 200 Hz. 
 
 **Tips:**
-
 * try to excite all IMU axes (rotation and translation)
 * avoid shocks, especially at the beginning/end when you pick up the sensor
 * keep the motion blur low:
