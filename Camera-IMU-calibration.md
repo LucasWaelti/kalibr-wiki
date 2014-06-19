@@ -62,7 +62,7 @@ Download the dataset from the [Downloads](downloads) page and extract it. The ar
 The calibration can be started with:
 > kalibr_calibrate_imu_camera --target april_6x6.yaml --cam camchain.yaml --imu imu_adis16448.yaml --bag dynamic.bag --bag-from-to 5 45
 
-*NOTE:* Because there are shocks in the dataset (sensor pick-up/lay-down), only the data between 5 to 45 s is used.
+**NOTE:** Because there are shocks in the dataset (sensor pick-up/lay-down), only the data between 5 to 45 s is used.
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
