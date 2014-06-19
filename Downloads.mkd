@@ -2,7 +2,7 @@
 
 |  | Version | Last updated |
 |:--|:--|:--|
-| [Kalibr-CDE 64-bit](https://drive.google.com/file/d/0B0T1sizOvRsUbFBKOGJvREVjd3c/edit?usp=sharing) | 0.0.1  | 18. Jun. 2014 | 
+| [Kalibr-CDE 64-bit](https://drive.google.com/file/d/0B0T1sizOvRsUM0ZDZTNSbFRkNFE/edit?usp=sharing) | 0.1  | 19. Jun. 2014 | 
 
 ### Sample datasets
 
