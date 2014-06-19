@@ -107,4 +107,4 @@ rosrun image_view image_view image:=/cam1/image_raw &
         * reprojection errors should be in a normal range (0.1-0.2 px for a good calibration)
 
 ##4) Collect results
-Both calibrators have written reports to the working directory containing the plots shown during the calibration. Further a _camchain.yaml_ has been written by the camera calibrator and is extended by the imu-camera calibrator with imu-camera transformations to the file _camchain_cimu.yaml_. Please refer to [YAML formats](yaml-formats) page for the format.
+Both calibrators write reports to the working directory containing the plots shown at the end of the calibration. Further a _camchain.yaml_ has been written by the camera calibrator and is extended by the imu-camera calibrator with imu-camera transformations to the file _camchain_cimu.yaml_. Please refer to the [YAML formats](yaml-formats) page for the format.
