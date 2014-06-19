@@ -74,8 +74,8 @@ rosrun image_view image_view image:=/cam1/image_raw &
 1. **dynamic dataset (spatial camera-imu calibration)**
     * move the sensor (target is fixed)
     * cameras should run at 20 Hz and IMU at 200 Hz
-    * try to excite all rotation and acceleration axis of the IMU
-    * avoid shocks
+    * try to excite all rotation and acceleration axes of the IMU
+    * avoid shocks (e.g. while picking up the sensor)
     * good illumination and shutter times are crucial here (to avoid motion blur while exciting the IMU)
 
     view images with:
@@ -92,8 +92,10 @@ rosrun image_view image_view image:=/cam1/image_raw &
 
     1. inspect the result plots
     1. verify calibration on the live image stream
+       reprojection errors should be in a normal range (0.1-0.2 px for a good calibration)
 
     > kalibr_camera_validator --chain chain.yaml --target aprilgrid_6x6.yaml
+
 
 1. camera-imu calibration
     1. run calibration
@@ -102,7 +104,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
 
     1. inspect the result plots
         * make sure the predicted accelerations & angular velocities fit the IMU measurements
-        * reprojection errors should be in a normal range
+        * reprojection errors should be in a normal range (0.1-0.2 px for a good calibration)
 
 ##4) Collect results
 Both calibrators have written reports to the working directory containing the plots shown during the calibration. Further a _camchain.yaml_ has been written by the camera calibrator and is extended by the imu-camera calibrator with imu-camera transformations to the file _camchain_cimu.yaml_. Please refer to [YAML formats](yaml-formats) page for the format.
