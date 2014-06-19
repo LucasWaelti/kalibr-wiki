@@ -29,7 +29,7 @@ Good results have been obtained by using a camera rate of 20 Hz and an IMU rate 
     * good illumination 
 
 **WARNING:**
-If you are using a calibration target with symmetries (checkerboard, circlegrid), movements which could lead to flips in the target pose estimates have to be avoided. To avoid this problem entirely the use of an [Aprilgrid](calibration-targets) is recommended. 
+If you are using a calibration target with symmetries (checkerboard, circlegrid), movements which could lead to flips in the target pose estimates have to be avoided. The use of an [Aprilgrid](calibration-targets) is recommended to avoid this problem entirely.
 
 ###3) Running the calibration
 The tool must be provided with the following input:
@@ -37,7 +37,7 @@ The tool must be provided with the following input:
 * **--bag filename.bag**<br>
     ROS bag containing the image and IMU data<br>
 * **--cam camchain.yaml**<br>
-    intrinsic and extrinsic calibration parameters of the camera system. The output of the multiple-camera-calibration tool can be used directly here. (see [YAML formats](yaml-formats))<br>
+    intrinsic and extrinsic calibration parameters of the camera system. The output of the multiple-camera-calibration tool can be used here. (see [YAML formats](yaml-formats))<br>
 * **--imu imu.yaml**<br>
     contains the IMU statistics and the IMU's topic (see [YAML formats](yaml-formats))<br>
 * **--target target.yaml**<br>
@@ -62,7 +62,7 @@ Download the dataset from the [Downloads](downloads) page and extract it. The ar
 The calibration can be started with:
 > kalibr_calibrate_imu_camera --target april_6x6.yaml --cam camchain.yaml --imu imu_adis16448.yaml --bag dynamic.bag --bag-from-to 5 45
 
-*NOTE: * Because there are shocks in the dataset (sensor pick-up/lay-down), only the data between 5 to 45 s is used.
+*NOTE:* Because there are shocks in the dataset (sensor pick-up/lay-down), only the data between 5 to 45 s is used.
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
