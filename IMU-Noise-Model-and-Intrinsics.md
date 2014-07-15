@@ -1,1 +1,1 @@
-This wiki page describes how to set the IMU parameters in the [YAML file](yaml-formats), and explains what they mean. These parameters are needed when you do a [Camera-IMU calibration](Camera-IMU-calibration).
+The [Camera-IMU calibration](Camera-IMU-calibration) routine needs to know how "noisy" your IMU is. Your [IMU configuration YAML file](yaml-formats) specifies this. This wiki page explains how to set these parameters, and how to interpret them.
