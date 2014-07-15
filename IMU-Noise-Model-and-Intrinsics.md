@@ -30,7 +30,7 @@ with
 
 where <img src="https://latex.codecogs.com/svg.latex?{%5CDelta%20t}"> is the sampling time. _Note_: This assumes that the noise was filtered with an ideal low-pass filter that filters noise above <img src="https://latex.codecogs.com/svg.latex?{f=%5Cfrac%7B1%7D%7B%5CDelta%20t%7D}"> (in other words, an ideal decimation stage). This may or may not be the case, depending on your sensor settings. If you simply "subsample" your gyro or accel, you are not allowed to scale your "white noise density" in that way.
 
-How you can determine this parameter for your particular IMU in practice is explained below.
+How you can determine this parameter for your particular IMU is explained below.
 
 ***
 
