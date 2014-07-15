@@ -96,3 +96,6 @@ Some manufacturers provide an Allan variance plot in the datasheet of the device
 It is important to note that the IMU measurement error model used here is derived from a sensor which does not undergo motion, and at constant temperature. Hence scale factor errors and bias variation caused by temperature changes, for example, are not accounted for. So clearly, the model is optimistic. Particularly when using low-cost MEMS IMUs with Kalibr, you may have to increase the noise model parameters, to "capture" other errors with the model as well. In other words, if you use directly the "sigmas" obtained from static sensor data, Kalibr will tend to trust your IMU measurements too much, and it's solution will not be optimal.
 
 From our experience, for lowest-cost sensors, increasing the noise model parameters by a factor of 10 or more may be necessary. If you use Kalibr with such a device, please give us feedback, such that we can develop specific guidelines, device-specific suggestions, or more advanced methods to determine these parameters.
+
+[1] "IEEE Standard Specification Format Guide and Test Procedure for Single-Axis Interferometric Fiber Optic Gyros" IEEE Std 952-1997 , vol., no., pp.i,, 1998
+http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=660628&isnumber=14457
