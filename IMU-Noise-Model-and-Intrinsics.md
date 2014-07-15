@@ -2,6 +2,13 @@ The [Camera-IMU calibration](Camera-IMU-calibration) routine needs to know how "
 
 ## The IMU Noise Model
 
+The model used to describe IMU errors in Kalibr has two components:
+
+1. Additive "white noise" that fluctuates rapidly
+2. A slowly varying sensor "bias"
+
+
+
 ## How to Obtain the Parameters
 
 ### From the Datasheet of the IMU
