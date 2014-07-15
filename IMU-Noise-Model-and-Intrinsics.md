@@ -12,7 +12,7 @@ The same model (with different parameters, as we will later see) is used to mode
 
 **Additive "White Noise"** The rapid fluctuations in the sensor signal are modelled heuristically with an additive, independent white Gaussian noise process <img src="https://latex.codecogs.com/svg.latex?{n(t)}"> of strength <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> in continuous-time as:
 
-<img src="https://latex.codecogs.com/svg.latex?{n(t)=%5Cmathcal%7BN%7D(0,%5Csigma_g^2)}">
+<img src="https://latex.codecogs.com/svg.latex?{n(t)%5Csim%5Cmathcal%7BN%7D(0,%5Csigma_g^2)}">
 
 <img src="https://latex.codecogs.com/svg.latex?{E[n(t_1)n(t_2)]=%5Csigma_g^2%5Cdelta(t_1-t_2})">
 
@@ -34,7 +34,7 @@ How you can determine this parameter for your particular IMU is specified below 
 
 ***
 
-Table 1: Summary of the IMU noise model parameters as they need to be specified in the [IMU configuration YAML file](yaml-formats).
+Table 1: Summary of the IMU noise model parameters as they can be specified in the [IMU configuration YAML file](yaml-formats).
 
 Parameter | YAML element | Symbol | Units
 --- | --- | --- | ---
@@ -45,7 +45,16 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
 
 ***
 
-## How to Obtain the Parameters
+## How to Obtain the Parameters for your IMU
+
+This section describes how you can obtain the Kalibr IMU noise model parameters for your particular IMU. We focus on how to get the parameters from the datasheet or using the "Allan variance" - but there are many alternative methods available.
 
 ### From the Datasheet of the IMU
-### From the Allan Variance
+
+The **"White noise" Terms ** (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, it is commonly specified as _Angular Random Walk_ in case of the gyro, and _Velocity Random Walk_ for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated, it becomes a "random walk" on the angle or the velocity.
+
+
+**From the Allan Variance**
+
+
+
