@@ -16,7 +16,19 @@ The same model (with different parameters, as we will later see) is used to mode
 
 <img src="https://latex.codecogs.com/svg.latex?{E[n(t_1)n(t_2)]=%5Csigma_g^2%5Cdelta(t_1-t_2})">
 
-In other words, the higher <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> is, the more "noisy" your gyro measurements. The parameters `gyroscope_noise_density` and `accelerometer_noise_density` in the [YAML file](yaml-formats) specify exactly these noise strengths <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> (gyro) and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}"> (accel).
+In other words, the higher <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> is, the more "noisy" your gyro measurements. The parameters `gyroscope_noise_density` and `accelerometer_noise_density` in the [YAML file](yaml-formats) specify exactly these noise strengths <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> (gyro) and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}"> (accel) for the continuous-time model.
+
+This process can be simulated in discrete-time as follows:
+
+<img src="https://latex.codecogs.com/svg.latex?{n_d[k]=%5Csigma_g_dw[k]}">
+
+with
+
+<img src="https://latex.codecogs.com/svg.latex?{w[k]%5Csim%5Cmathcal%7BN%7D(0,1)}">
+
+<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g_d=%5Csigma_g%5Cfrac%7B1%7D%7B%5Csqrt%7B%5CDelta%20t%7D%7D}">,
+
+where <img src="https://latex.codecogs.com/svg.latex?{%5CDelta%20t}"> is the sampling time. Note: This assumes that the noise was filtered with an ideal low-pass filter that filters noise above <img src="https://latex.codecogs.com/svg.latex?{f=%5Cfrac%7B1%7D%7B%5CDelta%20t%7D}"> (in other words, an ideal decimation stage). This may or may not be the case, depending on your sensor settings.
 
 How you can determine this parameter for your particular IMU in practice will be explained below [link].
 
@@ -51,7 +63,9 @@ This section describes how you can obtain the Kalibr IMU noise model parameters 
 
 ### From the Datasheet of the IMU
 
-The **"White noise" Terms ** (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, it is commonly specified as _Angular Random Walk_ in case of the gyro, and _Velocity Random Walk_ for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated, it becomes a "random walk" on the angle or the velocity.
+** White Noise Terms ** The parameters for the "white noise" processes (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, they are commonly denoted (approximately) as _Angular Random Walk_ in case of the gyro, and _Velocity Random Walk_ for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated (in the navigation equations), it becomes a "random walk" on the angle or the velocity.
+
+Other manufacturers specify it as _rate noise density_, _acceleration noise density_, or simply _noise density_. The units are often a reliable indicator, and a quick check is recommended.
 
 
 **From the Allan Variance**
