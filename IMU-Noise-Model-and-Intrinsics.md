@@ -75,6 +75,8 @@ This section describes how you can obtain the Kalibr IMU noise model parameters 
 
 Other manufacturers specify it directly as **rate noise density**, **acceleration noise density**, or simply **noise density**. The name comes from the fact that <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g^2}"> corresponds to the power spectral _density_ of <img src="https://latex.codecogs.com/svg.latex?{n}">. The units are often a reliable indicator, but a quick check using the discrete-time implementation outlined above is recommended.
 
+***
+
 **Bias Terms** In contrast to the "white noise sigmas", <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are rarely directly specified in the datasheet. The reason is that in practice, the bias does not truly behave like a "random walk" for longer integration times. Often, the so-called **in-run bias (in)stability** is specified instead. This sensor parameter indicates (approximately) the accuracy with which the bias can be determined (if a random process is the sum of "white noise" and a "random walk" bias, the bias can not be estimated with arbitrarily low uncertainty at any point in time). In combination with the strength of the "white noise", however, one can often use the in-run bias stability (the lowest point in the Allan variance) to determine a reasonable parameter for <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> (assuming that the noise is dominated by "white noise" and a "random walk"). See below.
 
 ### From the Allan Variance (AV)
