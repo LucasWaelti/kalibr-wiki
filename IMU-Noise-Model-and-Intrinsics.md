@@ -14,7 +14,26 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Datasheet of the IMU
 ### From the Allan Variance
 
-\\\(2^2\\\)
+<script type="math/mml">
+<math>
+  <mstyle displaystyle="true">
+    <msup>
+      <mi>x</mi>
+      <semantics>
+        <annotation-xml encoding="application/xhtml+xml">
+          <input xmlns="http://www.w3.org/1999/xhtml" style="text-align:right" type="text" size="2" name="n" />
+        </annotation-xml>
+      </semantics>
+    </msup>
+    <mo>+</mo>
+    <semantics>
+      <annotation-xml encoding="application/xhtml+xml">
+        <input xmlns="http://www.w3.org/1999/xhtml" type="text" size="2" name="b" />
+      </annotation-xml>
+    </semantics>
+  </mstyle>
+</math>
+</script>
 
 <p>
   Here is some inline latex rendered by 
