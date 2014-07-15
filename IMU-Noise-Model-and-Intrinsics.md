@@ -1,12 +1,12 @@
-The [Camera-IMU calibration](Camera-IMU-calibration) routine needs to know how "noisy" your IMU is. This is specified in your [IMU configuration YAML file](yaml-formats) before you start the calibration. This wiki page explains how to set these parameters and how to interpret them.
+The [Camera-IMU calibration](Camera-IMU-calibration) routine needs to know how "noisy" your IMU is. This is specified in your [IMU configuration YAML file](yaml-formats) before you start the calibration. Here, you learn how to set these parameters and how to interpret them.
 
 ## The IMU Noise Model
 
-The model used to describe IMU errors in Kalibr has two components:
+The IMU measurement model used in Kalibr contains two types of sensor errors: <img src="https://latex.codecogs.com/svg.latex?{n}">, an additive noise term that fluctuates rapidly ("white noise"), and <img src="https://latex.codecogs.com/svg.latex?{b}">, a slowly varying sensor bias:
 
-1. Additive "white noise" that fluctuates rapidly
-2. A slowly varying sensor "bias"
+<img src="https://latex.codecogs.com/svg.latex?{%5Ctilde%5Comega(t)=%5Comega(t)+b(t)+n(t)}">
 
+where <img src="https://latex.codecogs.com/svg.latex?{%5Ctilde%5Comega}"> is the measured angular rate (in case of a gyro), and <img src="https://latex.codecogs.com/svg.latex?{%5Comega}"> is the true rate.
 
 
 ## How to Obtain the Parameters
@@ -14,38 +14,4 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Datasheet of the IMU
 ### From the Allan Variance
 
-
-
-<p>
-  Here is some inline latex rendered by 
-  Mathjax: Let $( \epsilon > 0 $).
-</p>
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-
-<script type="math/mml">
-<math>
-  <mstyle displaystyle="true">
-    <msup>
-      <mi>x</mi>
-      <semantics>
-        <annotation-xml encoding="application/xhtml+xml">
-          <input xmlns="http://www.w3.org/1999/xhtml" style="text-align:right" type="text" size="2" name="n" />
-        </annotation-xml>
-      </semantics>
-    </msup>
-    <mo>+</mo>
-    <semantics>
-      <annotation-xml encoding="application/xhtml+xml">
-        <input xmlns="http://www.w3.org/1999/xhtml" type="text" size="2" name="b" />
-      </annotation-xml>
-    </semantics>
-  </mstyle>
-</math>
-</script>
-</dl>
+<img src="https://latex.codecogs.com/svg.latex?{%5Cfrac%7Bx%7D%7B1&plus;x%5E2%7D}">
