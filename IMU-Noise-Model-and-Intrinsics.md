@@ -14,6 +14,8 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Datasheet of the IMU
 ### From the Allan Variance
 
+\\\(2^2\\\)
+
 <p>
   Here is some inline latex rendered by 
   Mathjax: Let \( \epsilon > 0 \).
