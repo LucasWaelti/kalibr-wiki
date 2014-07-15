@@ -7,7 +7,8 @@ The model used to describe IMU errors in Kalibr has two components:
 1. Additive "white noise" that fluctuates rapidly
 2. A slowly varying sensor "bias"
 
-<a=b>
+$wgUseTeX
+<$a=b$>
 
 ## How to Obtain the Parameters
 
