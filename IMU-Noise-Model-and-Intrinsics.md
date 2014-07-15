@@ -73,7 +73,7 @@ This section describes how you can obtain the Kalibr IMU noise model parameters 
 
 **White Noise Terms** The parameters for the "white noise" processes (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, they are commonly denoted as **angular random walk** in case of the gyro, and **velocity random walk** for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated (in the navigation equations), it becomes a "random walk" on the angle or the velocity.
 
-Other manufacturers specify it directly as **rate noise density**, **acceleration noise density**, or simply **noise density**. The name comes from the fact that <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g^2}"> corresponds to the power spectral _density_ of <img src="https://latex.codecogs.com/svg.latex?{n}">. The units are often a reliable indicator, but a quick check using the discrete-time implementation outlined above is recommended.
+Other manufacturers specify it directly as **rate noise density**, **acceleration noise density**, or simply **noise density**. The name comes from the fact that <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g^2}"> corresponds to the power spectral _density_ of <img src="https://latex.codecogs.com/svg.latex?{n}">. Using the discrete-time implementation outlined above, you can check if you interpreted the values in the datasheet correctly.
 
 ***
 
