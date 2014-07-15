@@ -14,6 +14,20 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Datasheet of the IMU
 ### From the Allan Variance
 
+
+
+<p>
+  Here is some inline latex rendered by 
+  Mathjax: Let \( \epsilon > 0 \).
+</p>
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+
 <script type="math/mml">
 <math>
   <mstyle displaystyle="true">
@@ -34,16 +48,4 @@ The model used to describe IMU errors in Kalibr has two components:
   </mstyle>
 </math>
 </script>
-
-<p>
-  Here is some inline latex rendered by 
-  Mathjax: Let \( \epsilon > 0 \).
-</p>
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
