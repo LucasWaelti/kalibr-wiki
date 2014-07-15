@@ -14,6 +14,10 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Datasheet of the IMU
 ### From the Allan Variance
 
+<p>
+  Here is some inline latex rendered by 
+  Mathjax: Let \( \epsilon > 0 \).
+</p>
 
 <dl>
   <dt>Definition list</dt>
