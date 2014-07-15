@@ -67,7 +67,7 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
 
 ## How to Obtain the Parameters for your IMU
 
-This section describes how you can obtain the Kalibr IMU noise model parameters for your particular IMU. We focus on how to get the parameters from the datasheet or using the "Allan variance" - but there are many alternative methods available.
+This section describes how you can obtain the Kalibr IMU noise model parameters for your particular IMU. While there are many methods available, we focus on how to get the parameters from the datasheet or using the "Allan variance".
 
 ### From the Datasheet of the IMU
 
