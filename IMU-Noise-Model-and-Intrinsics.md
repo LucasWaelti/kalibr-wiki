@@ -77,15 +77,15 @@ Other manufacturers specify it directly as **rate noise density**, **acceleratio
 
 ***
 
-**Bias Terms** In contrast to the "white noise sigmas", <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are rarely directly specified in the datasheet. The reason is that in practice, the bias does not truly behave like a "random walk" for longer integration times. Often, the so-called **in-run bias (in)stability** is specified instead. This sensor parameter indicates (approximately) the accuracy with which the bias can be determined (if a random process is the sum of "white noise" and a "random walk" bias, the bias can not be estimated with arbitrarily low uncertainty at any point in time). In combination with the strength of the "white noise", however, one can often use the in-run bias stability (the lowest point in the Allan variance, see below) to determine reasonable values for <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> (assuming that the noise is dominated by "white noise" and a "random walk"). See below.
+**Bias Terms** In contrast to the "white noise sigmas", <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are rarely directly specified in the datasheet. The reason is that in practice, the bias does not truly behave like a "random walk" for longer integration times. Often, the so-called **in-run bias (in)stability** is specified instead. This sensor parameter indicates (approximately) the accuracy with which the bias can be determined (if a random process is the sum of "white noise" and a "random walk" bias, the bias can not be estimated with arbitrarily low uncertainty at any point in time). In combination with the strength of the "white noise", however, one can often use the in-run bias stability (the lowest point in the Allan variance, see below) to determine reasonable values for <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> (assuming that the noise is dominated by "white noise" and a "random walk").
 
 ### From the Allan Variance (AV)
 
 While many (parametric and non-parametric) methods have been proposed to (automatically) determine the noise model parameters from samples, deriving the parameters form an Allan variance plot is probably the most common and standardized procedure. [1] derives the AV for different random processes, including "white noise" (slope -1/2 in a log-log AV plot) and "random walk" (slope +1/2 in a log-log AV plot) that are used in Kalibr. The noise model parameters can be determined directly from the Allan variance.
 
-<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}"> correspond to the values at <img src="https://latex.codecogs.com/svg.latex?{AV(%5Ctau=1s)}"> (point (1) in the figure below). This is only true since the noise power in most inertial sensors is dominated by "white noise" at a frequency of approx. 1Hz.
+<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}"> correspond to the values at <img src="https://latex.codecogs.com/svg.latex?{AV(%5Ctau=1s)}"> (point (1) in the figure below). This is only true since the noise power in most inertial sensors is dominated by "white noise" at a frequency of approximately 1Hz.
 
-<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are identified as the value of the (fitted) "random walk" diagonal with <img src="https://latex.codecogs.com/svg.latex?{%5Ctau=3s}"> (point (2) in the figure below). This can be seen immediately when the Allan variance is derived for a "random walk" process.
+<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are identified as the value of the (fitted) "random walk" diagonal at an integration time of <img src="https://latex.codecogs.com/svg.latex?{%5Ctau=3s}"> (point (2) in the figure below). This can be seen immediately when the Allan variance is derived for a "random walk" process [1].
 
 ***
 
@@ -95,7 +95,7 @@ Figure 1: Allan variance of a MEMS gyro with manually identified noise processes
 
 ***
 
-Some manufacturers provide an Allan variance plot in the datasheet of the device. Otherwise, it needs to be computed from sensor data.
+Some manufacturers provide an Allan variance plot in the datasheet of the device. Otherwise, it needs to be computed from sensor data [TODO(nikolicj) link to AV script].
 
 ### Kalibr IMU Noise Parameters in Practice
 
