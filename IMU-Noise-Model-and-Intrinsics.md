@@ -87,7 +87,13 @@ While many (parametric and non-parametric) methods have been proposed to (automa
 
 <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are identified as the value of the (fitted) "random walk" diagonal with <img src="https://latex.codecogs.com/svg.latex?{%5Ctau=3s}"> (point (2) in the figure below). This can be seen immediately when the Allan variance is derived for a "random walk" process.
 
+***
+
+Figure 1: Allan variance of a MEMS gyro with manually identified noise processes.
+
 <img src="https://cloud.githubusercontent.com/assets/1916839/3589506/8f57d0ee-0c4e-11e4-9ab4-33821c040490.png" width="85%" align="middle"/>
+
+***
 
 Some manufacturers provide an Allan variance plot in the datasheet of the device. Otherwise, it needs to be computed from sensor data.
 
