@@ -42,7 +42,15 @@ where <img src="https://latex.codecogs.com/svg.latex?{w}"> is "white noise" of u
 
 The parameters `gyroscope_random_walk` and `accelerometer_random_walk` in the [YAML file](yaml-formats) specify these noise strengths <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}">. The higher the bias variations in your gyro or accel are, the higher these parameters need to be set.
 
-How you can determine this parameter for your particular IMU is specified below [link].
+This process can be simulated in discrete-time as follows:
+
+<img src="https://latex.codecogs.com/svg.latex?{b_d[k]=b_d[k-1]+%5Csigma_b_g_dw[k]}">
+
+with
+
+<img src="https://latex.codecogs.com/svg.latex?{w[k]%5Csim%5Cmathcal%7BN%7D(0,1)}">
+
+<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g_d=%5Csigma_b_g%5Csqrt%7B%5CDelta%20t%7D}">.
 
 ***
 
@@ -63,10 +71,11 @@ This section describes how you can obtain the Kalibr IMU noise model parameters 
 
 ### From the Datasheet of the IMU
 
-** White Noise Terms ** The parameters for the "white noise" processes (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, they are commonly denoted (approximately) as _Angular Random Walk_ in case of the gyro, and _Velocity Random Walk_ for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated (in the navigation equations), it becomes a "random walk" on the angle or the velocity.
+**White Noise Terms** The parameters for the "white noise" processes (<img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">, <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_a}">) are often specified in the datasheet of the sensor manufacturer. A bit misleading, they are commonly denoted as _Angular Random Walk_ in case of the gyro, and _Velocity Random Walk_ for the accel. The name comes from the fact that if this white noise on rate or acceleration is integrated (in the navigation equations), it becomes a "random walk" on the angle or the velocity.
 
-Other manufacturers specify it as _rate noise density_, _acceleration noise density_, or simply _noise density_. The units are often a reliable indicator, and a quick check is recommended.
+Other manufacturers specify it directly as _rate noise density_, _acceleration noise density_, or simply _noise density_. The name comes from the fact that <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g^2}"> corresponds to the power spectral _density_ of <img src="https://latex.codecogs.com/svg.latex?{n}">. The units are often a reliable indicator, but a quick check using the discrete-time implementation outlined above is recommended.
 
+**Bias Terms** In contrast to the "white noise sigmas", <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_g}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> are rarely directly specified in the datasheet. The reason is that in practice, the bias does not truly behave like a "random walk" for longer integration times. Often, the so-called _in-run bias (in)stability_ is specified instead. This sensor parameter indicates (approximately) the accuracy with which the bias can be determined (if a random process is the sum of "white noise" and a "random walk" bias, the bias can not be estimated with arbitrarily low uncertainty at any point in time). In combination with the strength of the "white noise", however, one can often use the in-run bias stability (the lowest point in the Allan variance) to determine a reasonable parameter for <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> and <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_b_a}"> (assuming that the noise is dominated by "white noise" and a "random walk"). See below.
 
 **From the Allan Variance**
 
