@@ -10,7 +10,7 @@ The same model (with different parameters, as we will later see) is used to mode
 
 ***
 
-**Additive "White Noise"** The rapid fluctuations in the sensor signal are modelled heuristically with an additive, independent white Gaussian noise process <img src="https://latex.codecogs.com/svg.latex?{n(t)}"> of strength <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}"> in continuous-time as:
+**Additive "White Noise"** The rapid fluctuations in the sensor signal are modelled heuristically with an additive, independent, continuous-time white Gaussian noise process <img src="https://latex.codecogs.com/svg.latex?{n(t)}"> of strength <img src="https://latex.codecogs.com/svg.latex?{%5Csigma_g}">:
 
 <img src="https://latex.codecogs.com/svg.latex?{n(t)%5Csim%5Cmathcal%7BN%7D(0,%5Csigma_g^2)}">
 
