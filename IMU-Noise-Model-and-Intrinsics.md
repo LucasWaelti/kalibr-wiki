@@ -6,7 +6,7 @@ The IMU measurement model used in Kalibr contains two types of sensor errors: <i
 
 <img src="https://latex.codecogs.com/svg.latex?{%5Ctilde%5Comega(t)=%5Comega(t)+b(t)+n(t)}">.
 
-The same model (with different parameters, as we will later see) is used to model the accelerometer measurement errors. This model is tractable and often used.
+The same model (with different parameters, as we will later see) is used to model the accelerometer measurement errors. This model is tractable and often used to model inertial sensors [1,2].
 
 ***
 
@@ -103,5 +103,8 @@ It is important to note that the IMU measurement error model used here is derive
 
 From our experience, for lowest-cost sensors, increasing the noise model parameters by a factor of 10 or more may be necessary. If you use Kalibr with such a device, please give us feedback, such that we can develop specific guidelines, device-specific suggestions, or more advanced methods to determine these parameters.
 
-[1] "IEEE Standard Specification Format Guide and Test Procedure for Single-Axis Interferometric Fiber Optic Gyros" IEEE Std 952-1997 , vol., no., pp.i,, 1998
+[1] "IEEE Standard Specification Format Guide and Test Procedure for Single-Axis Interferometric Fiber Optic Gyros",  IEEE Std 952-1997, 1998
 http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=660628&isnumber=14457
+
+[2] "Indirect Kalman Filter for 3D Attitude Estimation", Nikolas Trawny and Stergios I. Roumeliotis, MARS Lab Tech. Report Nr. 2005-002, Rev. 57
+http://www-users.cs.umn.edu/~trawny/Publications/Quaternions_3D.pdf
