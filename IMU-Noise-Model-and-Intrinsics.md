@@ -8,7 +8,7 @@ The model used to describe IMU errors in Kalibr has two components:
 2. A slowly varying sensor "bias"
 
 $wgUseTeX
-<$a=b$>
+<a=b>
 
 ## How to Obtain the Parameters
 
