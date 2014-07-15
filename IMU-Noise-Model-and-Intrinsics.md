@@ -103,6 +103,8 @@ It is important to note that the IMU measurement error model used here is derive
 
 From our experience, for lowest-cost sensors, increasing the noise model parameters by a factor of 10 or more may be necessary. If you use Kalibr with such a device, please give us feedback, such that we can develop specific guidelines, device-specific parameter suggestions, or more advanced methods to determine these parameters.
 
+***
+
 [1] "IEEE Standard Specification Format Guide and Test Procedure for Single-Axis Interferometric Fiber Optic Gyros",  IEEE Std 952-1997, 1998
 http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=660628&isnumber=14457
 
