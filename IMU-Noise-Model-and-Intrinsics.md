@@ -18,7 +18,7 @@ The model used to describe IMU errors in Kalibr has two components:
 
 <p>
   Here is some inline latex rendered by 
-  Mathjax: Let \\\( \epsilon > 0 \\\).
+  Mathjax: Let $( \epsilon > 0 $).
 </p>
 
 <dl>
