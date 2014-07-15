@@ -15,25 +15,10 @@ The model used to describe IMU errors in Kalibr has two components:
 ### From the Allan Variance
 
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
-  var HTMLCSS = MathJax.OutputJax["HTML-CSS"];
-  HTMLCSS.Augment({
-    OldPreTranslate: HTMLCSS.preTranslate,  // cache original preTranslate
-    //
-    //  Call original preTranslate (sets the HTMLCSS.display values used below)
-    //  Then separate the scripts into inline and display ones
-    //  Finally, make the scripts be inline followed by the display
-    //
-    preTranslate: function (state) {
-      this.OldPreTranslate(state);
-      var scripts = state.scripts, inline = [], display = [];
-      for (var i = 0, m = scripts.length; i < m; i++) {
-        (scripts[i].MathJax.elementJax.HTMLCSS.display ? display : inline).push(scripts[i]);
-      }
-      state.scripts = inline.concat(display);
-    }
-  })
-});
-MathJax.Hub.Register.MessageHook("New Math",function (message) {console.log(message[1])});
-</script>
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
