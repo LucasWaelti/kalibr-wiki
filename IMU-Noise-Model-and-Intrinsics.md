@@ -6,7 +6,7 @@ The IMU measurement model used in Kalibr contains two types of sensor errors: <i
 
 <img src="https://latex.codecogs.com/svg.latex?{%5Ctilde%5Comega(t)=%5Comega(t)+b(t)+n(t)}">.
 
-The same model (with different parameters, as we will later see) is used to model the accelerometer measurement errors. This model is tractable and often used to model inertial sensors [1,2].
+The same model (with different parameters, as we will later see) is used to model the accelerometer measurement errors. This model is tractable and often used to model inertial sensors [1], [2].
 
 ***
 
