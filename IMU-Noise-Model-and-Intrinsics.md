@@ -54,7 +54,7 @@ with
 
 ***
 
-Table 1: Summary of the IMU noise model parameters as they can be specified in the [IMU configuration YAML file](yaml-formats).
+Table 1: Summary of the IMU noise model parameters as they can be specified in the [IMU configuration YAML file](yaml-formats) of Kalibr.
 
 Parameter | YAML element | Symbol | Units
 --- | --- | --- | ---
