@@ -68,7 +68,7 @@ In Kalibr, the sensor errors are modelled for each sensor axis independently. Un
 
 <img src="https://latex.codecogs.com/svg.latex?{E[%5Cmathbf%7Bn%7D(t)]%5Cequiv%5Cmathbf%7B0%7D_%7B3%5Ctimes1%7D}">,
 
-<img src="https://latex.codecogs.com/svg.latex?{E[%5Cmathbf%7Bn%7D(t_1)%5Cmathbf%7Bn%7D^T(t_2)]=%5Csigma_g%5Cmathbf%7BI%7D_%7B3%5Ctimes3%7D%5Cdelta(t_1-t_2)}">.
+<img src="https://latex.codecogs.com/svg.latex?{E[%5Cmathbf%7Bn%7D(t_1)%5Cmathbf%7Bn%7D^T(t_2)]=%5Csigma_g^2%5Cmathbf%7BI%7D_%7B3%5Ctimes3%7D%5Cdelta(t_1-t_2)}">.
 
 The bias variations ("random walks") are also modelled independently on each sensor axis. Table 1 summarizes all the parameters, and links them to the entries that you can specify in the [YAML file](yaml-formats). The units of the "sigmas" can also be found in [3].
 
