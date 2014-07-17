@@ -13,6 +13,7 @@ To make the calibration task more convenient and reproducible the following tool
 1. **camera focus**: tool to set the camera focus in a reproducible way
 1. **calibration validator**: validation tool that computes the reprojection error statistics of the calibrated camera-system on live ROS image streams
 
+**For questions or comments, please use the [user forum](https://groups.google.com/forum/#!forum/kalibr-users).**
 ##Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
 * Jérôme Maye ([email](jerome.maye@mavt.ethz.ch))
