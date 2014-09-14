@@ -24,7 +24,7 @@ The tool must be provided with the following input:
 * **--models MODEL_0 ... MODEL_N**<br>
     list of camera/distortion models to be fitted. matches the ordering of --topics (see [Supported models](supported-models))
 * **--target target.yaml**<br>
-    the calibration target configuration (see [Calibration targets](#calibration-target))
+    the calibration target configuration (see [Calibration targets](https://github.com/ethz-asl/kalibr/wiki/calibration-targets))
 
 Note that the order of the topics (--topics) and camera/distortion models (--models) must match and determine the internal camera numbering in the output.
 
