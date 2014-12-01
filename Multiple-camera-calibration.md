@@ -49,7 +49,7 @@ If your sensor is ROS-enabled you can use the validator tool to verify the calib
 ##An example run using a sample dataset
 Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.
 
-![Sensor](https://raw.githubusercontent.com/wiki/schneith/Kalibr-test/images/sensor_dataset.png)
+![Sensor](https://raw.githubusercontent.com/wiki/ethz-asl/kalibr/images/sensor_dataset.png)
 
 The dataset was recorded with the sensor system shown in the picture above. It contains four cameras that should be calibrated using the following models:
 
