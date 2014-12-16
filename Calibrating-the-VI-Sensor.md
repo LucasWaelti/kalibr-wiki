@@ -32,8 +32,8 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 
     Shutter times can be set using the following commands:
 
-    >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam0_agc_enable': 0, 'cam0_aec_enable': 0, 'cam0_coarse_shutter_width': 300}"<br>
-    >rosrun dynamic_reconfigure dynparam set /slam_sensor "{'cam1_agc_enable': 0, 'cam1_aec_enable': 0, 'cam1_coarse_shutter_width': 300}"
+    >rosrun dynamic_reconfigure dynparam set /visensor_node "{'cam0_agc_enable': 0, 'cam0_aec_enable': 0, 'cam0_coarse_shutter_width': 300}"<br>
+    >rosrun dynamic_reconfigure dynparam set /visensor_node "{'cam1_agc_enable': 0, 'cam1_aec_enable': 0, 'cam1_coarse_shutter_width': 300}"
 
     Observe the result on an image window and tweak the shutter until you get a good image:
 
