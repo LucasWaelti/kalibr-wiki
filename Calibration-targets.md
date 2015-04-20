@@ -21,7 +21,7 @@ tagCols: 6               #number of apriltags
 tagRows: 6               #number of apriltags
 tagSize: 0.088           #size of apriltag, edge to edge [m]
 tagSpacing: 0.3          #ratio of space between tags to tagSize
-                         #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.3[-]
+                         #example: tagSize=2m, spacing=0.5m --> tagSpacing=0.25[-]
 ```
 
 **Make sure to hide all external Apriltags while collecting the calibration dataset.**
