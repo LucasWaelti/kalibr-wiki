@@ -37,7 +37,7 @@ To build the toolbox from source follow these steps (tested on Ubuntu 14.04 with
 <br>
     wget http://packages.ros.org/ros.key -O - | sudo apt-key add - <br>
     sudo apt-get update  <br>
-    sudo apt-get install ros-indigo-desktop python-rosdistro python-rosdep python-rosinstall python-rosinstall-generator python-bloom python-rosinstall python-rosdep -y <br>
+    sudo apt-get install ros-indigo-desktop python-rosinstall python-rosdep -y <br>
     rosdep init <br>
     rosdep update <br>
 
