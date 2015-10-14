@@ -1,7 +1,7 @@
 The following two sources for the toolbox are available:
 
 * **building from source**<br>
-    Depends on a working installation of ROS hydro and a catkin workspace. Binaries will run faster than with the CDE package and all tools are available.
+    Depends on a working installation of ROS indigo and a catkin workspace. Binaries will run faster than with the CDE package and all tools are available.
 
 * **CDE package**<br>
     This package is the easiest and fastest way to get the toolbox running. All dependencies are packed within this package and no external dependencies are required. The [Camera focus](camera-focus) and [Calibration validator](calibration-validator) tools aren't available with the CDE-package as they require a native ROS installation.
@@ -26,42 +26,44 @@ To remove the necessity of installing ROS and building the toolbox from source, 
     to use the tools more conveniently.
 
 ##B) Building from source
-To build the toolbox from source follow these steps (tested on Ubuntu 12.10 and 13.10 with ROS hydro):
+To build the toolbox from source follow these steps (tested on Ubuntu 14.04 with ROS indigo):
 
-1. Install ROS hydro <br>
+1. Install ROS indigo <br>
     see [ros.org](http://wiki.ros.org/ROS/Installation) for more information
 
-    Example installation on Ubuntu 12.10 (quantal) and ROS hydro:
+    Example installation on Ubuntu 14.04 and ROS indigo:
 
-    >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu quantal main" > /etc/apt/sources.list.d/ros-latest.list'
+    >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
 <br>
     wget http://packages.ros.org/ros.key -O - | sudo apt-key add - <br>
     sudo apt-get update  <br>
-    sudo apt-get install ros-hydro-desktop python-rosdistro python-rosdep python-rosinstall python-rosinstall-generator python-bloom python-rosinstall python-rosdep -y <br>
+    sudo apt-get install ros-indigo-desktop python-rosdistro python-rosdep python-rosinstall python-rosinstall-generator python-bloom python-rosinstall python-rosdep -y <br>
     rosdep init <br>
     rosdep update <br>
 
 1. Install the build and run dependencies:
 
-    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-hydro-vision-opencv ros-hydro-image-transport-plugins ros-hydro-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev <br> <br>
+    >sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev ros-indigo-vision-opencv ros-indigo-image-transport-plugins ros-indigo-cmake-modules python-software-properties software-properties-common libpoco-dev python-matplotlib python-git python-pip ipython libtbb-dev libblas-dev liblapack-dev python-catkin-tools <br> <br>
     sudo pip install python-igraph --upgrade
 
 1. Create a catkin workspace<br>
 
     >mkdir -p ~/kalibr_workspace/src <br>
-    cd ~/kalibr_workspace/src <br>
-    source /opt/ros/hydro/setup.bash <br>
-    catkin_init_workspace <br>
+    cd ~/kalibr_workspace <br>
+    source /opt/ros/indigo/setup.bash <br>
+    catkin init <br>
+    catkin config --extend /opt/ros/indigo <br>
+    catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 1. Clone the source repo into your catkin workspace _src_ folder <br>
     >cd ~/kalibr_workspace/src <br>
     git clone https://github.com/ethz-asl/Kalibr.git
 
-1. Build the code using the _Release_ target.
+1. Build the code using the _Release_ configuration.
     depending on the available memory, you might need to reduce the build threads (e.g. add -j2 to catkin_make) <br>
 
     > cd ~/kalibr_workspace <br>
-    catkin_make -DCMAKE_BUILD_TYPE=Release -j4
+    catkin build -DCMAKE_BUILD_TYPE=Release -j4
 
     Grab a coffee, this will take a while... <br>
 
