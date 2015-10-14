@@ -19,6 +19,8 @@ Kalibr supports the following distortion models:
     (_distortion_coeffs_: [k1 k2 r1 r2])
 * **equidistant**<br>
     (_distortion_coeffs_: [k1 k2 k3 k4])
+* **fov**<br>
+    (_distortion_coeffs_: [w])
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
