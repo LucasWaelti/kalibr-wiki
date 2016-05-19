@@ -23,4 +23,4 @@ Tools
 
 Additional Resources<br>
 ---
-[IMU Noise Model and Intrinsics](IMU-Noise-Model-and-Intrinsics)<br>
+[IMU Noise Model](IMU-Noise-Model)<br>
