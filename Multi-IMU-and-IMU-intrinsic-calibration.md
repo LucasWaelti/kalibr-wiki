@@ -19,7 +19,7 @@ Options specific to the extended framework are
 * **--imu-models IMU_MODELS [IMU_MODELS ...]**<br>
 This option holds a list of IMU models of the same length as the list provided to **--imu**. Currently supported models are *calibrated*, *scale-misalignment* and *scale-misalignment-size-effect*. The default is *calibrated*, which will also be assumed when no model is provided. For more details on the models, please see [3](#joern1). 
 
-Optional, less important new options are
+Optional new options are
 * **--imu-delay-by-correlation**<br>
 In case your set of IMUs is not perfectly synchronized, the framework is able to determine a temporal offset of each IMU with respect to IMU0. However, the limitations documented [here](#temporal) apply.
 * **--reprojection-sigma REPROJECTION_SIGMA**<br>
