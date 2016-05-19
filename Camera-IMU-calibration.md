@@ -4,7 +4,7 @@ The calibration parameters are estimated in a full batch optimization using spli
 
 ##How to use it
 
-###1) Requirements<a name="requirements"></a>
+###1) Requirements
 The intrinsic parameters of the IMU (e.g. scales, axis misalignment, nonlinearities,...) need to be calibrated beforehand and and its correction applied to the raw measurements.
 
 Further an IMU configuration YAML has to be created containing the following statistical properties for the accelerometers and gyroscopes:
@@ -14,7 +14,7 @@ Further an IMU configuration YAML has to be created containing the following sta
 
 Please refer to the [YAML formats](yaml-formats) page for the data format.
 
-###2) Collect images<a name="image-collection"></a>
+###2) Collect images
 Create a ROS bag containing the raw image streams either by directly recording from ROS sensor streams or by using the _[bagcreater](bag-format)_ script on a list of image files and a CSV file containing the IMU measurements.
 
 The calibration target is fixed in this calibration and the camera-imu system is moved in front of the target to excite all IMU axes. It is important to ensure good and even illumination of the calibration target and to keep the camera shutter times low to avoid excessive motion blur.
