@@ -42,4 +42,4 @@ However, there are a couple of small changes:
 ###References
 1. <a name="paul1"></a>Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.
 2. <a name="paul2"></a>Paul Furgale, T D Barfoot, G Sibley (2012). Continuous-Time Batch Estimation Using Temporal Basis Functions. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 2088–2095, St. Paul, MN.
-3. <a name="joern1"></a>Joern Rehder, Janosch Nikolic, Thomas Schneider, Timo Hinzmann, Roland Siegwart (2016). Extending kalibr: Calibrating the Extrinsics of Multiple IMUs and of Individual Axes. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), Stockholm
+3. <a name="joern1"></a>Joern Rehder, Janosch Nikolic, Thomas Schneider, Timo Hinzmann, Roland Siegwart (2016). Extending kalibr: Calibrating the Extrinsics of Multiple IMUs and of Individual Axes. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), Stockholm, Sweden
