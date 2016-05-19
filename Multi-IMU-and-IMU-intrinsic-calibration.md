@@ -11,7 +11,7 @@ Applies analogously to [here](Camera-IMU-calibration#1-requirements).
 Applies analogously to [here](Camera-IMU-calibration#2-collect-images).
 
 ###3) Running the calibration
-Please see [here](Camera-IMU-calibration#3-running-the-calibration) for the required options governing camera configuration and ROS-bag and target selection.
+Please see [here](Camera-IMU-calibration#3-running-the-calibration) for the required options governing camera configuration as well as ROS-bag and target selection.
 
 Options specific to the extended framework are
 * **--imu IMU_YAMLS [IMU_YAMLS ...]**<br>
