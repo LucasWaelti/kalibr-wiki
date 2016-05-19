@@ -118,7 +118,7 @@ Some manufacturers provide an Allan standard deviation plot in the datasheet of 
 
 ### Kalibr IMU Noise Parameters in Practice
 
-_It is important_ to note that the IMU measurement error model used here is derived from a sensor which does not undergo motion, and at constant temperature. Hence scale factor errors and bias variation caused by temperature changes, for example, are not accounted for. So clearly, the model is optimistic. Particularly when using low-cost MEMS IMUs with Kalibr, you may have to increase the noise model parameters to "capture" these errors as well. In other words, if you use directly the "sigmas" obtained from static sensor data, Kalibr will tend to trust your IMU measurements too much, and it's solution will not be optimal.
+_It is important_ to note that the IMU measurement error model used here is derived from a sensor which does not undergo motion, and at constant temperature. Hence scale factor errors and bias variation caused by temperature changes, for example, are not accounted for. So clearly, the model is optimistic. Particularly when using low-cost MEMS IMUs with Kalibr, you may have to increase the noise model parameters to "capture" these errors as well. In other words, if you use directly the "sigmas" obtained from static sensor data, Kalibr will tend to trust your IMU measurements too much, and its solution will not be optimal.
 
 From our experience, for lowest-cost sensors, increasing the noise model parameters by a factor of 10 or more may be necessary. If you use Kalibr with such a device, please give us feedback, such that we can develop specific guidelines, device-specific parameter suggestions, or more advanced methods to determine these parameters.
 
