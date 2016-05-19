@@ -13,7 +13,7 @@ Tools
 [Calibration validator](calibration-validator)<br>
 
 ---
-[Supported models](supported-models)<br>
+[Supported projection and distortion models](supported-models)<br>
 [Calibration targets](calibration-targets)<br>
 [Bag format](bag-format)<br>
 [YAML formats](yaml-formats)<br>
