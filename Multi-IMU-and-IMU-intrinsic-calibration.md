@@ -1,4 +1,4 @@
-The extended version of _kalibr_ supports (temporal-)[<sup>1</sup>](#temporal)spatial calibration of sensor suites comprising multiple cameras and multiple IMUs. In addition, it allows for estimating IMU intrinsics as well as the displacement of the accelerometer y and z-axis with respect to its x-axis.
+The extended version of _kalibr_ supports (temporal-)[<sup>1</sup>](#temporal)spatial calibration of sensor suites comprising multiple cameras and multiple IMUs. In addition, it allows for estimating IMU intrinsics as well as the displacement of the accelerometer y- and z-axis with respect to its x-axis.
 
 This page documents changes with respect to the default camera-IMU calibration. Please make sure to read the respective [documentation](Camera-IMU-calibration) first.
 
