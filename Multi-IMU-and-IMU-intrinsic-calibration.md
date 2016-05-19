@@ -23,10 +23,11 @@ Optional, less important new options are
 * **--imu-delay-by-correlation**<br>
 In case your set of IMUs is not perfectly synchronized, the framework is able to determine a temporal offset of each IMU with respect to IMU0. However, the limitations documented [here](#temporal) apply.
 * **--reprojection-sigma REPROJECTION_SIGMA**<br>
+This option allows for providing an estimated uncertainty in pixels as to how accurate the features of the calibration target could be localized within the calibration images.
 * **--recompute-camera-chain-extrinsics**<br>
 This option enables the estimation of camera chain extrinsics as part of the camera-IMU calibration process. We suspect that datasets suited for camera-IMU calibration are not necessarily optimal for camera chain extrinsic calibration, mostly due to an unbalanced selection of views of the calibration target. Hence, this option is only recommended for assessing issues with the camera chain calibration as a possible source of suboptimal calibration results.
 * **--timeoffset-padding TIMEOFFSET_PADDING**<br>
-
+This option is only in effect in conjunction with the option **--time-calibration**. It allows for varying the time offsets padding, bounds within which the estimated camera-IMU temporal offset may vary during calibration without the framework raising an exception. Note that an initial guess for the temporal offset is obtained from correlating absolute angular velocities as perceived independently by camera and IMU. Hence, this padding should not reflect the estimated temporal offset but merely a guess for the bounds within which this offsets will vary during calibration. Increasing this value will carry a runtime penalty. Note that trouble finding an appropriate value likely hints to issues in the dataset.
 
 ###4) Calibration Output
 Again, much of the description [here](Camera-IMU-calibration#4-the-output) applies.
