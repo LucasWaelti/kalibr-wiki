@@ -20,3 +20,7 @@ Tools
 
 ---
 [Example: calibrating a visual-inertial sensor](calibrating-the-vi-sensor)<br>
+
+Additional Resources<br>
+---
+[IMU Noise Model and Intrinsics](IMU-Noise-Model-and-Intrinsics)<br>
