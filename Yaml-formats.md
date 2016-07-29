@@ -68,14 +68,14 @@ IMUs are configured using a YAML file. Please refer to the example below for det
 **imu.yaml**
 ```
 #Accelerometers
-accelerometer_noise_density: 0.01   #Noise density (continuous-time)
-accelerometer_random_walk:   0.0002 #Bias random walk
+accelerometer_noise_density: 1.86e-03   #Noise density (continuous-time)
+accelerometer_random_walk:   4.33e-04   #Bias random walk
 
 #Gyroscopes
-gyroscope_noise_density:     0.005   #Noise density (continuous-time)
-gyroscope_random_walk:       4.0e-06 #Bias random walk
+gyroscope_noise_density:     1.87e-04   #Noise density (continuous-time)
+gyroscope_random_walk:       2.66e-05   #Bias random walk
 
-update_rate:                 200.0 #Hz (for discretization of the values above)
+update_rate:                 200.0      #Hz (for discretization of the values above)
 ```
 
 ###Calibration target configuration (target.yaml)
