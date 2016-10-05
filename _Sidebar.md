@@ -11,13 +11,11 @@ Tools
 (only ROS):<br>
 [Camera focus](camera-focus)<br>
 [Calibration validator](calibration-validator)<br>
-
 ---
 [Supported camera models](supported-models)<br>
 [Calibration targets](calibration-targets)<br>
 [Bag format](bag-format)<br>
 [YAML formats](yaml-formats)<br>
-
 ---
 [Example: calibrating a visual-inertial sensor](calibrating-the-vi-sensor)<br>
 
