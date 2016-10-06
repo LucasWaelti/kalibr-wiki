@@ -18,7 +18,7 @@ kalibr_calibrate_imu_camera_laser --cam ../camchain-calibration_2015-10-09-10-48
 The approach uses planes present in the environment to formulate a probabilistic model of range measurements. For this method to produce correct results, please collect a dataset as described for camera/IMU calibration but additionally in an environment where preferably multiple planes unobstructed to the LRF are present.
 
 
-An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5dxJScOEhXQ3loMUw1SGM/view?usp=sharing). Please note that this dataset was selected for its size, not because it is particularly suited for the task. In general, please prefer less cluttered environments and avoid scenarios where subtle non-planarities are present, since these may bias the estimate.
+An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5dxJScOEhXQ3loMUw1SGM/view?usp=sharing). Please note that this dataset was selected for its size, not because it is particularly well suited for the task. For best results, please prefer less cluttered environments and avoid scenarios where subtle non-planarities are present since these may bias the estimate.
 
 ### General Comments
 * The approach is non-deterministic in the sense that it employs a random selection of points for establishing plane hypotheses. Accordingly, different executions of the toolbox will yield different results.
