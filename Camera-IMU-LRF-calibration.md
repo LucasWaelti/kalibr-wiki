@@ -23,12 +23,12 @@ An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5d
 * The approach is non-deterministic in the sense that it employs a random selection of points for establishing plane hypotheses. Accordingly, different executions of the toolbox will yield different results.
 * The implementation provides visualizations that let you inspect the point cloud for detected planes color coded by the absolute residual.
 * Error checks are not in place everywhere. In case the approach fails to detect any planes, it may just crash.
-* The approach exhibits a number of free parameters, mostly in place to allow for automatic plane detection. Since currently no configuration trough a separate file is supported, these will have to be adapted in the code.
-* The example employs hardware synchronization using a timestamped trigger. For general use, you will have to adapt these lines.
-* Calibration output is limited to the terminal at this point.
-* The initial guess for the temporal offset between LRF and IMU is zero.
-* The extension was implemented specifically with the idea in mind of facilitating research in more complete LRF models. Feel free to extend the model in Python here. 
-* The current implementation employs a two step procedure, estimating an initial set of LRF parameters followed by outlier removal and a second optimization on the inlier set alone. 
+* The approach exhibits a number of free parameters, mostly in place to allow for automatic plane detection. Since currently no configuration trough a separate file is supported, these will have to be adapted [in the code](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L48-L56).
+* The example employs hardware synchronization using a timestamped trigger. For general use, you will have to adapt [these lines](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L33-L35).
+* Calibration output is limited to [the terminal](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera_laser#L244-L258) at this point.
+* The initial guess for the temporal offset between LRF and IMU [is zero](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L280).
+* The extension was implemented specifically with the idea in mind of facilitating research in more complete LRF models. Feel free to extend [the model](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L329-L341). 
+* The current implementation employs a [two step procedure](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera_laser#L229-L231), estimating an initial set of LRF parameters followed by outlier removal and a second optimization on the inlier set alone. 
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
