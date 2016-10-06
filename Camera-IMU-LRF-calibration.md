@@ -1,7 +1,7 @@
 Kalibr provides limited, experimental support for spatio-temporal laser range finder (LRF) calibration as detailed on in [[1](#references)].
 
 ### Usage
-This work marks an _extension_ to camera/IMU calibration. Accordingly, it extends the command line interface with a few LRF specific options, while all camera and IMU options remain valid.
+This work marks an _extension_ to camera/IMU calibration. Accordingly, it extends the command line interface with a few LRF specific options, while all camera and IMU options remain valid (please see [here](Multi-IMU-and-IMU-intrinsic-calibration#3-running-the-calibration) and [here](Camera-IMU-calibration#3-running-the-calibration) for these options).
 These additional options are
 * **--lrf-topic** The topic of the ROS scan message.
 * **--q_bl** An initial guess for the rotation from the laser into the body frame as quaternion.
@@ -15,7 +15,7 @@ kalibr_calibrate_imu_camera_laser --cam camchain-calibration_2015-10-09-10-48-02
 ```
 
 ### Dataset
-The approach uses planes present in the environment to formulate a probabilistic model of range measurements. For this method to produce correct results, please collect a dataset as described for camera/IMU calibration but additionally in an environment where (preferably multiple) planes are present and mostly unobstructed to the LRF during data collection.
+The approach uses planes present in the environment to formulate a probabilistic model of range measurements. For this method to produce correct results, please collect a dataset as described for [camera/IMU calibration](Camera-IMU-calibration#2-collect-images) but additionally in an environment where (preferably multiple) planes are present and mostly unobstructed to the LRF during data collection.
 
 An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5dxJScOEhXQ3loMUw1SGM/view?usp=sharing). Please note that this dataset was selected for its size, not because it is particularly well suited for the task. For best results, please prefer less cluttered environments and avoid scenarios where subtle non-planarities are present since these may bias the estimate.
 
