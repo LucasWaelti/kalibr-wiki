@@ -2,6 +2,7 @@ Kalibr provides limited, experimental support for spatio-temporal laser range fi
 
 ### Usage
 This work marks an _extension_ to camera/IMU calibration. Accordingly, it extends the command line interface with a few LRF specific options, while all camera and IMU options remain valid (please see [here](Multi-IMU-and-IMU-intrinsic-calibration#3-running-the-calibration) and [here](Camera-IMU-calibration#3-running-the-calibration) for these options).
+
 These additional options are
 * **--lrf-topic** The topic of the ROS scan message.
 * **--q_bl** An initial guess for the rotation from the laser into the body frame as quaternion.
