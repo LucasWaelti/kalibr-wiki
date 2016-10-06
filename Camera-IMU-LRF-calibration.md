@@ -21,8 +21,8 @@ An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5d
 
 ### General Comments
 * The approach is non-deterministic in the sense that it employs a random selection of points for establishing plane hypotheses. Accordingly, different executions of the toolbox will yield different results. Given that the example dataset provided here is less than optimal, the calibration was observed to fail in a small number of cases due to slow convergence (Not reaching the convergence criterion within a limited number of iterations is considered a failure.). In these cases, rerunning the application may yield appropriate calibrations. 
-* The implementation provides visualizations that let you inspect the point cloud for detected planes color coded by the absolute residual.
-* Error checks are not in place everywhere. In case the approach fails to detect any planes, it may just crash.
+* The implementation provides visualizations that let you inspect the point cloud for detected planes color coded by the absolute residual of each point.
+* Error checks are not in place everywhere. In case the approach fails to detect any planes, it may just crash without further notice.
 * The approach exhibits a number of free parameters, mostly in place to allow for automatic plane detection. Since currently no configuration trough a separate file is supported, these will have to be adapted [in the code](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L48-L56).
 * The example employs hardware synchronization using a timestamped trigger. For general use, you will have to adapt [these lines](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/LrfSensor.py#L33-L35).
 * Calibration output is limited to [the terminal](https://github.com/ethz-asl/kalibr/blob/experimental/lrf-calibration/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera_laser#L244-L258) at this point.
