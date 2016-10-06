@@ -21,7 +21,14 @@ The approach uses planes present in the environment to formulate a probabilistic
 An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5dxJScOEhXQ3loMUw1SGM/view?usp=sharing). Please note that this dataset was selected for its size, not because it is particularly suited for the task. In general, please prefer less cluttered environments and avoid scenarios where subtle non-planarities are present, since these may bias the estimate.
 
 ### General Comments
-
+* The approach is non-deterministic in the sense that it employs a random selection of points for establishing plane hypotheses. Accordingly, different executions of the toolbox will yield different results.
+* Error checks are not in place everywhere. In case the approach fails to detect any planes, it may just crash.
+* The approach exhibits a number of free parameters, mostly in place to allow for automatic plane detection. Since currently no configuration trough a separate file is supported, these will have to be adapted in the code.
+* The example employs hardware synchronization using a timestamped trigger. For general use, you will have to adapt these lines.
+* Calibration output is limited to the terminal at this point.
+* The initial guess for the temporal offset between LRF and IMU is zero.
+* The extension was implemented specifically with the idea in mind of facilitating research in more complete LRF models. Feel free to extend the model in Python here. 
+* The current implementation employs a two step procedure, estimating an initial set of LRF parameters followed by outlier removal and a second optimization on the inlier set alone. 
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
