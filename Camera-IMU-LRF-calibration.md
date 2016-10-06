@@ -21,6 +21,7 @@ An example dataset can be found [here](https://drive.google.com/file/d/0B4rISk5d
 
 ### General Comments
 * The approach is non-deterministic in the sense that it employs a random selection of points for establishing plane hypotheses. Accordingly, different executions of the toolbox will yield different results.
+* The implementation provides visualizations that let you inspect the point cloud for detected planes color coded by the absolute residual.
 * Error checks are not in place everywhere. In case the approach fails to detect any planes, it may just crash.
 * The approach exhibits a number of free parameters, mostly in place to allow for automatic plane detection. Since currently no configuration trough a separate file is supported, these will have to be adapted in the code.
 * The example employs hardware synchronization using a timestamped trigger. For general use, you will have to adapt these lines.
