@@ -114,7 +114,7 @@ Figure 1: Allan standard deviation of a MEMS gyro with manually identified noise
 
 ***
 
-Some manufacturers provide an Allan standard deviation plot in the datasheet of the device. Otherwise, it needs to be computed from sensor data [TODO(nikolicj) add AD script].
+Some manufacturers provide an Allan standard deviation plot in the datasheet of the device. Otherwise, it needs to be computed from sensor data.
 
 ### Kalibr IMU Noise Parameters in Practice
 
