@@ -15,11 +15,11 @@ The _intrinsics vector_ contains all parameters for the model:
 ### Distortion models
 Kalibr supports the following distortion models:
 
-* **radial-tangential** <br>
+* **radial-tangential (radtan)** <br>
     (_distortion_coeffs_: [k1 k2 r1 r2])
-* **equidistant**<br>
+* **equidistant (equi)**<br>
     (_distortion_coeffs_: [k1 k2 k3 k4])
-* **fov**<br>
+* **fov (fov)**<br>
     (_distortion_coeffs_: [w])
 
 ## References
