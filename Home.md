@@ -1,6 +1,6 @@
 ![Kalibr](https://raw.githubusercontent.com/wiki/ethz-asl/kalibr/images/kalibr_small.png)
 
-##Introduction
+## Introduction
 Kalibr is a toolbox that solves the following calibration problems:
 
 1. **Multiple camera calibration**: 
@@ -28,7 +28,7 @@ The calibration approaches used in Kalibr are based on the following papers. Ple
 1. <a name="jmaye"></a> J. Maye, P. Furgale, R. Siegwart (2013). Self-supervised Calibration for Robotic Systems, In Proc. of the IEEE Intelligent Vehicles Symposium (IVS)
 
 
-##License (BSD)
+## License (BSD)
 Copyright (c) 2014, Paul Furgale, Jérôme Maye and Jörn Rehder, Autonomous Systems Lab, ETH Zurich, Switzerland<br>
 Copyright (c) 2014, Thomas Schneider, Skybotix AG, Switzerland<br>
 All rights reserved.<br>
