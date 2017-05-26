@@ -2,15 +2,15 @@ The extended version of _kalibr_ supports (temporal-)[<sup>1</sup>](#temporal)sp
 
 This page documents changes with respect to the default camera-IMU calibration. Please make sure to read the respective [documentation](Camera-IMU-calibration) first.
 
-##How to use it
+## How to use it
 
-###1) Requirements
+### 1) Requirements
 Applies analogously to [here](Camera-IMU-calibration#1-requirements).
 
-###2) Dataset Collection
+### 2) Dataset Collection
 Applies analogously to [here](Camera-IMU-calibration#2-collect-images).
 
-###3) Running the calibration
+### 3) Running the calibration
 Please see [here](Camera-IMU-calibration#3-running-the-calibration) for the required options governing camera configuration as well as ROS-bag and target selection.
 
 Options specific to the extended framework are
@@ -41,7 +41,7 @@ However, there are a couple of small changes:
 
 <a name="temporal"></a><sup>1)</sup> Please note that only the fixed temporal offset of the cameras with respect to IMU0 is estimated in a maximum-likelihood fashion. IMUs are assumed to be correctly synchronized with respect to each other. If this is not the case, the option **--imu-delay-by-correlation** will estimate temporal offsets of additional IMUs with respect to IMU0. Note however that this offset is determined from correlating angular velocities in a preceding step and hence will not be as accurate as the maximum-likelihood estimate.
 
-###References
+### References
 1. <a name="paul1"></a>Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.
 1. <a name="paul2"></a>Paul Furgale, T D Barfoot, G Sibley (2012). Continuous-Time Batch Estimation Using Temporal Basis Functions. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 2088–2095, St. Paul, MN.
 1. <a name="joern1"></a>Joern Rehder, Janosch Nikolic, Thomas Schneider, Timo Hinzmann, Roland Siegwart (2016). Extending kalibr: Calibrating the Extrinsics of Multiple IMUs and of Individual Axes. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), Stockholm, Sweden
