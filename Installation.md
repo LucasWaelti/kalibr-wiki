@@ -8,7 +8,7 @@ The following two sources for the toolbox are available:
 
 **NOTE:** It is recommended to build the toolbox from source using a native ROS installation to make all tools available.
 
-##A) Using the CDE package (only 64bit systems)
+## A) Using the CDE package (only 64bit systems)
 To remove the necessity of installing ROS and building the toolbox from source, a [CDE](#guo) package is provided that packs the toolbox and all its dependencies in a chroot-like environment. To install this package follow these steps:
 
 1. Download the most recent package from the [Downloads](downloads) page.
@@ -25,7 +25,7 @@ To remove the necessity of installing ROS and building the toolbox from source, 
 
     to use the tools more conveniently.
 
-##B) Building from source
+## B) Building from source
 To build the toolbox from source follow these steps (tested on Ubuntu 14.04 with ROS indigo):
 
 1. Install ROS indigo <br>
