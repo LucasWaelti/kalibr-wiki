@@ -1,4 +1,4 @@
-###Camera-system calibration (camchain.yaml)
+### Camera-system calibration (camchain.yaml)
 This file stores the calibration of the camera intrinsic and extrinsic parameters as well as the spatial and temporal calibration parameters of the IMU with respect to the cameras.
 
 Each camera has the following parameters:
@@ -62,7 +62,7 @@ cam1:
   resolution: [752, 480]
 ```
 
-###IMU configuration (imu.yaml)
+### IMU configuration (imu.yaml)
 IMUs are configured using a YAML file. Please refer to the example below for details:
 
 **imu.yaml**
@@ -79,5 +79,5 @@ rostopic:                    /imu0      #the IMU ROS topic
 update_rate:                 200.0      #Hz (for discretization of the values above)
 ```
 
-###Calibration target configuration (target.yaml)
+### Calibration target configuration (target.yaml)
 Please refer to the [Calibration targets](calibration-target) page.
