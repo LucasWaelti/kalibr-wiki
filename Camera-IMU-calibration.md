@@ -56,7 +56,7 @@ The calibration will produce the following output files:
 * **results-imucam-%BAGNAME%.txt**: Result summary as a text file.
 * **camchain-imucam-%BAGNAME%.yaml**: Results in YAML format. This file is based on the input _camchain.yaml_ with added transformations (and optionally time shifts) for all cameras with respect to the IMU. Please check the format on the [YAML formats](yaml-formats) page.
 
-##An example using a sample dataset
+## An example using a sample dataset
 Download the dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag, calibration target and IMU configuration file.
 
 The calibration can be started with:
