@@ -4,16 +4,16 @@ The image data is provided as a [ROS](https://www.ros.org) bag containing the im
 
 Arbitrary combinations of projection and distortion models can be combined in one calibration run. Have a look at [Supported models](supported-models) page for a list of available models.
 
-##How to use?
+## How to use?
 
-###1) Collect images
+### 1) Collect images
 Create a ROS bag containing the raw image data either by directly recording from a ROS sensor stream or by using the _[bagcreater](bag-format)_ script on a sequence of image files.
 
 The camera system is fixed and the calibration target is moved in front of the cameras to obtain the calibration images. 
 
 It is recommended to lower the frequency of the camera streams to around 4 Hz while capturing the calibration data. This reduces redundant information in the dataset and thus lowering the runtime of the calibration.
 
-###2) Running the calibration
+### 2) Running the calibration
 
 The tool must be provided with the following input:
 
@@ -36,17 +36,17 @@ It can happen that the optimization diverges right after processing the first fe
 More information about options is available using the help argument:<br\>
 > kalibr_calibrate_cameras --h
 
-###3) The output
+### 3) The output
 The calibration will produce the following output:
 
 * **report-cam-%BAGNAME%.pdf**: Report in PDF format. Contains all plots for documentation.
 * **results-cam-%BAGNAME%.txt**: Result summary as a text file.
 * **camchain-%BAGNAME%.yaml**: Results in YAML format. This file can be used as an input for the camera-imu calibrator. Please check the format on the [YAML formats](yaml-formats) page.
 
-###4) Optional live validation (ROS only)
+### 4) Optional live validation (ROS only)
 If your sensor is ROS-enabled you can use the validator tool to verify the calibration on live data. Please refer to the [Calibration validator](calibration-validator) page on how to do that.
 
-##An example run using a sample dataset
+## An example run using a sample dataset
 Download the sample dataset from the [Downloads](downloads) page and extract it. The archive will contain the bag and the calibration target configuration file.
 
 ![Sensor](https://raw.githubusercontent.com/wiki/ethz-asl/kalibr/images/sensor_dataset.png)
