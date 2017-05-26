@@ -31,7 +31,7 @@ Good results have been obtained by using a camera rate of 20 Hz and an IMU rate 
 **WARNING:**
 If you are using a calibration target with symmetries (checkerboard, circlegrid), movements which could lead to flips in the target pose estimates have to be avoided. The use of an [Aprilgrid](calibration-targets) is recommended to avoid this problem entirely.
 
-###3) Running the calibration
+### 3) Running the calibration
 The tool must be provided with the following input:
 
 * **--bag filename.bag**<br>
