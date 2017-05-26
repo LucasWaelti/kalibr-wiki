@@ -4,7 +4,7 @@ This page will guide you through the calibration of the VI-Sensor (visual-inerti
 
 More information about the VI-Sensor can be found [here](http://www.skybotix.com/).
 
-##Procedure
+## Procedure
 
 1. prepare the sensor
 1. setting the focus
@@ -17,7 +17,7 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 1. collect results
 
 
-##Requirements
+## Requirements
 
 * ROS sensor driver is running (image/imu data)
 * good Aprilgrid target ([pdf](https://drive.google.com/file/d/0B0T1sizOvRsUdjFJem9mQXdiMTQ/edit?usp=sharing), [yaml](https://drive.google.com/file/d/0B0T1sizOvRsUU2lGMTdWYWhPaWc/edit?usp=sharing))
@@ -25,7 +25,7 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 * IMU configuration for ADIS16448 ([yaml](https://drive.google.com/file/d/0B0T1sizOvRsUSk9ReDlid0VSY3M/edit?usp=sharing))
 
 
-##1) Sensor preparation
+## 1) Sensor preparation
 
 1. make sure the sensor publishes all image and imu streams to ROS
 1. minimize the motion blur with a good light source and by reducing the shutter times.
@@ -41,7 +41,7 @@ More information about the VI-Sensor can be found [here](http://www.skybotix.com
 rosrun image_view image_view image:=/cam1/image_raw &
 
 
-##2) Setting the focus
+## 2) Setting the focus
 
 1. point the cameras on a Siemens star (or similar pattern)
 1. start the focus tool
@@ -54,7 +54,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
 Make sure a Teflon band or thread-locking glue prevents unintentional focus changes after this step.
 
 
-##2) Collect calibration data
+## 2) Collect calibration data
 In this step we need to collect two calibration datasets with the following properties:
 
 1. **static dataset (in-/extrinsic calibration of the cameras)**
@@ -85,7 +85,7 @@ rosrun image_view image_view image:=/cam1/image_raw &
     record bag with:
     >rosbag record /cam0/image_raw  /cam1/image_raw /imu0 -O dynamic.bag
 
-##3) Run the calibration
+## 3) Run the calibration
 1. calibration of camera in/extrinsics
     1. run calibration
     > kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /cam0/image_raw /cam1/image_raw --bag static.bag --target aprilgrid_6x6.yaml
@@ -106,5 +106,5 @@ rosrun image_view image_view image:=/cam1/image_raw &
         * make sure the predicted accelerations & angular velocities fit the IMU measurements
         * reprojection errors should be in a normal range (0.1-0.2 px for a good calibration)
 
-##4) Collect results
+## 4) Collect results
 Both calibrators write reports to the working directory containing the plots shown at the end of the calibration. Further a _camchain.yaml_ has been written by the camera calibrator and is extended by the imu-camera calibrator with imu-camera transformations to the file _camchain_cimu.yaml_. Please refer to the [YAML formats](yaml-formats) page for the format.
