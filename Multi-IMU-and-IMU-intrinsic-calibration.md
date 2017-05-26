@@ -31,7 +31,7 @@ This option is only in effect in conjunction with the option **--time-calibratio
 * **--perform-synchronization**<br>
 The most common failure mode of _kalibr_ appears to be incorrect timestamps provided by the user. The framework exclusively employs header timestamps and normally does not apply any corrections in order to preserve the original timing of your system. This option enables the use of the timestamp correction algorithm proposed by [Zhang et al.](#zhang) to correct for jitter and skew in the device clocks of the attached sensors. Please note that this option will **alter your timing**. It will hence void the significance of the estimated temporal offsets for your system and is solely recommended for assessing potential improvements through more adequate system design.
 
-###4) Calibration Output
+### 4) Calibration Output
 Again, much of the description [here](Camera-IMU-calibration#4-the-output) applies.
 
 However, there are a couple of small changes:
