@@ -80,4 +80,4 @@ update_rate:                 200.0      #Hz (for discretization of the values ab
 ```
 
 ### Calibration target configuration (target.yaml)
-Please refer to the [Calibration targets](calibration-target) page.
+Please refer to the [Calibration targets](calibration-targets) page.
