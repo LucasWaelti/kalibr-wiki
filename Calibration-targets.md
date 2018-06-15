@@ -15,6 +15,8 @@ Aprilgrids can be downloaded on the [Downloads](downloads) page or custom grids 
 > kalibr_create_target_pdf --type apriltag --nx [NUM_COLS] --ny [NUM_ROWS] --tsize [TAG_WIDTH_M] --tspace [TAG_SPACING_PERCENT]
 
 **aprilgrid.yaml**
+![kalibr](https://user-images.githubusercontent.com/5337083/41458381-be379c6e-7086-11e8-9291-352445140e88.png)
+
 ```
 target_type: 'aprilgrid' #gridtype
 tagCols: 6               #number of apriltags
