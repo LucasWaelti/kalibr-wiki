@@ -13,14 +13,14 @@ To make the calibration task more convenient and reproducible the following tool
 1. **camera focus**: tool to set the camera focus in a reproducible way
 1. **calibration validator**: validation tool that computes the reprojection error statistics of the calibrated camera-system on live ROS image streams
 
+**For questions or comments, please open an issue on Github.**
+
 ## Tutorial: IMU-camera calibration
 A video tutorial for the IMU-camera calibration can be found here:
 
 [![alt text](https://user-images.githubusercontent.com/5337083/44033014-50208b8a-9f09-11e8-8e9a-d7d6d3c69d97.png)](https://m.youtube.com/watch?v=puNXsnrYWTY "imu cam calib")
 
 (Credits: @indigomega)
-
-**For questions or comments, please open an issue on Github.**
 
 ## Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
