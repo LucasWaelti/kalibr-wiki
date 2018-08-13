@@ -15,7 +15,7 @@ To make the calibration task more convenient and reproducible the following tool
 
 **For questions or comments, please use the [user forum](https://groups.google.com/forum/#!forum/kalibr-users).**
 
-##Authors
+## Authors
 * Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
 * Jérôme Maye ([email](jerome.maye@mavt.ethz.ch))
 * Jörn Rehder ([email](joern.rehder@mavt.ethz.ch))
