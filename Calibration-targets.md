@@ -8,7 +8,7 @@ The targets are configured using YAML configuration files which have to be provi
 Grids can be downloaded on the [Downloads](downloads) page or created using the following script:
 > kalibr_create_target_pdf --h
 
-###A) Aprilgrid
+### A) Aprilgrid
 Partially visible Aprilgrid targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended choice.
 
 Aprilgrids can be downloaded on the [Downloads](downloads) page or custom grids can be created using the following script:
@@ -30,7 +30,7 @@ tagSpacing: 0.3          #ratio of space between tags to tagSize
 
 Kalibr uses the awsome Apriltag implementation of M. Kaess for tag extraction. [[1](#olson),[2](#kaess)]
 
-###B) Checkerboard
+### B) Checkerboard
 The standard checkerboard pattern is supported using the following configuration:
 
 **checkerboard.yaml**
@@ -42,7 +42,7 @@ rowSpacingMeters: 0.06      #size of one chessboard square [m]
 colSpacingMeters: 0.06      #size of one chessboard square [m]
 ```
 
-###C) Circlegrid
+### C) Circlegrid
 The standard OpenCV symmetric and asymmetric circle grids are supported using the following configuration:
 
 **circlegrid.yaml**
@@ -54,10 +54,10 @@ spacingMeters: 0.02        #distance between circles [m]
 asymmetricGrid: False      #use asymmetric grid (opencv) [bool]
 ```
 
-##Problems with the target extraction?
+## Problems with the target extraction?
 The *--show-extraction* argument can be used with the calibration tools to visualize the calibration target extraction process. This might help to find problems with the target configuration and extraction.
 
-##Tips/Problems
+## Tips/Problems
 * Make sure the calibration target is as flat as possible. Best is to glue it to a rigid plate such as aluminum or acrylic glass.
 * Most printers will scale the target during the printing process. Make sure to remeasure the important sizes and adjust the target configuration accordingly.
 * Keep a white border around the calibration target of min. the size of one grid element (or the detection might be unsuccessful in certain lighting conditions)
