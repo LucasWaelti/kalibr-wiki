@@ -9,6 +9,8 @@ Each camera has the following parameters:
     vector containing the intrinsic parameters for the given projection type. elements are as follows:<br>
     pinhole: [fu fv pu pv] <br>
     omni: [xi fu fv pu pv] <br>
+    ds: [xi alpha fu fv pu pv] <br>
+    eucm: [alpha beta fu fv pu pv] <br>
     see [Supported models](supported-models) for more information<br>
 * **distortion_model**<br>
     lens distortion type (radtan / equidistant)<br>
