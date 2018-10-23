@@ -53,7 +53,7 @@ The tool must be provided with the following input:
 The calibration can be run using:
 > kalibr_calibrate_imu_camera --bag [filename.bag] --cam [camchain.yaml] --imu [imu.yaml] --target [target.yaml]
 
-The temporal calibration is turned off by default and can be enabled using the **--time-calibration** argument. More information about options is available using the help argument:<br\>
+The temporal calibration is turned on by default and can be disabled using the **--no-time-calibration** argument. More information about options is available using the help argument:<br\>
 > kalibr_calibrate_imu_camera --h
 
 ### 4) The output
