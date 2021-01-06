@@ -1,0 +1,1 @@
+Full intrinsic calibration (projection, distortion and shutter parameters) of rolling shutter cameras
