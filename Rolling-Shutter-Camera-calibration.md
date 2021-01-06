@@ -32,7 +32,7 @@ rosrun kalibr kalibr_calibrate_rs_cameras --bag MYROSBAG.bag --model pinhole-rad
 ```
 
 ### 3) The output
-The calibration will produce the following output:
+The calibration will be printed to the screen.
 
 ## References
 Please cite the appropriate papers when using this toolbox or parts of it in an academic publication.
