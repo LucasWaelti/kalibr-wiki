@@ -9,24 +9,27 @@ The camera system is fixed and the calibration target is moved in front of the c
 
 ### 2) Running the calibration
 
-The tool must be provided with the following input:
-
-* **--bag filename.bag**<br>
-    ROS bag containing the data
-
 The calibration can be run using:
-> rosrun kalibr kalibr_calibrate_rs_cameras 
+```
+rosrun kalibr kalibr_calibrate_rs_cameras 
 --bag [filename.bag] \
 --model [MODEL_0 ... MODEL_N] \
 --target [target.yaml] \
 --topic  [TOPIC_0 ... TOPIC_N]  \
 --inverse-feature-variance 1 \
 --frame-rate [FRAMERATE]
+```
 
-Rolling shutter camera models:
-- 'pinhole-radtan-rs'
-- 'pinhole-equi-rs'
-- 'omni-radtan-rs'
+Available rolling shutter camera models:
+- `pinhole-radtan-rs`
+- `pinhole-equi-rs`
+- `omni-radtan-rs`
+
+Sample command: 
+```
+rosrun kalibr kalibr_calibrate_rs_cameras --bag MYROSBAG.bag --model pinhole-radtan-rs --target aprilgrid.yaml \\
+--topic /cam0/image_raw --feature-variance 1 --frame-rate 30
+```
 
 ### 3) The output
 The calibration will produce the following output:
