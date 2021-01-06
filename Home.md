@@ -7,6 +7,7 @@ Kalibr is a toolbox that solves the following calibration problems:
     intrinsic and extrinsic calibration of a camera-systems with non-globally shared overlapping fields of view
 1. **Camera-IMU calibration**:
     spatial and temporal calibration of an IMU w.r.t a camera-system. In an [extended version](https://github.com/ethz-asl/kalibr/tree/feature/extended-kalibr), spatial and temporal[<sup>1</sup>](../wiki/Multi-IMU-and-IMU-intrinsic-calibration#temporal) calibration of a camera system w.r.t. multiple IMUs as well as IMU intrinsic calibration is supported.
+1. **Rolling Shutter Camera calibration**: full intrinsic calibration (projection, distortion and shutter parameters) of rolling shutter cameras
  
 To make the calibration task more convenient and reproducible the following tools are available:
 
