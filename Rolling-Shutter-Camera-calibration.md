@@ -1,4 +1,4 @@
-The Rolling shutter calibration tool provides full intrinsic calibration (projection, distortion and shutter parameters) of rolling shutter cameras [1].
+The _rolling shutter calibration_ tool provides full intrinsic calibration (projection, distortion and shutter parameters) of rolling shutter cameras [1].
 
 ## How to use?
 
