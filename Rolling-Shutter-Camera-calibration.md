@@ -15,7 +15,18 @@ The tool must be provided with the following input:
     ROS bag containing the data
 
 The calibration can be run using:
-> kalibr_calibrate_cameras --bag [filename.bag] --topics [TOPIC_0 ... TOPIC_N] --models [MODEL_0 ... MODEL_N] --target [target.yaml]
+> rosrun kalibr kalibr_calibrate_rs_cameras 
+--bag [filename.bag] \
+--model [MODEL_0 ... MODEL_N] \
+--target [target.yaml] \
+--topic  [TOPIC_0 ... TOPIC_N]  \
+--inverse-feature-variance 1 \
+--frame-rate [FRAMERATE]
+
+Rolling shutter camera models:
+- 'pinhole-radtan-rs'
+- 'pinhole-equi-rs'
+- 'omni-radtan-rs'
 
 ### 3) The output
 The calibration will produce the following output:
