@@ -53,7 +53,7 @@ To build the toolbox from source follow these steps (tested on Ubuntu 14.04 with
     source /opt/ros/indigo/setup.bash <br>
     catkin init <br>
     catkin config --extend /opt/ros/indigo <br>
-    catkin config --merge-devel # Necessary for catkin_tools >= 0.4.
+    catkin config --merge-devel # Necessary for catkin_tools >= 0.4. <br>
     catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 1. Clone the source repo into your catkin workspace _src_ folder <br>
