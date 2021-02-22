@@ -74,6 +74,34 @@ To build the toolbox from source follow these steps (tested on Ubuntu 14.04 with
 
 More information on building with catkin and ROS can be found [here](http://wiki.ros.org/catkin/Tutorials).
 
+## C) Using Through Docker
+
+Kalibr can be run using the [Docker image](https://hub.docker.com/r/stereolabs/kalibr) provided by [Stereo Labs](https://www.stereolabs.com/). 
+
+To use the image, start by [installing Docker](https://docs.docker.com/get-docker/).
+
+1. Create a shell script `run_kalibr.sh` with the contents:
+```
+#!/bin/sh
+
+data_dir=$1
+
+if [ ! -d "$data_dir" ]; then
+  echo "data directory does not exist: $data_dir"
+  exit 1
+fi
+
+xhost +local:root;
+docker run -it -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v $data_dir:/root/data stereolabs/kalibr:kinetic /bin/bash -c "cd /root/data; /bin/bash"
+xhost -local:root;
+```
+
+2. Give the script execution permissions by running `chmod +x run_kalibr.sh`.
+
+3. Run using `./run_kalibr.sh <path-to-data-dir>`, where `<path-to-data-dir>` is the path to the directory on your computer which contains your calibration bag file.
+
+This will open an interactive shell session inside the docker container. The data directory will be mounted inside the container at the path `/root/data`. The shell has the Kalibr workspace loaded. This means you can run your favorite Kalibr commands such as `kalibr_calibrate_cameras --bag bag.bag --topics /cam_node/left_raw /cam_node/right_raw --models pinhole-radtan pinhole-radtan --target target.yaml`.
+
 ## References
 Please cite the appropriate papers when using this library or parts of it in an academic publication.
 
