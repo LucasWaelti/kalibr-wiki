@@ -100,7 +100,7 @@ Other manufacturers specify it directly as **rate noise density**, **acceleratio
 
 ### From the Allan standard deviation (AD)
 
-A useful open source tool for computing IMU parameters using Allan Deviation is available [here](https://github.com/ori-drs/allan_variance_ros). Below, we provide an explanation of the method.
+A useful open source tool for computing IMU parameters using Allan Deviation is available [here](https://github.com/ori-drs/allan_variance_ros). 
 
 While many (parametric and non-parametric) methods have been proposed to (automatically) determine the noise model parameters from samples, deriving the parameters from an Allan standard deviation plot is probably the most common and standardized procedure. [1] derives the AD for different random processes, including "white noise" (slope -1/2 in a log-log AD plot) and "random walk" (slope +1/2 in a log-log AD plot) that are used in Kalibr. The noise model parameters can be determined directly from the Allan standard deviation.
 
