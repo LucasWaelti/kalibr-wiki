@@ -24,9 +24,9 @@ A video tutorial for the IMU-camera calibration can be found here:
 (Credits: @indigomega)
 
 ## Authors
-* Paul Furgale ([email](paul.furgale@mavt.ethz.ch))
-* Jérôme Maye ([email](jerome.maye@mavt.ethz.ch))
-* Jörn Rehder ([email](joern.rehder@mavt.ethz.ch))
+* Paul Furgale
+* Jérôme Maye
+* Jörn Rehder
 * Thomas Schneider ([email](schneith@ethz.ch))
 * Luc Oth
 * Timo Hinzmann ([email](hitimo@ethz.ch))
